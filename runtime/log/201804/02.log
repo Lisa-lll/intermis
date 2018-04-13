@@ -1,0 +1,2856 @@
+---------------------------------------------------------------
+[ 2018-04-02T14:18:42+08:00 ] 0.0.0.0 GET /student.php/student/st/fill
+[ info ] tp5.com/student.php/student/st/fill [运行时间：0.360948s][吞吐率：2.77req/s] [内存消耗：2,501.66kb] [文件加载：76]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill.html [ array (
+  0 => 'country',
+  1 => 'lang',
+  2 => 're',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.053991s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `country` [ RunTime:0.114268s ]
+[ sql ] [ SQL ] SELECT * FROM `country` [ RunTime:0.037319s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `language` [ RunTime:0.009294s ]
+[ sql ] [ SQL ] SELECT * FROM `language` [ RunTime:0.000961s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `religion` [ RunTime:0.009342s ]
+[ sql ] [ SQL ] SELECT * FROM `religion` [ RunTime:0.000773s ]
+---------------------------------------------------------------
+[ 2018-04-02T14:18:50+08:00 ] 0.0.0.0 POST /student.php/student/st/upload.html
+[ info ] tp5.com/student.php/student/st/upload.html [运行时间：0.035357s][吞吐率：28.28req/s] [内存消耗：1,232.38kb] [文件加载：57]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://tp5.com/student.php/student/st/fill',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:65]
+---------------------------------------------------------------
+[ 2018-04-02T14:18:51+08:00 ] 0.0.0.0 POST /student.php/student/st/upload.html
+[ info ] tp5.com/student.php/student/st/upload.html [运行时间：0.029924s][吞吐率：33.42req/s] [内存消耗：1,232.38kb] [文件加载：57]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://tp5.com/student.php/student/st/fill',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:65]
+---------------------------------------------------------------
+[ 2018-04-02T14:18:51+08:00 ] 0.0.0.0 POST /student.php/student/st/upload.html
+[ info ] tp5.com/student.php/student/st/upload.html [运行时间：0.029656s][吞吐率：33.72req/s] [内存消耗：1,232.38kb] [文件加载：57]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://tp5.com/student.php/student/st/fill',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:65]
+---------------------------------------------------------------
+[ 2018-04-02T14:18:51+08:00 ] 0.0.0.0 POST /student.php/student/st/upload.html
+[ info ] tp5.com/student.php/student/st/upload.html [运行时间：0.029451s][吞吐率：33.95req/s] [内存消耗：1,232.38kb] [文件加载：57]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://tp5.com/student.php/student/st/fill',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:65]
+---------------------------------------------------------------
+[ 2018-04-02T14:18:52+08:00 ] 0.0.0.0 POST /student.php/student/st/upload.html
+[ info ] tp5.com/student.php/student/st/upload.html [运行时间：0.032352s][吞吐率：30.91req/s] [内存消耗：1,232.38kb] [文件加载：57]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://tp5.com/student.php/student/st/fill',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:65]
+---------------------------------------------------------------
+[ 2018-04-02T14:18:52+08:00 ] 0.0.0.0 POST /student.php/student/st/upload.html
+[ info ] tp5.com/student.php/student/st/upload.html [运行时间：0.032685s][吞吐率：30.60req/s] [内存消耗：1,232.38kb] [文件加载：57]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://tp5.com/student.php/student/st/fill',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:65]
+---------------------------------------------------------------
+[ 2018-04-02T14:18:52+08:00 ] 0.0.0.0 POST /student.php/student/st/upload.html
+[ info ] tp5.com/student.php/student/st/upload.html [运行时间：0.028673s][吞吐率：34.88req/s] [内存消耗：1,232.38kb] [文件加载：57]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://tp5.com/student.php/student/st/fill',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:65]
+---------------------------------------------------------------
+[ 2018-04-02T14:18:52+08:00 ] 0.0.0.0 POST /student.php/student/st/upload.html
+[ info ] tp5.com/student.php/student/st/upload.html [运行时间：0.027331s][吞吐率：36.59req/s] [内存消耗：1,232.38kb] [文件加载：57]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://tp5.com/student.php/student/st/fill',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:65]
+---------------------------------------------------------------
+[ 2018-04-02T14:18:53+08:00 ] 0.0.0.0 POST /student.php/student/st/upload.html
+[ info ] tp5.com/student.php/student/st/upload.html [运行时间：0.025507s][吞吐率：39.20req/s] [内存消耗：1,232.38kb] [文件加载：57]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://tp5.com/student.php/student/st/fill',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:65]
+---------------------------------------------------------------
+[ 2018-04-02T14:23:47+08:00 ] 0.0.0.0 GET /student.php/student/st/fill
+[ info ] tp5.com/student.php/student/st/fill [运行时间：0.096030s][吞吐率：10.41req/s] [内存消耗：2,660.61kb] [文件加载：78]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill.html [ array (
+  0 => 'country',
+  1 => 'lang',
+  2 => 're',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000620s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `country` [ RunTime:0.003271s ]
+[ sql ] [ SQL ] SELECT * FROM `country` [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `language` [ RunTime:0.002943s ]
+[ sql ] [ SQL ] SELECT * FROM `language` [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `religion` [ RunTime:0.002723s ]
+[ sql ] [ SQL ] SELECT * FROM `religion` [ RunTime:0.000396s ]
+---------------------------------------------------------------
+[ 2018-04-02T14:27:56+08:00 ] 0.0.0.0 GET /student.php/student/st/fill
+[ info ] tp5.com/student.php/student/st/fill [运行时间：0.061829s][吞吐率：16.17req/s] [内存消耗：2,661.11kb] [文件加载：78]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill.html [ array (
+  0 => 'country',
+  1 => 'lang',
+  2 => 're',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000701s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `country` [ RunTime:0.004396s ]
+[ sql ] [ SQL ] SELECT * FROM `country` [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `language` [ RunTime:0.003121s ]
+[ sql ] [ SQL ] SELECT * FROM `language` [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `religion` [ RunTime:0.003078s ]
+[ sql ] [ SQL ] SELECT * FROM `religion` [ RunTime:0.000486s ]
+---------------------------------------------------------------
+[ 2018-04-02T14:28:02+08:00 ] 0.0.0.0 POST /student.php/student/st/upload.html
+[ info ] tp5.com/student.php/student/st/upload.html [运行时间：0.021980s][吞吐率：45.50req/s] [内存消耗：1,223.95kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://tp5.com/student.php/student/st/fill',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:65]
+---------------------------------------------------------------
+[ 2018-04-02T14:28:04+08:00 ] 0.0.0.0 POST /student.php/student/st/upload.html
+[ info ] tp5.com/student.php/student/st/upload.html [运行时间：0.025759s][吞吐率：38.82req/s] [内存消耗：1,223.95kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://tp5.com/student.php/student/st/fill',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:65]
+---------------------------------------------------------------
+[ 2018-04-02T14:28:04+08:00 ] 0.0.0.0 POST /student.php/student/st/upload.html
+[ info ] tp5.com/student.php/student/st/upload.html [运行时间：0.029961s][吞吐率：33.38req/s] [内存消耗：1,223.95kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://tp5.com/student.php/student/st/fill',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:65]
+---------------------------------------------------------------
+[ 2018-04-02T14:28:04+08:00 ] 0.0.0.0 POST /student.php/student/st/upload.html
+[ info ] tp5.com/student.php/student/st/upload.html [运行时间：0.026600s][吞吐率：37.59req/s] [内存消耗：1,223.95kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://tp5.com/student.php/student/st/fill',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:65]
+---------------------------------------------------------------
+[ 2018-04-02T14:28:04+08:00 ] 0.0.0.0 POST /student.php/student/st/upload.html
+[ info ] tp5.com/student.php/student/st/upload.html [运行时间：0.031424s][吞吐率：31.82req/s] [内存消耗：1,223.95kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://tp5.com/student.php/student/st/fill',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:65]
+---------------------------------------------------------------
+[ 2018-04-02T14:28:04+08:00 ] 0.0.0.0 POST /student.php/student/st/upload.html
+[ info ] tp5.com/student.php/student/st/upload.html [运行时间：0.025226s][吞吐率：39.64req/s] [内存消耗：1,223.95kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://tp5.com/student.php/student/st/fill',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:65]
+---------------------------------------------------------------
+[ 2018-04-02T14:28:05+08:00 ] 0.0.0.0 POST /student.php/student/st/upload.html
+[ info ] tp5.com/student.php/student/st/upload.html [运行时间：0.031047s][吞吐率：32.21req/s] [内存消耗：1,223.95kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://tp5.com/student.php/student/st/fill',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:65]
+---------------------------------------------------------------
+[ 2018-04-02T14:28:05+08:00 ] 0.0.0.0 POST /student.php/student/st/upload.html
+[ info ] tp5.com/student.php/student/st/upload.html [运行时间：0.027954s][吞吐率：35.77req/s] [内存消耗：1,223.95kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://tp5.com/student.php/student/st/fill',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:65]
+---------------------------------------------------------------
+[ 2018-04-02T14:28:05+08:00 ] 0.0.0.0 POST /student.php/student/st/upload.html
+[ info ] tp5.com/student.php/student/st/upload.html [运行时间：0.026816s][吞吐率：37.29req/s] [内存消耗：1,223.95kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://tp5.com/student.php/student/st/fill',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:65]
+---------------------------------------------------------------
+[ 2018-04-02T14:28:05+08:00 ] 0.0.0.0 POST /student.php/student/st/upload.html
+[ info ] tp5.com/student.php/student/st/upload.html [运行时间：0.027529s][吞吐率：36.33req/s] [内存消耗：1,223.95kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://tp5.com/student.php/student/st/fill',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:65]
+---------------------------------------------------------------
+[ 2018-04-02T14:28:06+08:00 ] 0.0.0.0 POST /student.php/student/st/upload.html
+[ info ] tp5.com/student.php/student/st/upload.html [运行时间：0.026436s][吞吐率：37.83req/s] [内存消耗：1,223.95kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://tp5.com/student.php/student/st/fill',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:65]
+---------------------------------------------------------------
+[ 2018-04-02T14:28:06+08:00 ] 0.0.0.0 POST /student.php/student/st/upload.html
+[ info ] tp5.com/student.php/student/st/upload.html [运行时间：0.025818s][吞吐率：38.73req/s] [内存消耗：1,223.95kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://tp5.com/student.php/student/st/fill',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:65]
+---------------------------------------------------------------
+[ 2018-04-02T14:28:06+08:00 ] 0.0.0.0 POST /student.php/student/st/upload.html
+[ info ] tp5.com/student.php/student/st/upload.html [运行时间：0.025226s][吞吐率：39.64req/s] [内存消耗：1,223.95kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://tp5.com/student.php/student/st/fill',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:65]
+---------------------------------------------------------------
+[ 2018-04-02T14:28:06+08:00 ] 0.0.0.0 POST /student.php/student/st/upload.html
+[ info ] tp5.com/student.php/student/st/upload.html [运行时间：0.024701s][吞吐率：40.48req/s] [内存消耗：1,223.95kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://tp5.com/student.php/student/st/fill',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:65]
+---------------------------------------------------------------
+[ 2018-04-02T14:28:06+08:00 ] 0.0.0.0 POST /student.php/student/st/upload.html
+[ info ] tp5.com/student.php/student/st/upload.html [运行时间：0.026030s][吞吐率：38.42req/s] [内存消耗：1,223.95kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://tp5.com/student.php/student/st/fill',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:65]
+---------------------------------------------------------------
+[ 2018-04-02T14:34:34+08:00 ] 0.0.0.0 GET /student.php/student/st/test
+[ info ] tp5.com/student.php/student/st/test [运行时间：0.049313s][吞吐率：20.28req/s] [内存消耗：1,323.10kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T14:34:41+08:00 ] 0.0.0.0 POST /student/st/upload
+[ info ] tp5.com/student/st/upload [运行时间：0.054820s][吞吐率：18.24req/s] [内存消耗：1,269.38kb] [文件加载：57]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '4278',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://tp5.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryUA1GzCkFAG6xfAEN',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student.php/student/st/test',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:65]
+---------------------------------------------------------------
+[ 2018-04-02T14:35:46+08:00 ] 0.0.0.0 GET /student.php/student/st/test
+[ info ] tp5.com/student.php/student/st/test [运行时间：0.024373s][吞吐率：41.03req/s] [内存消耗：1,190.52kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T14:35:48+08:00 ] 0.0.0.0 GET /student.php/student/st/test
+[ info ] tp5.com/student.php/student/st/test [运行时间：0.023469s][吞吐率：42.61req/s] [内存消耗：1,190.52kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T14:35:55+08:00 ] 0.0.0.0 POST /student/st/upload
+[ info ] tp5.com/student/st/upload [运行时间：0.045260s][吞吐率：22.09req/s] [内存消耗：1,224.66kb] [文件加载：55]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '4278',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://tp5.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryiZ9Bn7OXVG1xs8Yx',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student.php/student/st/test',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T14:38:02+08:00 ] 0.0.0.0 GET /student/st/fill
+[ info ] tp5.com/student/st/fill [运行时间：0.068834s][吞吐率：14.53req/s] [内存消耗：2,500.21kb] [文件加载：76]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill.html [ array (
+  0 => 'country',
+  1 => 'lang',
+  2 => 're',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001570s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `country` [ RunTime:0.003573s ]
+[ sql ] [ SQL ] SELECT * FROM `country` [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `language` [ RunTime:0.003298s ]
+[ sql ] [ SQL ] SELECT * FROM `language` [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `religion` [ RunTime:0.002919s ]
+[ sql ] [ SQL ] SELECT * FROM `religion` [ RunTime:0.000463s ]
+---------------------------------------------------------------
+[ 2018-04-02T14:38:10+08:00 ] 0.0.0.0 POST /student/st/upload.html
+[ info ] tp5.com/student/st/upload.html [运行时间：0.025826s][吞吐率：38.72req/s] [内存消耗：1,222.50kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://tp5.com/student/st/fill',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:63]
+---------------------------------------------------------------
+[ 2018-04-02T14:38:58+08:00 ] 0.0.0.0 GET /student/st/fill
+[ info ] tp5.com/student/st/fill [运行时间：0.124872s][吞吐率：8.01req/s] [内存消耗：2,659.73kb] [文件加载：78]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill.html [ array (
+  0 => 'country',
+  1 => 'lang',
+  2 => 're',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000463s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `country` [ RunTime:0.004428s ]
+[ sql ] [ SQL ] SELECT * FROM `country` [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `language` [ RunTime:0.003433s ]
+[ sql ] [ SQL ] SELECT * FROM `language` [ RunTime:0.000612s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `religion` [ RunTime:0.002863s ]
+[ sql ] [ SQL ] SELECT * FROM `religion` [ RunTime:0.000381s ]
+---------------------------------------------------------------
+[ 2018-04-02T14:39:03+08:00 ] 0.0.0.0 POST /student/st/upload.html
+[ info ] tp5.com/student/st/upload.html [运行时间：0.028877s][吞吐率：34.63req/s] [内存消耗：1,222.50kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://tp5.com/student/st/fill',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:63]
+---------------------------------------------------------------
+[ 2018-04-02T14:40:17+08:00 ] 0.0.0.0 GET /student/st/test
+[ info ] tp5.com/student/st/test [运行时间：0.041434s][吞吐率：24.13req/s] [内存消耗：1,321.50kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T14:40:33+08:00 ] 0.0.0.0 GET /student/st/test
+[ info ] tp5.com/student/st/test [运行时间：0.026710s][吞吐率：37.44req/s] [内存消耗：1,322.02kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T14:41:07+08:00 ] 0.0.0.0 POST /student/st/upload
+[ info ] tp5.com/student/st/upload [运行时间：0.032395s][吞吐率：30.87req/s] [内存消耗：1,271.64kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '605839',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://tp5.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryNUiUrKiLzSsPbaWF',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/test',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]variable type error： array[/Users/liuyang/intermis/tp5/thinkphp/library/think/Response.php:385]
+---------------------------------------------------------------
+[ 2018-04-02T14:42:34+08:00 ] 0.0.0.0 GET /student/st/test
+[ info ] tp5.com/student/st/test [运行时间：0.025203s][吞吐率：39.68req/s] [内存消耗：1,190.91kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T14:42:39+08:00 ] 0.0.0.0 POST /student/st/upload
+[ info ] tp5.com/student/st/upload [运行时间：0.026014s][吞吐率：38.44req/s] [内存消耗：1,271.67kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1481861',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://tp5.com',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryPcNJBR3u6MlopWq0',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/test',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]variable type error： array[/Users/liuyang/intermis/tp5/thinkphp/library/think/Response.php:385]
+---------------------------------------------------------------
+[ 2018-04-02T14:46:57+08:00 ] 0.0.0.0 GET /student/st/test
+[ info ] tp5.com/student/st/test [运行时间：0.031233s][吞吐率：32.02req/s] [内存消耗：1,371.22kb] [文件加载：60]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T14:47:02+08:00 ] 0.0.0.0 POST /student/st/upload.html
+[ info ] tp5.com/student/st/upload.html [运行时间：0.030543s][吞吐率：32.74req/s] [内存消耗：1,221.68kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://tp5.com/student/st/test',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:63]
+---------------------------------------------------------------
+[ 2018-04-02T14:47:02+08:00 ] 0.0.0.0 GET /student/st/test?lll=%E7%A8%BB%E7%94%B0%E6%99%AF%E8%A7%823.JPG
+[ info ] tp5.com/student/st/test?lll=%E7%A8%BB%E7%94%B0%E6%99%AF%E8%A7%823.JPG [运行时间：0.026319s][吞吐率：38.00req/s] [内存消耗：1,239.38kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/test',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+  'lll' => '稻田景观3.JPG',
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T14:47:19+08:00 ] 0.0.0.0 POST /student/st/upload.html
+[ info ] tp5.com/student/st/upload.html [运行时间：0.029027s][吞吐率：34.45req/s] [内存消耗：1,221.86kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://tp5.com/student/st/test?lll=%E7%A8%BB%E7%94%B0%E6%99%AF%E8%A7%823.JPG',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:63]
+---------------------------------------------------------------
+[ 2018-04-02T14:47:19+08:00 ] 0.0.0.0 GET /student/st/test?lll=DSC00741.JPG
+[ info ] tp5.com/student/st/test?lll=DSC00741.JPG [运行时间：0.026784s][吞吐率：37.34req/s] [内存消耗：1,239.42kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/test?lll=%E7%A8%BB%E7%94%B0%E6%99%AF%E8%A7%823.JPG',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+  'lll' => 'DSC00741.JPG',
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T14:48:39+08:00 ] 0.0.0.0 GET /student/st/test?lll=DSC00741.JPG
+[ info ] tp5.com/student/st/test?lll=DSC00741.JPG [运行时间：0.030951s][吞吐率：32.31req/s] [内存消耗：1,372.38kb] [文件加载：60]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/test?lll=%E7%A8%BB%E7%94%B0%E6%99%AF%E8%A7%823.JPG',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+  'lll' => 'DSC00741.JPG',
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T14:48:43+08:00 ] 0.0.0.0 GET /student/st/test
+[ info ] tp5.com/student/st/test [运行时间：0.024324s][吞吐率：41.11req/s] [内存消耗：1,238.87kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T14:48:45+08:00 ] 0.0.0.0 GET /student/st/test
+[ info ] tp5.com/student/st/test [运行时间：0.024667s][吞吐率：40.54req/s] [内存消耗：1,239.38kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T14:48:50+08:00 ] 0.0.0.0 GET /student/st/test?lll=DSC00749.JPG
+[ info ] tp5.com/student/st/test?lll=DSC00749.JPG [运行时间：0.027012s][吞吐率：37.02req/s] [内存消耗：1,239.77kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/test',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+  'lll' => 'DSC00749.JPG',
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T14:48:50+08:00 ] 0.0.0.0 POST /student/st/upload.html
+[ info ] tp5.com/student/st/upload.html [运行时间：0.034717s][吞吐率：28.80req/s] [内存消耗：1,222.08kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://tp5.com/student/st/test',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:63]
+---------------------------------------------------------------
+[ 2018-04-02T14:50:57+08:00 ] 0.0.0.0 GET /student/st/test
+[ info ] tp5.com/student/st/test [运行时间：0.029141s][吞吐率：34.32req/s] [内存消耗：1,371.68kb] [文件加载：60]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T14:51:02+08:00 ] 0.0.0.0 GET /student/st/test?lll=DSC00749.JPG
+[ info ] tp5.com/student/st/test?lll=DSC00749.JPG [运行时间：0.025830s][吞吐率：38.71req/s] [内存消耗：1,239.83kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/test',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+  'lll' => 'DSC00749.JPG',
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T14:51:02+08:00 ] 0.0.0.0 POST /student/st/upload.html
+[ info ] tp5.com/student/st/upload.html [运行时间：0.033979s][吞吐率：29.43req/s] [内存消耗：1,222.08kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://tp5.com/student/st/test',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:63]
+---------------------------------------------------------------
+[ 2018-04-02T14:51:05+08:00 ] 0.0.0.0 POST /student/st/upload.html
+[ info ] tp5.com/student/st/upload.html [运行时间：0.029984s][吞吐率：33.35req/s] [内存消耗：1,222.10kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://tp5.com/student/st/test?lll=DSC00749.JPG',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:63]
+---------------------------------------------------------------
+[ 2018-04-02T14:51:05+08:00 ] 0.0.0.0 GET /student/st/test?lll=
+[ info ] tp5.com/student/st/test?lll= [运行时间：0.030802s][吞吐率：32.47req/s] [内存消耗：1,239.81kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/test?lll=DSC00749.JPG',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+  'lll' => '',
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T14:51:06+08:00 ] 0.0.0.0 POST /student/st/upload.html
+[ info ] tp5.com/student/st/upload.html [运行时间：0.029125s][吞吐率：34.33req/s] [内存消耗：1,222.09kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://tp5.com/student/st/test?lll=',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:63]
+---------------------------------------------------------------
+[ 2018-04-02T14:51:06+08:00 ] 0.0.0.0 GET /student/st/test?lll=
+[ info ] tp5.com/student/st/test?lll= [运行时间：0.030648s][吞吐率：32.63req/s] [内存消耗：1,239.80kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/test?lll=',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+  'lll' => '',
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T14:51:07+08:00 ] 0.0.0.0 POST /student/st/upload.html
+[ info ] tp5.com/student/st/upload.html [运行时间：0.030022s][吞吐率：33.31req/s] [内存消耗：1,222.09kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://tp5.com/student/st/test?lll=',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:63]
+---------------------------------------------------------------
+[ 2018-04-02T14:51:07+08:00 ] 0.0.0.0 GET /student/st/test?lll=
+[ info ] tp5.com/student/st/test?lll= [运行时间：0.029785s][吞吐率：33.57req/s] [内存消耗：1,239.80kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/test?lll=',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+  'lll' => '',
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T14:52:00+08:00 ] 0.0.0.0 GET /student/st/test?lll=
+[ info ] tp5.com/student/st/test?lll= [运行时间：0.030032s][吞吐率：33.30req/s] [内存消耗：1,372.17kb] [文件加载：60]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/test?lll=',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+  'lll' => '',
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T14:52:05+08:00 ] 0.0.0.0 GET /student/st/test?lll=DSC00749.JPG
+[ info ] tp5.com/student/st/test?lll=DSC00749.JPG [运行时间：0.024972s][吞吐率：40.04req/s] [内存消耗：1,239.88kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+  'lll' => 'DSC00749.JPG',
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T14:52:08+08:00 ] 0.0.0.0 GET /student/st/test?lll=DSC00749.JPG
+[ info ] tp5.com/student/st/test?lll=DSC00749.JPG [运行时间：0.024815s][吞吐率：40.30req/s] [内存消耗：1,239.88kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+  'lll' => 'DSC00749.JPG',
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T14:52:13+08:00 ] 0.0.0.0 GET /student/st/test
+[ info ] tp5.com/student/st/test [运行时间：0.023938s][吞吐率：41.77req/s] [内存消耗：1,238.99kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T14:52:15+08:00 ] 0.0.0.0 GET /student/st/test
+[ info ] tp5.com/student/st/test [运行时间：0.031722s][吞吐率：31.52req/s] [内存消耗：1,239.51kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T14:52:27+08:00 ] 0.0.0.0 POST /student/st/upload.html
+[ info ] tp5.com/student/st/upload.html [运行时间：0.028699s][吞吐率：34.84req/s] [内存消耗：1,222.08kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://tp5.com/student/st/test',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:63]
+---------------------------------------------------------------
+[ 2018-04-02T14:52:27+08:00 ] 0.0.0.0 GET /student/st/test?lll=%E9%9B%86%E6%98%9F%E5%9B%AD1.JPG
+[ info ] tp5.com/student/st/test?lll=%E9%9B%86%E6%98%9F%E5%9B%AD1.JPG [运行时间：0.024739s][吞吐率：40.42req/s] [内存消耗：1,239.91kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/test',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+  'lll' => '集星园1.JPG',
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T14:53:08+08:00 ] 0.0.0.0 POST /student/st/upload.html
+[ info ] tp5.com/student/st/upload.html [运行时间：0.030616s][吞吐率：32.66req/s] [内存消耗：1,222.12kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://tp5.com/student/st/test?lll=%E9%9B%86%E6%98%9F%E5%9B%AD1.JPG',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:63]
+---------------------------------------------------------------
+[ 2018-04-02T14:53:08+08:00 ] 0.0.0.0 GET /student/st/test?lll=%E9%9B%86%E6%98%9F%E5%9B%AD2.JPG
+[ info ] tp5.com/student/st/test?lll=%E9%9B%86%E6%98%9F%E5%9B%AD2.JPG [运行时间：0.030133s][吞吐率：33.19req/s] [内存消耗：1,239.95kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/test?lll=%E9%9B%86%E6%98%9F%E5%9B%AD1.JPG',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+  'lll' => '集星园2.JPG',
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T14:53:11+08:00 ] 0.0.0.0 POST /student/st/upload.html
+[ info ] tp5.com/student/st/upload.html [运行时间：0.027856s][吞吐率：35.90req/s] [内存消耗：1,222.12kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://tp5.com/student/st/test?lll=%E9%9B%86%E6%98%9F%E5%9B%AD2.JPG',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:63]
+---------------------------------------------------------------
+[ 2018-04-02T14:53:11+08:00 ] 0.0.0.0 GET /student/st/test?lll=
+[ info ] tp5.com/student/st/test?lll= [运行时间：0.029863s][吞吐率：33.49req/s] [内存消耗：1,239.89kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/test?lll=%E9%9B%86%E6%98%9F%E5%9B%AD2.JPG',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+  'lll' => '',
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T14:53:12+08:00 ] 0.0.0.0 POST /student/st/upload.html
+[ info ] tp5.com/student/st/upload.html [运行时间：0.024843s][吞吐率：40.25req/s] [内存消耗：1,222.09kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://tp5.com/student/st/test?lll=',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:63]
+---------------------------------------------------------------
+[ 2018-04-02T14:53:12+08:00 ] 0.0.0.0 GET /student/st/test?lll=
+[ info ] tp5.com/student/st/test?lll= [运行时间：0.025535s][吞吐率：39.16req/s] [内存消耗：1,239.86kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/test?lll=',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+  'lll' => '',
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T14:53:12+08:00 ] 0.0.0.0 POST /student/st/upload.html
+[ info ] tp5.com/student/st/upload.html [运行时间：0.025640s][吞吐率：39.00req/s] [内存消耗：1,222.09kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://tp5.com/student/st/test?lll=',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:63]
+---------------------------------------------------------------
+[ 2018-04-02T14:53:12+08:00 ] 0.0.0.0 GET /student/st/test?lll=
+[ info ] tp5.com/student/st/test?lll= [运行时间：0.028164s][吞吐率：35.51req/s] [内存消耗：1,239.86kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/test?lll=',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+  'lll' => '',
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T14:53:23+08:00 ] 0.0.0.0 POST /student/st/upload.html
+[ info ] tp5.com/student/st/upload.html [运行时间：0.042052s][吞吐率：23.78req/s] [内存消耗：1,222.09kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '1',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://tp5.com/student/st/test?lll=',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:63]
+---------------------------------------------------------------
+[ 2018-04-02T14:53:23+08:00 ] 0.0.0.0 GET /student/st/test?lll=%E9%9B%86%E6%98%9F%E5%9B%AD3.JPG
+[ info ] tp5.com/student/st/test?lll=%E9%9B%86%E6%98%9F%E5%9B%AD3.JPG [运行时间：0.041719s][吞吐率：23.97req/s] [内存消耗：1,239.91kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/test?lll=',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+  'lll' => '集星园3.JPG',
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T14:54:26+08:00 ] 0.0.0.0 GET /student/st/test
+[ info ] tp5.com/student/st/test [运行时间：0.041393s][吞吐率：24.16req/s] [内存消耗：1,371.16kb] [文件加载：60]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T14:54:32+08:00 ] 0.0.0.0 POST /student/st/upload.html
+[ info ] tp5.com/student/st/upload.html [运行时间：0.029848s][吞吐率：33.50req/s] [内存消耗：1,222.47kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://tp5.com/student/st/test',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:63]
+---------------------------------------------------------------
+[ 2018-04-02T14:54:32+08:00 ] 0.0.0.0 GET /student/st/test?lll=%E9%9B%86%E6%98%9F%E5%9B%AD3.JPG
+[ info ] tp5.com/student/st/test?lll=%E9%9B%86%E6%98%9F%E5%9B%AD3.JPG [运行时间：0.030124s][吞吐率：33.20req/s] [内存消耗：1,239.84kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/test',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+  'lll' => '集星园3.JPG',
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T14:58:58+08:00 ] 0.0.0.0 GET /student/st/test
+[ info ] tp5.com/student/st/test [运行时间：0.042719s][吞吐率：23.41req/s] [内存消耗：1,371.23kb] [文件加载：60]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T14:59:04+08:00 ] 0.0.0.0 GET /student/st/test?lll=%E9%9B%86%E6%98%9F%E5%9B%AD3.JPG
+[ info ] tp5.com/student/st/test?lll=%E9%9B%86%E6%98%9F%E5%9B%AD3.JPG [运行时间：0.025742s][吞吐率：38.85req/s] [内存消耗：1,239.91kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/test',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+  'lll' => '集星园3.JPG',
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T14:59:04+08:00 ] 0.0.0.0 POST /student/st/upload.html
+[ info ] tp5.com/student/st/upload.html [运行时间：0.043186s][吞吐率：23.16req/s] [内存消耗：1,222.47kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://tp5.com/student/st/test',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:63]
+---------------------------------------------------------------
+[ 2018-04-02T14:59:50+08:00 ] 0.0.0.0 GET /student/st/test
+[ info ] tp5.com/student/st/test [运行时间：0.030776s][吞吐率：32.49req/s] [内存消耗：1,371.48kb] [文件加载：60]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T14:59:52+08:00 ] 0.0.0.0 GET /student/st/test
+[ info ] tp5.com/student/st/test [运行时间：0.025778s][吞吐率：38.79req/s] [内存消耗：1,239.51kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T14:59:58+08:00 ] 0.0.0.0 POST /student/st/upload.html
+[ info ] tp5.com/student/st/upload.html [运行时间：0.029731s][吞吐率：33.63req/s] [内存消耗：1,222.47kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://tp5.com/student/st/test',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:63]
+---------------------------------------------------------------
+[ 2018-04-02T14:59:58+08:00 ] 0.0.0.0 GET /student/st/test?lll=%E9%9B%86%E6%98%9F%E5%9B%AD3.JPG
+[ info ] tp5.com/student/st/test?lll=%E9%9B%86%E6%98%9F%E5%9B%AD3.JPG [运行时间：0.028965s][吞吐率：34.52req/s] [内存消耗：1,239.91kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/test',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+  'lll' => '集星园3.JPG',
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T15:01:08+08:00 ] 0.0.0.0 GET /student/st/test
+[ info ] tp5.com/student/st/test [运行时间：0.038879s][吞吐率：25.72req/s] [内存消耗：1,371.10kb] [文件加载：60]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T15:01:10+08:00 ] 0.0.0.0 GET /student/st/test
+[ info ] tp5.com/student/st/test [运行时间：0.021549s][吞吐率：46.41req/s] [内存消耗：1,239.38kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T15:01:15+08:00 ] 0.0.0.0 POST /student/st/upload.html
+[ info ] tp5.com/student/st/upload.html [运行时间：0.032179s][吞吐率：31.08req/s] [内存消耗：1,222.47kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://tp5.com/student/st/test',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:63]
+---------------------------------------------------------------
+[ 2018-04-02T15:01:15+08:00 ] 0.0.0.0 GET /student/st/test?lll=%E9%9B%86%E6%98%9F%E5%9B%AD3.JPG
+[ info ] tp5.com/student/st/test?lll=%E9%9B%86%E6%98%9F%E5%9B%AD3.JPG [运行时间：0.032064s][吞吐率：31.19req/s] [内存消耗：1,239.78kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/test',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+  'lll' => '集星园3.JPG',
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T15:02:36+08:00 ] 0.0.0.0 GET /student/st/test
+[ info ] tp5.com/student/st/test [运行时间：0.026109s][吞吐率：38.30req/s] [内存消耗：1,371.10kb] [文件加载：60]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T15:02:38+08:00 ] 0.0.0.0 GET /student/st/test
+[ info ] tp5.com/student/st/test [运行时间：0.025129s][吞吐率：39.79req/s] [内存消耗：1,239.38kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T15:02:42+08:00 ] 0.0.0.0 POST /student/st/upload.html
+[ info ] tp5.com/student/st/upload.html [运行时间：0.029538s][吞吐率：33.85req/s] [内存消耗：1,222.47kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '0',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'referer' => 'http://tp5.com/student/st/test',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to a member function move() on null[/Users/liuyang/intermis/tp5/application/student/controller/St.php:63]
+---------------------------------------------------------------
+[ 2018-04-02T15:02:42+08:00 ] 0.0.0.0 GET /student/st/test?lll=%E9%9B%86%E6%98%9F%E5%9B%AD3.JPG
+[ info ] tp5.com/student/st/test?lll=%E9%9B%86%E6%98%9F%E5%9B%AD3.JPG [运行时间：0.028121s][吞吐率：35.56req/s] [内存消耗：1,239.78kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/test',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+  'lll' => '集星园3.JPG',
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T15:10:18+08:00 ] 0.0.0.0 GET /student/st/test
+[ info ] tp5.com/student/st/test [运行时间：0.082370s][吞吐率：12.14req/s] [内存消耗：1,325.03kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T15:10:19+08:00 ] 0.0.0.0 GET /student/st/test
+[ info ] tp5.com/student/st/test [运行时间：0.023123s][吞吐率：43.25req/s] [内存消耗：1,192.03kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T15:10:24+08:00 ] 0.0.0.0 GET /student/st/test?lll=%E9%9B%86%E6%98%9F%E5%9B%AD3.JPG
+[ info ] tp5.com/student/st/test?lll=%E9%9B%86%E6%98%9F%E5%9B%AD3.JPG [运行时间：0.024236s][吞吐率：41.26req/s] [内存消耗：1,192.43kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/test',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+  'lll' => '集星园3.JPG',
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T15:10:46+08:00 ] 0.0.0.0 GET /student/st/test
+[ info ] tp5.com/student/st/test [运行时间：0.029588s][吞吐率：33.80req/s] [内存消耗：1,325.55kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T15:10:50+08:00 ] 0.0.0.0 GET /student/st/test?lll=%E9%9B%86%E6%98%9F%E5%9B%AD3.JPG
+[ info ] tp5.com/student/st/test?lll=%E9%9B%86%E6%98%9F%E5%9B%AD3.JPG [运行时间：0.024989s][吞吐率：40.02req/s] [内存消耗：1,192.43kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/test',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+  'lll' => '集星园3.JPG',
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T15:11:42+08:00 ] 0.0.0.0 GET /student/st/test
+[ info ] tp5.com/student/st/test [运行时间：0.027803s][吞吐率：35.97req/s] [内存消耗：1,325.55kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T15:11:46+08:00 ] 0.0.0.0 GET /student/st/test?lll=%E9%9B%86%E6%98%9F%E5%9B%AD3.JPG
+[ info ] tp5.com/student/st/test?lll=%E9%9B%86%E6%98%9F%E5%9B%AD3.JPG [运行时间：0.025369s][吞吐率：39.42req/s] [内存消耗：1,192.43kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/test',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+  'lll' => '集星园3.JPG',
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T15:13:47+08:00 ] 0.0.0.0 GET /student/st/test
+[ info ] tp5.com/student/st/test [运行时间：0.029110s][吞吐率：34.35req/s] [内存消耗：1,325.55kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T15:13:48+08:00 ] 0.0.0.0 GET /student/st/test
+[ info ] tp5.com/student/st/test [运行时间：0.026264s][吞吐率：38.08req/s] [内存消耗：1,192.03kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T15:14:58+08:00 ] 0.0.0.0 GET /student/st/test
+[ info ] tp5.com/student/st/test [运行时间：0.037526s][吞吐率：26.65req/s] [内存消耗：1,325.55kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T15:16:04+08:00 ] 0.0.0.0 GET /student/st/test
+[ info ] tp5.com/student/st/test [运行时间：0.026458s][吞吐率：37.80req/s] [内存消耗：1,325.55kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T15:17:43+08:00 ] 0.0.0.0 GET /student/st/test
+[ info ] tp5.com/student/st/test [运行时间：0.050786s][吞吐率：19.69req/s] [内存消耗：1,325.55kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T16:12:12+08:00 ] 0.0.0.0 GET /student/st/test
+[ info ] tp5.com/student/st/test [运行时间：0.050391s][吞吐率：19.84req/s] [内存消耗：1,328.55kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T16:12:14+08:00 ] 0.0.0.0 GET /student/st/test
+[ info ] tp5.com/student/st/test [运行时间：0.024046s][吞吐率：41.59req/s] [内存消耗：1,193.03kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T16:14:21+08:00 ] 0.0.0.0 GET /student/st/test
+[ info ] tp5.com/student/st/test [运行时间：0.069540s][吞吐率：14.38req/s] [内存消耗：1,345.05kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T16:14:22+08:00 ] 0.0.0.0 GET /student/st/test
+[ info ] tp5.com/student/st/test [运行时间：0.019096s][吞吐率：52.37req/s] [内存消耗：1,198.53kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T16:14:46+08:00 ] 0.0.0.0 GET /student/st/test
+[ info ] tp5.com/student/st/test [运行时间：0.031417s][吞吐率：31.83req/s] [内存消耗：1,345.05kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T16:15:12+08:00 ] 0.0.0.0 GET /student/st/test
+[ info ] tp5.com/student/st/test [运行时间：0.033138s][吞吐率：30.18req/s] [内存消耗：1,345.05kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T16:15:28+08:00 ] 0.0.0.0 GET /student/st/test
+[ info ] tp5.com/student/st/test [运行时间：0.032529s][吞吐率：30.74req/s] [内存消耗：1,345.05kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T16:18:56+08:00 ] 0.0.0.0 GET /student/st/test
+[ info ] tp5.com/student/st/test [运行时间：0.041202s][吞吐率：24.27req/s] [内存消耗：1,198.53kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T16:19:07+08:00 ] 0.0.0.0 GET /student/st/test
+[ info ] tp5.com/student/st/test [运行时间：0.019501s][吞吐率：51.28req/s] [内存消耗：1,197.74kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'pgv_pvi=5340116992',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/604.5.6 (KHTML, like Gecko) Version/11.0.3 Safari/604.5.6',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T16:19:08+08:00 ] 0.0.0.0 GET /apple-touch-icon-precomposed.png
+[ info ] tp5.com/apple-touch-icon-precomposed.png [运行时间：0.022994s][吞吐率：43.49req/s] [内存消耗：975.90kb] [文件加载：48]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'accept' => '*/*',
+  'accept-language' => 'zh-cn',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Safari%20%E6%B5%8F%E8%A7%88%E5%99%A8/13604.5.6 CFNetwork/893.13.1 Darwin/17.4.0 (x86_64)',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T16:19:08+08:00 ] 0.0.0.0 GET /apple-touch-icon.png
+[ info ] tp5.com/apple-touch-icon.png [运行时间：0.018769s][吞吐率：53.28req/s] [内存消耗：975.86kb] [文件加载：48]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'accept' => '*/*',
+  'accept-language' => 'zh-cn',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Safari%20%E6%B5%8F%E8%A7%88%E5%99%A8/13604.5.6 CFNetwork/893.13.1 Darwin/17.4.0 (x86_64)',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T16:20:42+08:00 ] 0.0.0.0 GET /student/st/test
+[ info ] tp5.com/student/st/test [运行时间：0.043131s][吞吐率：23.19req/s] [内存消耗：1,198.53kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T16:20:45+08:00 ] 0.0.0.0 GET /student/st/test
+[ info ] tp5.com/student/st/test [运行时间：0.024723s][吞吐率：40.45req/s] [内存消耗：1,198.53kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T16:22:04+08:00 ] 0.0.0.0 GET /student/st/test
+[ info ] tp5.com/student/st/test [运行时间：0.073853s][吞吐率：13.54req/s] [内存消耗：1,345.05kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T16:22:05+08:00 ] 0.0.0.0 GET /student/st/test
+[ info ] tp5.com/student/st/test [运行时间：0.047808s][吞吐率：20.92req/s] [内存消耗：1,198.53kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T16:22:06+08:00 ] 0.0.0.0 GET /student/st/test
+[ info ] tp5.com/student/st/test [运行时间：0.022175s][吞吐率：45.10req/s] [内存消耗：1,198.53kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-02T16:22:08+08:00 ] 0.0.0.0 GET /student/st/test
+[ info ] tp5.com/student/st/test [运行时间：0.023886s][吞吐率：41.87req/s] [内存消耗：1,198.53kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'pgv_pvi=9845039104',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/test.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
