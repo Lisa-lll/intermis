@@ -1,4 +1,4 @@
-<?php /*a:1:{s:66:"/Users/liuyang/intermis/tp5/application/student/view/st/fill1.html";i:1522137567;}*/ ?>
+<?php /*a:1:{s:66:"/Users/liuyang/intermis/tp5/application/student/view/st/fill1.html";i:1523609527;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="/static/css/bootstrap-select.min.css">
     <script src="/static/js/bootstrap-select.min.js"></script>
     <script src="/static/js/i18n/defaults-zh_CN.min.js"></script>
+    <script>
+        $stid = $_GET['stid'];
+    </script>
 
 </head>
 <body>
@@ -42,7 +45,7 @@
                 <tbody>
                 <tr>
                     <td colspan="7" class="active">
-                        <div class="col-md-6">家庭情况 <input type="hidden" name="stid" value="<?php echo htmlentities($stid); ?>"><?php echo htmlentities($stid); ?></div>
+                        <div class="col-md-6">家庭情况<?php echo htmlentities($stid); ?> <input type="hidden" name="stid" value="<?php echo htmlentities($stid); ?>"><?php echo htmlentities($stid); ?></div>
                         <div class="col-md-6 text-right"><button type="button" class="btn btn-primary btn-sm" id="addtry" onclick="addaaa();">追加</button></div>
                     </td>
                 </tr>

@@ -128,25 +128,32 @@ class st extends base
 
 
             $data=Request::param();
+            $result=Db::table('student')->where('user',$data['user'])->select();
 
-            if($stu=student::create(
-                $data
-            ))
+         if($result){
 
-            {
-                //获取插入成功后对id
-                $stid=$stu->id;
-              //进行跳转，并赋值
-                $this->redirect('st/fill1',['stid'=>$stid]);
-                //下面是之前用ajax的return，ajax success后读取我们return的数值进行判断，但读取的数值无法再次进行跳转赋值，没弄懂。
+             return ['status'=>2,'message'=>'有重复数据'];
+         }else{
 
-                // return ['status'=>1,'message'=>'插入成功','stid1'=>$stid];
+             if($stu=student::create($data))
+             {
+                 //获取插入成功后对id
+                 $stid=$stu->id;
 
-            }
-            else
-            {
-                $this->error("错误",'/student/st/first');
-            }
+                 //进行跳转，并赋值
+              //   $this->redirect('st/fill1',['stid'=>$stid]);
+                 //下面是之前用ajax的return，ajax success后读取我们return的数值进行判断，但读取的数值无法再次进行跳转赋值，没弄懂。
+
+                  return ['status'=>1,'message'=>'插入成功','stid1'=>$stid];
+             }
+             else
+             {
+                 $this->error("错误",'/student/st/first');
+             }
+         }
+
+
+
 
 
 
@@ -397,7 +404,7 @@ die('{"jsonrpc" : "2.0", "result" : null, "id" : "id"}');
 
            Session::set('user',$res['user']);
            $user=Session::get('user');
-           return['status'=>1,'data'=>$res,'user1'=>$user];
+           return['status'=>1,'data'=>$res,'user1'=>$user,'message'=>'Login success！'];
        }
 
     }

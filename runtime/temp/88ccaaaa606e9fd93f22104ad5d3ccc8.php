@@ -1,34 +1,35 @@
-<?php /*a:1:{s:66:"/Users/liuyang/intermis/tp5/application/student/view/st/index.html";i:1523264033;}*/ ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<?php /*a:1:{s:66:"/Users/liuyang/intermis/tp5/application/student/view/st/index.html";i:1523602476;}*/ ?>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+
+    <title>Shenyang Jianzhu University-Online Service Platform for International Students</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>留学生服务平台</title>
-
     <link rel="stylesheet" href="/static/css/style1.css" />
     <script src="/static/js/jquery-2.1.1.min.js"></script>
+</head>
 <body>
 
 <div class="login-container">
-    <h1>留学生在线服务系统</h1>
+    <h1>International Student Service System</h1>
 
     <div class="connect">
-        <p>国际学院</p>
+        <p>International School</p>
     </div>
 
     <form action=""  id="loginForm">
         <div>
-            <input type="text" name="username" class="username" placeholder="用户名" autocomplete="off"/>
+            <input type="text" name="username" class="username" placeholder="user name" autocomplete="off"/>
         </div>
         <div>
-            <input type="password" name="password" class="password" placeholder="密码" oncontextmenu="return false" onpaste="return false" />
+            <input type="password" name="password" class="password" placeholder="password" oncontextmenu="return false" onpaste="return false" />
         </div>
-        <button id="submit" type="button">登 陆</button>
+        <button id="submit" type="button">Sign In</button>
     </form>
 
     <a href="register.html">
-        <button type="button" class="register-tis">还有没有账号？</button>
+        <button type="button" class="register-tis">Register</button>
     </a>
 
 </div>
@@ -47,12 +48,12 @@
                     if (data.status == 1) {
 
 
-                        alert(data["user"]);
+                        alert(data.message);
 
                         location.href = "<?php echo url('student/st/fill'); ?>";
 
                     }else {
-                        alert("用户名或密码错误");
+                        alert("User does not exist or wrong password, sign in failure!");
                     }
                 }
 
