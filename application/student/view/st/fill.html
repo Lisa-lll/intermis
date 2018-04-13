@@ -285,7 +285,12 @@
                     if (data.status == 1) {
 
 
-                        alert(data.message);
+                        alert(data.stid1);
+
+                        var url="{:url('student/st/fill1',['stid'=>'stidoo'])}";
+                       url1=url.replace("stidoo",data.stid1);
+
+                        window.location.href=url1;
 
                      //   $this->redirect('st/fill1',['stid'=>$stid]);
 

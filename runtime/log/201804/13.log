@@ -4436,3 +4436,2616 @@
 [ sql ] [ SQL ] SELECT * FROM `language` [ RunTime:0.000393s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `religion` [ RunTime:0.003268s ]
 [ sql ] [ SQL ] SELECT * FROM `religion` [ RunTime:0.000486s ]
+---------------------------------------------------------------
+[ 2018-04-13T20:02:30+08:00 ] 0.0.0.0 GET /student/st/fill.html
+[ info ] tp5.com/student/st/fill.html [运行时间：0.121556s][吞吐率：8.23req/s] [内存消耗：2,700.74kb] [文件加载：79]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill.html [ array (
+  0 => 'user',
+  1 => 'qx1',
+  2 => 'country',
+  3 => 'lang',
+  4 => 're',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000549s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `country` [ RunTime:0.010710s ]
+[ sql ] [ SQL ] SELECT * FROM `country` [ RunTime:0.000581s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `language` [ RunTime:0.003835s ]
+[ sql ] [ SQL ] SELECT * FROM `language` [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `religion` [ RunTime:0.003808s ]
+[ sql ] [ SQL ] SELECT * FROM `religion` [ RunTime:0.000452s ]
+---------------------------------------------------------------
+[ 2018-04-13T20:02:32+08:00 ] 0.0.0.0 POST /student/st/insert.html
+[ info ] tp5.com/student/st/insert.html [运行时间：0.057382s][吞吐率：17.43req/s] [内存消耗：2,378.05kb] [文件加载：70]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '233',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://tp5.com/student/st/fill.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'rr',
+  'imgaddress' => '',
+  'hzx' => '',
+  'hzm' => '',
+  'zwxm' => '',
+  'gj' => '阿富汗',
+  'csrq' => '',
+  'csgj' => '阿富汗',
+  'csdd' => '',
+  'my' => '英语',
+  'zhxl' => '英语',
+  'zjxy' => '道教',
+  'gzdw' => '',
+  'zy' => '英语',
+  'jkzk' => '',
+  'tcah' => '',
+  'hzhm' => '',
+  'hzdq' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000350s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `student` [ RunTime:0.003337s ]
+[ sql ] [ SQL ] SELECT * FROM `student` WHERE  `user` = 'rr' [ RunTime:0.000703s ]
+[ sql ] [ SQL ] INSERT INTO `student` (`user` , `imgaddress` , `hzx` , `hzm` , `zwxm` , `gj` , `csrq` , `csgj` , `csdd` , `my` , `zhxl` , `zjxy` , `gzdw` , `zy` , `jkzk` , `tcah` , `hzhm` , `hzdq`) VALUES ('rr' , '' , '' , '' , '' , '阿富汗' , '' , '阿富汗' , '' , '英语' , '英语' , '道教' , '' , '英语' , '' , '' , '' , '') [ RunTime:0.002020s ]
+---------------------------------------------------------------
+[ 2018-04-13T20:02:34+08:00 ] 0.0.0.0 GET /student/st/fill1/stid/sss.html
+[ info ] tp5.com/student/st/fill1/stid/sss.html [运行时间：0.035327s][吞吐率：28.31req/s] [内存消耗：1,285.66kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill1.html [ array (
+  0 => 'stid',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-13T20:20:35+08:00 ] 0.0.0.0 GET /student/st/fill.html
+[ info ] tp5.com/student/st/fill.html [运行时间：0.120926s][吞吐率：8.27req/s] [内存消耗：2,744.67kb] [文件加载：82]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill.html [ array (
+  0 => 'user',
+  1 => 'qx1',
+  2 => 'country',
+  3 => 'lang',
+  4 => 're',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000461s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `country` [ RunTime:0.004432s ]
+[ sql ] [ SQL ] SELECT * FROM `country` [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `language` [ RunTime:0.002890s ]
+[ sql ] [ SQL ] SELECT * FROM `language` [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `religion` [ RunTime:0.002982s ]
+[ sql ] [ SQL ] SELECT * FROM `religion` [ RunTime:0.000437s ]
+[ error ] [8]未定义变量: data[/Users/liuyang/intermis/tp5/runtime/temp/a107fdd50b7d34eb8655e3cb0f0fdd96.php:313]
+---------------------------------------------------------------
+[ 2018-04-13T20:20:37+08:00 ] 0.0.0.0 GET /student/st/fill.html
+[ info ] tp5.com/student/st/fill.html [运行时间：0.069305s][吞吐率：14.43req/s] [内存消耗：2,585.44kb] [文件加载：80]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill.html [ array (
+  0 => 'user',
+  1 => 'qx1',
+  2 => 'country',
+  3 => 'lang',
+  4 => 're',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000425s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `country` [ RunTime:0.003488s ]
+[ sql ] [ SQL ] SELECT * FROM `country` [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `language` [ RunTime:0.003262s ]
+[ sql ] [ SQL ] SELECT * FROM `language` [ RunTime:0.001167s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `religion` [ RunTime:0.002836s ]
+[ sql ] [ SQL ] SELECT * FROM `religion` [ RunTime:0.000432s ]
+[ error ] [8]未定义变量: data[/Users/liuyang/intermis/tp5/runtime/temp/a107fdd50b7d34eb8655e3cb0f0fdd96.php:313]
+---------------------------------------------------------------
+[ 2018-04-13T20:28:32+08:00 ] 0.0.0.0 GET /student/st/fill.html
+[ info ] tp5.com/student/st/fill.html [运行时间：0.142774s][吞吐率：7.00req/s] [内存消耗：2,683.44kb] [文件加载：78]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill.html [ array (
+  0 => 'user',
+  1 => 'qx1',
+  2 => 'country',
+  3 => 'lang',
+  4 => 're',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000444s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `country` [ RunTime:0.004396s ]
+[ sql ] [ SQL ] SELECT * FROM `country` [ RunTime:0.000563s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `language` [ RunTime:0.003349s ]
+[ sql ] [ SQL ] SELECT * FROM `language` [ RunTime:0.000700s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `religion` [ RunTime:0.002801s ]
+[ sql ] [ SQL ] SELECT * FROM `religion` [ RunTime:0.000375s ]
+[ error ] [0]语法解析错误: syntax error, unexpected '.'[/Users/liuyang/intermis/tp5/runtime/temp/a107fdd50b7d34eb8655e3cb0f0fdd96.php:313]
+---------------------------------------------------------------
+[ 2018-04-13T20:29:10+08:00 ] 0.0.0.0 GET /student/st/fill.html
+[ info ] tp5.com/student/st/fill.html [运行时间：0.072721s][吞吐率：13.75req/s] [内存消耗：2,683.72kb] [文件加载：78]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill.html [ array (
+  0 => 'user',
+  1 => 'qx1',
+  2 => 'country',
+  3 => 'lang',
+  4 => 're',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000469s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `country` [ RunTime:0.004838s ]
+[ sql ] [ SQL ] SELECT * FROM `country` [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `language` [ RunTime:0.003054s ]
+[ sql ] [ SQL ] SELECT * FROM `language` [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `religion` [ RunTime:0.003451s ]
+[ sql ] [ SQL ] SELECT * FROM `religion` [ RunTime:0.000449s ]
+[ error ] [0]语法解析错误: syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)[/Users/liuyang/intermis/tp5/runtime/temp/a107fdd50b7d34eb8655e3cb0f0fdd96.php:313]
+---------------------------------------------------------------
+[ 2018-04-13T20:29:53+08:00 ] 0.0.0.0 GET /student/st/fill.html
+[ info ] tp5.com/student/st/fill.html [运行时间：0.072495s][吞吐率：13.79req/s] [内存消耗：2,683.72kb] [文件加载：78]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill.html [ array (
+  0 => 'user',
+  1 => 'qx1',
+  2 => 'country',
+  3 => 'lang',
+  4 => 're',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000508s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `country` [ RunTime:0.004746s ]
+[ sql ] [ SQL ] SELECT * FROM `country` [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `language` [ RunTime:0.003140s ]
+[ sql ] [ SQL ] SELECT * FROM `language` [ RunTime:0.000749s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `religion` [ RunTime:0.002978s ]
+[ sql ] [ SQL ] SELECT * FROM `religion` [ RunTime:0.000684s ]
+[ error ] [0]语法解析错误: syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)[/Users/liuyang/intermis/tp5/runtime/temp/a107fdd50b7d34eb8655e3cb0f0fdd96.php:313]
+---------------------------------------------------------------
+[ 2018-04-13T20:32:14+08:00 ] 0.0.0.0 GET /student/st/fill.html
+[ info ] tp5.com/student/st/fill.html [运行时间：0.091684s][吞吐率：10.91req/s] [内存消耗：2,700.80kb] [文件加载：79]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill.html [ array (
+  0 => 'user',
+  1 => 'qx1',
+  2 => 'country',
+  3 => 'lang',
+  4 => 're',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000360s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `country` [ RunTime:0.003126s ]
+[ sql ] [ SQL ] SELECT * FROM `country` [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `language` [ RunTime:0.003040s ]
+[ sql ] [ SQL ] SELECT * FROM `language` [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `religion` [ RunTime:0.002777s ]
+[ sql ] [ SQL ] SELECT * FROM `religion` [ RunTime:0.000377s ]
+---------------------------------------------------------------
+[ 2018-04-13T20:32:18+08:00 ] 0.0.0.0 POST /student/st/insert.html
+[ info ] tp5.com/student/st/insert.html [运行时间：0.042940s][吞吐率：23.29req/s] [内存消耗：2,084.45kb] [文件加载：63]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '233',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://tp5.com/student/st/fill.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'rr',
+  'imgaddress' => '',
+  'hzx' => '',
+  'hzm' => '',
+  'zwxm' => '',
+  'gj' => '阿富汗',
+  'csrq' => '',
+  'csgj' => '阿富汗',
+  'csdd' => '',
+  'my' => '英语',
+  'zhxl' => '英语',
+  'zjxy' => '道教',
+  'gzdw' => '',
+  'zy' => '英语',
+  'jkzk' => '',
+  'tcah' => '',
+  'hzhm' => '',
+  'hzdq' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000388s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `student` [ RunTime:0.003023s ]
+[ sql ] [ SQL ] SELECT * FROM `student` WHERE  `user` = 'rr' [ RunTime:0.000654s ]
+---------------------------------------------------------------
+[ 2018-04-13T20:32:20+08:00 ] 0.0.0.0 GET /student/st/fill1.html%EF%BC%9Fstid=undefined
+[ info ] tp5.com/student/st/fill1.html%EF%BC%9Fstid=undefined [运行时间：0.043805s][吞吐率：22.83req/s] [内存消耗：1,255.83kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-13T20:37:02+08:00 ] 0.0.0.0 GET /student/st/fill.html
+[ info ] tp5.com/student/st/fill.html [运行时间：0.057714s][吞吐率：17.33req/s] [内存消耗：2,700.73kb] [文件加载：79]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill.html [ array (
+  0 => 'user',
+  1 => 'qx1',
+  2 => 'country',
+  3 => 'lang',
+  4 => 're',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000423s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `country` [ RunTime:0.003084s ]
+[ sql ] [ SQL ] SELECT * FROM `country` [ RunTime:0.000583s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `language` [ RunTime:0.003308s ]
+[ sql ] [ SQL ] SELECT * FROM `language` [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `religion` [ RunTime:0.002831s ]
+[ sql ] [ SQL ] SELECT * FROM `religion` [ RunTime:0.000400s ]
+---------------------------------------------------------------
+[ 2018-04-13T20:37:04+08:00 ] 0.0.0.0 GET /student/st/fill.html
+[ info ] tp5.com/student/st/fill.html [运行时间：0.060667s][吞吐率：16.48req/s] [内存消耗：2,541.54kb] [文件加载：77]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill.html [ array (
+  0 => 'user',
+  1 => 'qx1',
+  2 => 'country',
+  3 => 'lang',
+  4 => 're',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000369s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `country` [ RunTime:0.003114s ]
+[ sql ] [ SQL ] SELECT * FROM `country` [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `language` [ RunTime:0.002916s ]
+[ sql ] [ SQL ] SELECT * FROM `language` [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `religion` [ RunTime:0.002917s ]
+[ sql ] [ SQL ] SELECT * FROM `religion` [ RunTime:0.000432s ]
+---------------------------------------------------------------
+[ 2018-04-13T20:37:05+08:00 ] 0.0.0.0 POST /student/st/insert.html
+[ info ] tp5.com/student/st/insert.html [运行时间：0.042868s][吞吐率：23.33req/s] [内存消耗：2,084.45kb] [文件加载：63]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '233',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://tp5.com/student/st/fill.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'rr',
+  'imgaddress' => '',
+  'hzx' => '',
+  'hzm' => '',
+  'zwxm' => '',
+  'gj' => '阿富汗',
+  'csrq' => '',
+  'csgj' => '阿富汗',
+  'csdd' => '',
+  'my' => '英语',
+  'zhxl' => '英语',
+  'zjxy' => '道教',
+  'gzdw' => '',
+  'zy' => '英语',
+  'jkzk' => '',
+  'tcah' => '',
+  'hzhm' => '',
+  'hzdq' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000414s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `student` [ RunTime:0.005109s ]
+[ sql ] [ SQL ] SELECT * FROM `student` WHERE  `user` = 'rr' [ RunTime:0.000770s ]
+---------------------------------------------------------------
+[ 2018-04-13T20:37:07+08:00 ] 0.0.0.0 GET /student/st/fill1.html%EF%BC%9Fstid=undefined
+[ info ] tp5.com/student/st/fill1.html%EF%BC%9Fstid=undefined [运行时间：0.037243s][吞吐率：26.85req/s] [内存消耗：1,255.83kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-13T20:37:54+08:00 ] 0.0.0.0 GET /student/st/fill.html
+[ info ] tp5.com/student/st/fill.html [运行时间：0.076363s][吞吐率：13.10req/s] [内存消耗：2,700.79kb] [文件加载：79]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill.html [ array (
+  0 => 'user',
+  1 => 'qx1',
+  2 => 'country',
+  3 => 'lang',
+  4 => 're',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000434s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `country` [ RunTime:0.002859s ]
+[ sql ] [ SQL ] SELECT * FROM `country` [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `language` [ RunTime:0.003210s ]
+[ sql ] [ SQL ] SELECT * FROM `language` [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `religion` [ RunTime:0.003181s ]
+[ sql ] [ SQL ] SELECT * FROM `religion` [ RunTime:0.000492s ]
+---------------------------------------------------------------
+[ 2018-04-13T20:37:55+08:00 ] 0.0.0.0 GET /student/st/fill.html
+[ info ] tp5.com/student/st/fill.html [运行时间：0.060177s][吞吐率：16.62req/s] [内存消耗：2,541.60kb] [文件加载：77]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill.html [ array (
+  0 => 'user',
+  1 => 'qx1',
+  2 => 'country',
+  3 => 'lang',
+  4 => 're',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000361s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `country` [ RunTime:0.004417s ]
+[ sql ] [ SQL ] SELECT * FROM `country` [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `language` [ RunTime:0.004040s ]
+[ sql ] [ SQL ] SELECT * FROM `language` [ RunTime:0.000658s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `religion` [ RunTime:0.004220s ]
+[ sql ] [ SQL ] SELECT * FROM `religion` [ RunTime:0.000497s ]
+---------------------------------------------------------------
+[ 2018-04-13T20:37:57+08:00 ] 0.0.0.0 POST /student/st/insert.html
+[ info ] tp5.com/student/st/insert.html [运行时间：0.041526s][吞吐率：24.08req/s] [内存消耗：2,084.45kb] [文件加载：63]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '233',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://tp5.com/student/st/fill.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'rr',
+  'imgaddress' => '',
+  'hzx' => '',
+  'hzm' => '',
+  'zwxm' => '',
+  'gj' => '阿富汗',
+  'csrq' => '',
+  'csgj' => '阿富汗',
+  'csdd' => '',
+  'my' => '英语',
+  'zhxl' => '英语',
+  'zjxy' => '道教',
+  'gzdw' => '',
+  'zy' => '英语',
+  'jkzk' => '',
+  'tcah' => '',
+  'hzhm' => '',
+  'hzdq' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000415s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `student` [ RunTime:0.004734s ]
+[ sql ] [ SQL ] SELECT * FROM `student` WHERE  `user` = 'rr' [ RunTime:0.000635s ]
+---------------------------------------------------------------
+[ 2018-04-13T20:37:58+08:00 ] 0.0.0.0 GET /student/st/fill1.html%EF%BC%9Fstid=undefined
+[ info ] tp5.com/student/st/fill1.html%EF%BC%9Fstid=undefined [运行时间：0.032776s][吞吐率：30.51req/s] [内存消耗：1,255.83kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-13T20:39:08+08:00 ] 0.0.0.0 GET /student/st/fill.html
+[ info ] tp5.com/student/st/fill.html [运行时间：0.080133s][吞吐率：12.48req/s] [内存消耗：2,700.73kb] [文件加载：79]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill.html [ array (
+  0 => 'user',
+  1 => 'qx1',
+  2 => 'country',
+  3 => 'lang',
+  4 => 're',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000619s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `country` [ RunTime:0.004179s ]
+[ sql ] [ SQL ] SELECT * FROM `country` [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `language` [ RunTime:0.003767s ]
+[ sql ] [ SQL ] SELECT * FROM `language` [ RunTime:0.000598s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `religion` [ RunTime:0.003423s ]
+[ sql ] [ SQL ] SELECT * FROM `religion` [ RunTime:0.000552s ]
+---------------------------------------------------------------
+[ 2018-04-13T20:39:09+08:00 ] 0.0.0.0 GET /student/st/fill.html
+[ info ] tp5.com/student/st/fill.html [运行时间：0.054402s][吞吐率：18.38req/s] [内存消耗：2,541.54kb] [文件加载：77]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill.html [ array (
+  0 => 'user',
+  1 => 'qx1',
+  2 => 'country',
+  3 => 'lang',
+  4 => 're',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000422s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `country` [ RunTime:0.005202s ]
+[ sql ] [ SQL ] SELECT * FROM `country` [ RunTime:0.000473s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `language` [ RunTime:0.003032s ]
+[ sql ] [ SQL ] SELECT * FROM `language` [ RunTime:0.000591s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `religion` [ RunTime:0.003141s ]
+[ sql ] [ SQL ] SELECT * FROM `religion` [ RunTime:0.000421s ]
+---------------------------------------------------------------
+[ 2018-04-13T20:39:11+08:00 ] 0.0.0.0 POST /student/st/insert.html
+[ info ] tp5.com/student/st/insert.html [运行时间：0.041854s][吞吐率：23.89req/s] [内存消耗：2,084.45kb] [文件加载：63]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '233',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://tp5.com/student/st/fill.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'rr',
+  'imgaddress' => '',
+  'hzx' => '',
+  'hzm' => '',
+  'zwxm' => '',
+  'gj' => '阿富汗',
+  'csrq' => '',
+  'csgj' => '阿富汗',
+  'csdd' => '',
+  'my' => '英语',
+  'zhxl' => '英语',
+  'zjxy' => '道教',
+  'gzdw' => '',
+  'zy' => '英语',
+  'jkzk' => '',
+  'tcah' => '',
+  'hzhm' => '',
+  'hzdq' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000372s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `student` [ RunTime:0.004690s ]
+[ sql ] [ SQL ] SELECT * FROM `student` WHERE  `user` = 'rr' [ RunTime:0.000700s ]
+---------------------------------------------------------------
+[ 2018-04-13T20:39:13+08:00 ] 0.0.0.0 GET /student/st/fill1.html%EF%BC%9Fstid=undefined
+[ info ] tp5.com/student/st/fill1.html%EF%BC%9Fstid=undefined [运行时间：0.032364s][吞吐率：30.90req/s] [内存消耗：1,255.83kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-13T20:39:52+08:00 ] 0.0.0.0 GET /student/st/fill.html
+[ info ] tp5.com/student/st/fill.html [运行时间：0.060395s][吞吐率：16.56req/s] [内存消耗：2,700.73kb] [文件加载：79]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill.html [ array (
+  0 => 'user',
+  1 => 'qx1',
+  2 => 'country',
+  3 => 'lang',
+  4 => 're',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000379s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `country` [ RunTime:0.002789s ]
+[ sql ] [ SQL ] SELECT * FROM `country` [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `language` [ RunTime:0.003004s ]
+[ sql ] [ SQL ] SELECT * FROM `language` [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `religion` [ RunTime:0.002952s ]
+[ sql ] [ SQL ] SELECT * FROM `religion` [ RunTime:0.000488s ]
+---------------------------------------------------------------
+[ 2018-04-13T20:39:53+08:00 ] 0.0.0.0 GET /student/st/fill.html
+[ info ] tp5.com/student/st/fill.html [运行时间：0.056365s][吞吐率：17.74req/s] [内存消耗：2,541.54kb] [文件加载：77]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill.html [ array (
+  0 => 'user',
+  1 => 'qx1',
+  2 => 'country',
+  3 => 'lang',
+  4 => 're',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000428s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `country` [ RunTime:0.004228s ]
+[ sql ] [ SQL ] SELECT * FROM `country` [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `language` [ RunTime:0.003306s ]
+[ sql ] [ SQL ] SELECT * FROM `language` [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `religion` [ RunTime:0.003536s ]
+[ sql ] [ SQL ] SELECT * FROM `religion` [ RunTime:0.000554s ]
+---------------------------------------------------------------
+[ 2018-04-13T20:39:55+08:00 ] 0.0.0.0 POST /student/st/insert.html
+[ info ] tp5.com/student/st/insert.html [运行时间：0.043906s][吞吐率：22.78req/s] [内存消耗：2,084.45kb] [文件加载：63]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '233',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://tp5.com/student/st/fill.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'rr',
+  'imgaddress' => '',
+  'hzx' => '',
+  'hzm' => '',
+  'zwxm' => '',
+  'gj' => '阿富汗',
+  'csrq' => '',
+  'csgj' => '阿富汗',
+  'csdd' => '',
+  'my' => '英语',
+  'zhxl' => '英语',
+  'zjxy' => '道教',
+  'gzdw' => '',
+  'zy' => '英语',
+  'jkzk' => '',
+  'tcah' => '',
+  'hzhm' => '',
+  'hzdq' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000447s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `student` [ RunTime:0.004342s ]
+[ sql ] [ SQL ] SELECT * FROM `student` WHERE  `user` = 'rr' [ RunTime:0.000632s ]
+---------------------------------------------------------------
+[ 2018-04-13T20:39:58+08:00 ] 0.0.0.0 GET /student/st/fill1.html%EF%BC%9Fstid=undefined
+[ info ] tp5.com/student/st/fill1.html%EF%BC%9Fstid=undefined [运行时间：0.035907s][吞吐率：27.85req/s] [内存消耗：1,255.83kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-13T20:41:05+08:00 ] 0.0.0.0 GET /student/st/fill.html
+[ info ] tp5.com/student/st/fill.html [运行时间：0.104123s][吞吐率：9.60req/s] [内存消耗：2,541.46kb] [文件加载：77]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill.html [ array (
+  0 => 'user',
+  1 => 'qx1',
+  2 => 'country',
+  3 => 'lang',
+  4 => 're',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000393s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `country` [ RunTime:0.002858s ]
+[ sql ] [ SQL ] SELECT * FROM `country` [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `language` [ RunTime:0.002933s ]
+[ sql ] [ SQL ] SELECT * FROM `language` [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `religion` [ RunTime:0.003151s ]
+[ sql ] [ SQL ] SELECT * FROM `religion` [ RunTime:0.000384s ]
+---------------------------------------------------------------
+[ 2018-04-13T20:41:06+08:00 ] 0.0.0.0 GET /student/st/fill.html
+[ info ] tp5.com/student/st/fill.html [运行时间：0.052936s][吞吐率：18.89req/s] [内存消耗：2,541.54kb] [文件加载：77]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill.html [ array (
+  0 => 'user',
+  1 => 'qx1',
+  2 => 'country',
+  3 => 'lang',
+  4 => 're',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000415s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `country` [ RunTime:0.004827s ]
+[ sql ] [ SQL ] SELECT * FROM `country` [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `language` [ RunTime:0.002811s ]
+[ sql ] [ SQL ] SELECT * FROM `language` [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `religion` [ RunTime:0.002642s ]
+[ sql ] [ SQL ] SELECT * FROM `religion` [ RunTime:0.000371s ]
+---------------------------------------------------------------
+[ 2018-04-13T20:41:08+08:00 ] 0.0.0.0 POST /student/st/insert.html
+[ info ] tp5.com/student/st/insert.html [运行时间：0.041037s][吞吐率：24.37req/s] [内存消耗：2,084.45kb] [文件加载：63]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '233',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://tp5.com/student/st/fill.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'rr',
+  'imgaddress' => '',
+  'hzx' => '',
+  'hzm' => '',
+  'zwxm' => '',
+  'gj' => '阿富汗',
+  'csrq' => '',
+  'csgj' => '阿富汗',
+  'csdd' => '',
+  'my' => '英语',
+  'zhxl' => '英语',
+  'zjxy' => '道教',
+  'gzdw' => '',
+  'zy' => '英语',
+  'jkzk' => '',
+  'tcah' => '',
+  'hzhm' => '',
+  'hzdq' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000375s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `student` [ RunTime:0.002976s ]
+[ sql ] [ SQL ] SELECT * FROM `student` WHERE  `user` = 'rr' [ RunTime:0.000621s ]
+---------------------------------------------------------------
+[ 2018-04-13T20:41:10+08:00 ] 0.0.0.0 GET /student/st/fill1.html%EF%BC%9Fstid=undefined
+[ info ] tp5.com/student/st/fill1.html%EF%BC%9Fstid=undefined [运行时间：0.039420s][吞吐率：25.37req/s] [内存消耗：1,255.83kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-13T20:41:38+08:00 ] 0.0.0.0 GET /student/st/fill.html
+[ info ] tp5.com/student/st/fill.html [运行时间：0.058974s][吞吐率：16.96req/s] [内存消耗：2,541.46kb] [文件加载：77]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill.html [ array (
+  0 => 'user',
+  1 => 'qx1',
+  2 => 'country',
+  3 => 'lang',
+  4 => 're',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000370s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `country` [ RunTime:0.004310s ]
+[ sql ] [ SQL ] SELECT * FROM `country` [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `language` [ RunTime:0.003480s ]
+[ sql ] [ SQL ] SELECT * FROM `language` [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `religion` [ RunTime:0.003025s ]
+[ sql ] [ SQL ] SELECT * FROM `religion` [ RunTime:0.000402s ]
+---------------------------------------------------------------
+[ 2018-04-13T20:41:45+08:00 ] 0.0.0.0 POST /student/st/insert.html
+[ info ] tp5.com/student/st/insert.html [运行时间：0.051050s][吞吐率：19.59req/s] [内存消耗：2,084.45kb] [文件加载：63]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '233',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://tp5.com/student/st/fill.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'rr',
+  'imgaddress' => '',
+  'hzx' => '',
+  'hzm' => '',
+  'zwxm' => '',
+  'gj' => '阿富汗',
+  'csrq' => '',
+  'csgj' => '阿富汗',
+  'csdd' => '',
+  'my' => '英语',
+  'zhxl' => '英语',
+  'zjxy' => '道教',
+  'gzdw' => '',
+  'zy' => '英语',
+  'jkzk' => '',
+  'tcah' => '',
+  'hzhm' => '',
+  'hzdq' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000511s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `student` [ RunTime:0.005007s ]
+[ sql ] [ SQL ] SELECT * FROM `student` WHERE  `user` = 'rr' [ RunTime:0.000735s ]
+---------------------------------------------------------------
+[ 2018-04-13T20:41:46+08:00 ] 0.0.0.0 GET /student/st/fill1.html%EF%BC%9Fstid=undefined
+[ info ] tp5.com/student/st/fill1.html%EF%BC%9Fstid=undefined [运行时间：0.053748s][吞吐率：18.61req/s] [内存消耗：1,255.83kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-13T20:42:21+08:00 ] 0.0.0.0 GET /student/st/fill.html
+[ info ] tp5.com/student/st/fill.html [运行时间：0.057315s][吞吐率：17.45req/s] [内存消耗：2,541.46kb] [文件加载：77]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill.html [ array (
+  0 => 'user',
+  1 => 'qx1',
+  2 => 'country',
+  3 => 'lang',
+  4 => 're',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000533s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `country` [ RunTime:0.004491s ]
+[ sql ] [ SQL ] SELECT * FROM `country` [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `language` [ RunTime:0.003216s ]
+[ sql ] [ SQL ] SELECT * FROM `language` [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `religion` [ RunTime:0.002987s ]
+[ sql ] [ SQL ] SELECT * FROM `religion` [ RunTime:0.000401s ]
+---------------------------------------------------------------
+[ 2018-04-13T20:42:37+08:00 ] 0.0.0.0 GET /student/st/fill.html
+[ info ] tp5.com/student/st/fill.html [运行时间：0.067404s][吞吐率：14.84req/s] [内存消耗：2,541.72kb] [文件加载：77]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill.html [ array (
+  0 => 'user',
+  1 => 'qx1',
+  2 => 'country',
+  3 => 'lang',
+  4 => 're',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000396s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `country` [ RunTime:0.004744s ]
+[ sql ] [ SQL ] SELECT * FROM `country` [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `language` [ RunTime:0.003150s ]
+[ sql ] [ SQL ] SELECT * FROM `language` [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `religion` [ RunTime:0.002898s ]
+[ sql ] [ SQL ] SELECT * FROM `religion` [ RunTime:0.000536s ]
+---------------------------------------------------------------
+[ 2018-04-13T20:42:39+08:00 ] 0.0.0.0 POST /student/st/insert.html
+[ info ] tp5.com/student/st/insert.html [运行时间：0.043460s][吞吐率：23.01req/s] [内存消耗：2,084.63kb] [文件加载：63]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '233',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://tp5.com/student/st/fill.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'rr',
+  'imgaddress' => '',
+  'hzx' => '',
+  'hzm' => '',
+  'zwxm' => '',
+  'gj' => '阿富汗',
+  'csrq' => '',
+  'csgj' => '阿富汗',
+  'csdd' => '',
+  'my' => '英语',
+  'zhxl' => '英语',
+  'zjxy' => '道教',
+  'gzdw' => '',
+  'zy' => '英语',
+  'jkzk' => '',
+  'tcah' => '',
+  'hzhm' => '',
+  'hzdq' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000452s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `student` [ RunTime:0.003446s ]
+[ sql ] [ SQL ] SELECT * FROM `student` WHERE  `user` = 'rr' [ RunTime:0.000693s ]
+---------------------------------------------------------------
+[ 2018-04-13T20:42:42+08:00 ] 0.0.0.0 GET /student/st/fill1.html%EF%BC%9Fstid=undefined
+[ info ] tp5.com/student/st/fill1.html%EF%BC%9Fstid=undefined [运行时间：0.045350s][吞吐率：22.05req/s] [内存消耗：1,256.01kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-13T20:42:51+08:00 ] 0.0.0.0 GET /student/st/fill.html
+[ info ] tp5.com/student/st/fill.html [运行时间：0.065063s][吞吐率：15.37req/s] [内存消耗：2,541.64kb] [文件加载：77]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill.html [ array (
+  0 => 'user',
+  1 => 'qx1',
+  2 => 'country',
+  3 => 'lang',
+  4 => 're',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000396s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `country` [ RunTime:0.002643s ]
+[ sql ] [ SQL ] SELECT * FROM `country` [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `language` [ RunTime:0.003291s ]
+[ sql ] [ SQL ] SELECT * FROM `language` [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `religion` [ RunTime:0.003125s ]
+[ sql ] [ SQL ] SELECT * FROM `religion` [ RunTime:0.000423s ]
+---------------------------------------------------------------
+[ 2018-04-13T20:42:56+08:00 ] 0.0.0.0 POST /student/st/insert.html
+[ info ] tp5.com/student/st/insert.html [运行时间：0.057672s][吞吐率：17.34req/s] [内存消耗：2,084.63kb] [文件加载：63]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '233',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://tp5.com/student/st/fill.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'rr',
+  'imgaddress' => '',
+  'hzx' => '',
+  'hzm' => '',
+  'zwxm' => '',
+  'gj' => '阿富汗',
+  'csrq' => '',
+  'csgj' => '阿富汗',
+  'csdd' => '',
+  'my' => '英语',
+  'zhxl' => '英语',
+  'zjxy' => '道教',
+  'gzdw' => '',
+  'zy' => '英语',
+  'jkzk' => '',
+  'tcah' => '',
+  'hzhm' => '',
+  'hzdq' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000396s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `student` [ RunTime:0.003417s ]
+[ sql ] [ SQL ] SELECT * FROM `student` WHERE  `user` = 'rr' [ RunTime:0.000697s ]
+---------------------------------------------------------------
+[ 2018-04-13T20:43:00+08:00 ] 0.0.0.0 GET /student/st/fill1.html%EF%BC%9Fstid=undefined
+[ info ] tp5.com/student/st/fill1.html%EF%BC%9Fstid=undefined [运行时间：0.046775s][吞吐率：21.38req/s] [内存消耗：1,256.01kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-13T20:43:41+08:00 ] 0.0.0.0 GET /student/st/fill.html
+[ info ] tp5.com/student/st/fill.html [运行时间：0.066470s][吞吐率：15.04req/s] [内存消耗：2,700.91kb] [文件加载：79]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill.html [ array (
+  0 => 'user',
+  1 => 'qx1',
+  2 => 'country',
+  3 => 'lang',
+  4 => 're',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000352s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `country` [ RunTime:0.004598s ]
+[ sql ] [ SQL ] SELECT * FROM `country` [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `language` [ RunTime:0.003465s ]
+[ sql ] [ SQL ] SELECT * FROM `language` [ RunTime:0.000906s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `religion` [ RunTime:0.002760s ]
+[ sql ] [ SQL ] SELECT * FROM `religion` [ RunTime:0.000449s ]
+---------------------------------------------------------------
+[ 2018-04-13T20:43:42+08:00 ] 0.0.0.0 GET /student/st/fill.html
+[ info ] tp5.com/student/st/fill.html [运行时间：0.064176s][吞吐率：15.58req/s] [内存消耗：2,541.72kb] [文件加载：77]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill.html [ array (
+  0 => 'user',
+  1 => 'qx1',
+  2 => 'country',
+  3 => 'lang',
+  4 => 're',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000437s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `country` [ RunTime:0.005011s ]
+[ sql ] [ SQL ] SELECT * FROM `country` [ RunTime:0.000659s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `language` [ RunTime:0.003135s ]
+[ sql ] [ SQL ] SELECT * FROM `language` [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `religion` [ RunTime:0.002961s ]
+[ sql ] [ SQL ] SELECT * FROM `religion` [ RunTime:0.000412s ]
+---------------------------------------------------------------
+[ 2018-04-13T20:43:44+08:00 ] 0.0.0.0 POST /student/st/insert.html
+[ info ] tp5.com/student/st/insert.html [运行时间：0.044520s][吞吐率：22.46req/s] [内存消耗：2,084.63kb] [文件加载：63]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '233',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://tp5.com/student/st/fill.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'rr',
+  'imgaddress' => '',
+  'hzx' => '',
+  'hzm' => '',
+  'zwxm' => '',
+  'gj' => '阿富汗',
+  'csrq' => '',
+  'csgj' => '阿富汗',
+  'csdd' => '',
+  'my' => '英语',
+  'zhxl' => '英语',
+  'zjxy' => '道教',
+  'gzdw' => '',
+  'zy' => '英语',
+  'jkzk' => '',
+  'tcah' => '',
+  'hzhm' => '',
+  'hzdq' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000547s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `student` [ RunTime:0.005222s ]
+[ sql ] [ SQL ] SELECT * FROM `student` WHERE  `user` = 'rr' [ RunTime:0.000706s ]
+---------------------------------------------------------------
+[ 2018-04-13T20:43:55+08:00 ] 0.0.0.0 POST /student/st/insert.html
+[ info ] tp5.com/student/st/insert.html [运行时间：0.064654s][吞吐率：15.47req/s] [内存消耗：2,084.63kb] [文件加载：63]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '233',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://tp5.com/student/st/fill.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'rr',
+  'imgaddress' => '',
+  'hzx' => '',
+  'hzm' => '',
+  'zwxm' => '',
+  'gj' => '阿富汗',
+  'csrq' => '',
+  'csgj' => '阿富汗',
+  'csdd' => '',
+  'my' => '英语',
+  'zhxl' => '英语',
+  'zjxy' => '道教',
+  'gzdw' => '',
+  'zy' => '英语',
+  'jkzk' => '',
+  'tcah' => '',
+  'hzhm' => '',
+  'hzdq' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000401s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `student` [ RunTime:0.005054s ]
+[ sql ] [ SQL ] SELECT * FROM `student` WHERE  `user` = 'rr' [ RunTime:0.002209s ]
+---------------------------------------------------------------
+[ 2018-04-13T20:45:35+08:00 ] 0.0.0.0 GET /student/st/fill.html
+[ info ] tp5.com/student/st/fill.html [运行时间：0.093373s][吞吐率：10.71req/s] [内存消耗：2,700.80kb] [文件加载：79]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill.html [ array (
+  0 => 'user',
+  1 => 'qx1',
+  2 => 'country',
+  3 => 'lang',
+  4 => 're',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000377s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `country` [ RunTime:0.003114s ]
+[ sql ] [ SQL ] SELECT * FROM `country` [ RunTime:0.000594s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `language` [ RunTime:0.004866s ]
+[ sql ] [ SQL ] SELECT * FROM `language` [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `religion` [ RunTime:0.002785s ]
+[ sql ] [ SQL ] SELECT * FROM `religion` [ RunTime:0.000482s ]
+---------------------------------------------------------------
+[ 2018-04-13T20:45:42+08:00 ] 0.0.0.0 POST /student/st/insert.html
+[ info ] tp5.com/student/st/insert.html [运行时间：0.058444s][吞吐率：17.11req/s] [内存消耗：2,378.05kb] [文件加载：70]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '233',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://tp5.com/student/st/fill.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'rr',
+  'imgaddress' => '',
+  'hzx' => '',
+  'hzm' => '',
+  'zwxm' => '',
+  'gj' => '阿富汗',
+  'csrq' => '',
+  'csgj' => '阿富汗',
+  'csdd' => '',
+  'my' => '英语',
+  'zhxl' => '英语',
+  'zjxy' => '道教',
+  'gzdw' => '',
+  'zy' => '英语',
+  'jkzk' => '',
+  'tcah' => '',
+  'hzhm' => '',
+  'hzdq' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000380s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `student` [ RunTime:0.003085s ]
+[ sql ] [ SQL ] SELECT * FROM `student` WHERE  `user` = 'rr' [ RunTime:0.000851s ]
+[ sql ] [ SQL ] INSERT INTO `student` (`user` , `imgaddress` , `hzx` , `hzm` , `zwxm` , `gj` , `csrq` , `csgj` , `csdd` , `my` , `zhxl` , `zjxy` , `gzdw` , `zy` , `jkzk` , `tcah` , `hzhm` , `hzdq`) VALUES ('rr' , '' , '' , '' , '' , '阿富汗' , '' , '阿富汗' , '' , '英语' , '英语' , '道教' , '' , '英语' , '' , '' , '' , '') [ RunTime:0.000952s ]
+---------------------------------------------------------------
+[ 2018-04-13T20:45:43+08:00 ] 0.0.0.0 GET /student/st/fill1.html%EF%BC%9Fstid=23
+[ info ] tp5.com/student/st/fill1.html%EF%BC%9Fstid=23 [运行时间：0.043959s][吞吐率：22.75req/s] [内存消耗：1,255.80kb] [文件加载：56]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-13T20:55:24+08:00 ] 0.0.0.0 GET /student/st/fill.html
+[ info ] tp5.com/student/st/fill.html [运行时间：0.122284s][吞吐率：8.18req/s] [内存消耗：2,683.38kb] [文件加载：78]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill.html [ array (
+  0 => 'user',
+  1 => 'qx1',
+  2 => 'country',
+  3 => 'lang',
+  4 => 're',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000377s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `country` [ RunTime:0.004765s ]
+[ sql ] [ SQL ] SELECT * FROM `country` [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `language` [ RunTime:0.002935s ]
+[ sql ] [ SQL ] SELECT * FROM `language` [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `religion` [ RunTime:0.002913s ]
+[ sql ] [ SQL ] SELECT * FROM `religion` [ RunTime:0.000429s ]
+[ error ] [0]语法解析错误: syntax error, unexpected 'stid' (T_STRING), expecting ',' or ')'[/Users/liuyang/intermis/tp5/runtime/temp/a107fdd50b7d34eb8655e3cb0f0fdd96.php:313]
+---------------------------------------------------------------
+[ 2018-04-13T20:55:25+08:00 ] 0.0.0.0 GET /student/st/fill.html
+[ info ] tp5.com/student/st/fill.html [运行时间：0.056311s][吞吐率：17.76req/s] [内存消耗：2,524.19kb] [文件加载：76]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill.html [ array (
+  0 => 'user',
+  1 => 'qx1',
+  2 => 'country',
+  3 => 'lang',
+  4 => 're',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000354s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `country` [ RunTime:0.003901s ]
+[ sql ] [ SQL ] SELECT * FROM `country` [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `language` [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SELECT * FROM `language` [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `religion` [ RunTime:0.002818s ]
+[ sql ] [ SQL ] SELECT * FROM `religion` [ RunTime:0.000556s ]
+[ error ] [0]语法解析错误: syntax error, unexpected 'stid' (T_STRING), expecting ',' or ')'[/Users/liuyang/intermis/tp5/runtime/temp/a107fdd50b7d34eb8655e3cb0f0fdd96.php:313]
+---------------------------------------------------------------
+[ 2018-04-13T20:57:14+08:00 ] 0.0.0.0 GET /student/st/fill.html
+[ info ] tp5.com/student/st/fill.html [运行时间：0.104742s][吞吐率：9.55req/s] [内存消耗：2,683.45kb] [文件加载：78]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill.html [ array (
+  0 => 'user',
+  1 => 'qx1',
+  2 => 'country',
+  3 => 'lang',
+  4 => 're',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000462s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `country` [ RunTime:0.002737s ]
+[ sql ] [ SQL ] SELECT * FROM `country` [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `language` [ RunTime:0.003061s ]
+[ sql ] [ SQL ] SELECT * FROM `language` [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `religion` [ RunTime:0.003399s ]
+[ sql ] [ SQL ] SELECT * FROM `religion` [ RunTime:0.000472s ]
+[ error ] [0]语法解析错误: syntax error, unexpected 'stid' (T_STRING), expecting ',' or ')'[/Users/liuyang/intermis/tp5/runtime/temp/a107fdd50b7d34eb8655e3cb0f0fdd96.php:313]
+---------------------------------------------------------------
+[ 2018-04-13T20:58:47+08:00 ] 0.0.0.0 GET /student/st/fill.html
+[ info ] tp5.com/student/st/fill.html [运行时间：0.091614s][吞吐率：10.92req/s] [内存消耗：2,683.45kb] [文件加载：78]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill.html [ array (
+  0 => 'user',
+  1 => 'qx1',
+  2 => 'country',
+  3 => 'lang',
+  4 => 're',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000362s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `country` [ RunTime:0.002638s ]
+[ sql ] [ SQL ] SELECT * FROM `country` [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `language` [ RunTime:0.003357s ]
+[ sql ] [ SQL ] SELECT * FROM `language` [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `religion` [ RunTime:0.003368s ]
+[ sql ] [ SQL ] SELECT * FROM `religion` [ RunTime:0.000393s ]
+[ error ] [0]语法解析错误: syntax error, unexpected 'stid' (T_STRING), expecting ',' or ')'[/Users/liuyang/intermis/tp5/runtime/temp/a107fdd50b7d34eb8655e3cb0f0fdd96.php:313]
+---------------------------------------------------------------
+[ 2018-04-13T20:59:03+08:00 ] 0.0.0.0 GET /student/st/fill.html
+[ info ] tp5.com/student/st/fill.html [运行时间：0.099605s][吞吐率：10.04req/s] [内存消耗：2,683.45kb] [文件加载：78]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill.html [ array (
+  0 => 'user',
+  1 => 'qx1',
+  2 => 'country',
+  3 => 'lang',
+  4 => 're',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000512s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `country` [ RunTime:0.004620s ]
+[ sql ] [ SQL ] SELECT * FROM `country` [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `language` [ RunTime:0.003288s ]
+[ sql ] [ SQL ] SELECT * FROM `language` [ RunTime:0.003362s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `religion` [ RunTime:0.004260s ]
+[ sql ] [ SQL ] SELECT * FROM `religion` [ RunTime:0.001276s ]
+[ error ] [0]语法解析错误: syntax error, unexpected 'stid' (T_STRING), expecting ',' or ')'[/Users/liuyang/intermis/tp5/runtime/temp/a107fdd50b7d34eb8655e3cb0f0fdd96.php:313]
+---------------------------------------------------------------
+[ 2018-04-13T21:00:12+08:00 ] 0.0.0.0 GET /student/st/fill.html
+[ info ] tp5.com/student/st/fill.html [运行时间：0.078877s][吞吐率：12.68req/s] [内存消耗：2,683.45kb] [文件加载：78]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill.html [ array (
+  0 => 'user',
+  1 => 'qx1',
+  2 => 'country',
+  3 => 'lang',
+  4 => 're',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000433s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `country` [ RunTime:0.004434s ]
+[ sql ] [ SQL ] SELECT * FROM `country` [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `language` [ RunTime:0.003109s ]
+[ sql ] [ SQL ] SELECT * FROM `language` [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `religion` [ RunTime:0.003431s ]
+[ sql ] [ SQL ] SELECT * FROM `religion` [ RunTime:0.000401s ]
+[ error ] [0]语法解析错误: syntax error, unexpected 'stid' (T_STRING), expecting ',' or ')'[/Users/liuyang/intermis/tp5/runtime/temp/a107fdd50b7d34eb8655e3cb0f0fdd96.php:313]
+---------------------------------------------------------------
+[ 2018-04-13T21:00:35+08:00 ] 0.0.0.0 GET /student/st/fill.html
+[ info ] tp5.com/student/st/fill.html [运行时间：0.072834s][吞吐率：13.73req/s] [内存消耗：2,700.93kb] [文件加载：79]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill.html [ array (
+  0 => 'user',
+  1 => 'qx1',
+  2 => 'country',
+  3 => 'lang',
+  4 => 're',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000402s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `country` [ RunTime:0.004467s ]
+[ sql ] [ SQL ] SELECT * FROM `country` [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `language` [ RunTime:0.002940s ]
+[ sql ] [ SQL ] SELECT * FROM `language` [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `religion` [ RunTime:0.003220s ]
+[ sql ] [ SQL ] SELECT * FROM `religion` [ RunTime:0.000417s ]
+---------------------------------------------------------------
+[ 2018-04-13T21:00:40+08:00 ] 0.0.0.0 POST /student/st/insert.html
+[ info ] tp5.com/student/st/insert.html [运行时间：0.041446s][吞吐率：24.13req/s] [内存消耗：2,084.45kb] [文件加载：63]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '233',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://tp5.com/student/st/fill.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'rr',
+  'imgaddress' => '',
+  'hzx' => '',
+  'hzm' => '',
+  'zwxm' => '',
+  'gj' => '阿富汗',
+  'csrq' => '',
+  'csgj' => '阿富汗',
+  'csdd' => '',
+  'my' => '英语',
+  'zhxl' => '英语',
+  'zjxy' => '道教',
+  'gzdw' => '',
+  'zy' => '英语',
+  'jkzk' => '',
+  'tcah' => '',
+  'hzhm' => '',
+  'hzdq' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000393s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `student` [ RunTime:0.003955s ]
+[ sql ] [ SQL ] SELECT * FROM `student` WHERE  `user` = 'rr' [ RunTime:0.000782s ]
+---------------------------------------------------------------
+[ 2018-04-13T21:00:58+08:00 ] 0.0.0.0 GET /student/st/fill.html
+[ info ] tp5.com/student/st/fill.html [运行时间：0.089610s][吞吐率：11.16req/s] [内存消耗：2,541.66kb] [文件加载：77]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill.html [ array (
+  0 => 'user',
+  1 => 'qx1',
+  2 => 'country',
+  3 => 'lang',
+  4 => 're',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000477s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `country` [ RunTime:0.002686s ]
+[ sql ] [ SQL ] SELECT * FROM `country` [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `language` [ RunTime:0.003491s ]
+[ sql ] [ SQL ] SELECT * FROM `language` [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `religion` [ RunTime:0.003650s ]
+[ sql ] [ SQL ] SELECT * FROM `religion` [ RunTime:0.000586s ]
+---------------------------------------------------------------
+[ 2018-04-13T21:01:00+08:00 ] 0.0.0.0 POST /student/st/insert.html
+[ info ] tp5.com/student/st/insert.html [运行时间：0.048960s][吞吐率：20.42req/s] [内存消耗：2,378.05kb] [文件加载：70]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '233',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://tp5.com/student/st/fill.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'rr',
+  'imgaddress' => '',
+  'hzx' => '',
+  'hzm' => '',
+  'zwxm' => '',
+  'gj' => '阿富汗',
+  'csrq' => '',
+  'csgj' => '阿富汗',
+  'csdd' => '',
+  'my' => '英语',
+  'zhxl' => '英语',
+  'zjxy' => '道教',
+  'gzdw' => '',
+  'zy' => '英语',
+  'jkzk' => '',
+  'tcah' => '',
+  'hzhm' => '',
+  'hzdq' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000386s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `student` [ RunTime:0.003228s ]
+[ sql ] [ SQL ] SELECT * FROM `student` WHERE  `user` = 'rr' [ RunTime:0.000645s ]
+[ sql ] [ SQL ] INSERT INTO `student` (`user` , `imgaddress` , `hzx` , `hzm` , `zwxm` , `gj` , `csrq` , `csgj` , `csdd` , `my` , `zhxl` , `zjxy` , `gzdw` , `zy` , `jkzk` , `tcah` , `hzhm` , `hzdq`) VALUES ('rr' , '' , '' , '' , '' , '阿富汗' , '' , '阿富汗' , '' , '英语' , '英语' , '道教' , '' , '英语' , '' , '' , '' , '') [ RunTime:0.000998s ]
+---------------------------------------------------------------
+[ 2018-04-13T21:01:57+08:00 ] 0.0.0.0 GET /student/st/fill.html
+[ info ] tp5.com/student/st/fill.html [运行时间：0.083297s][吞吐率：12.01req/s] [内存消耗：2,700.93kb] [文件加载：79]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill.html [ array (
+  0 => 'user',
+  1 => 'qx1',
+  2 => 'country',
+  3 => 'lang',
+  4 => 're',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000485s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `country` [ RunTime:0.003483s ]
+[ sql ] [ SQL ] SELECT * FROM `country` [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `language` [ RunTime:0.003648s ]
+[ sql ] [ SQL ] SELECT * FROM `language` [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `religion` [ RunTime:0.003309s ]
+[ sql ] [ SQL ] SELECT * FROM `religion` [ RunTime:0.000388s ]
+---------------------------------------------------------------
+[ 2018-04-13T21:01:59+08:00 ] 0.0.0.0 POST /student/st/insert.html
+[ info ] tp5.com/student/st/insert.html [运行时间：0.044898s][吞吐率：22.27req/s] [内存消耗：2,378.05kb] [文件加载：70]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '233',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://tp5.com/student/st/fill.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'rr',
+  'imgaddress' => '',
+  'hzx' => '',
+  'hzm' => '',
+  'zwxm' => '',
+  'gj' => '阿富汗',
+  'csrq' => '',
+  'csgj' => '阿富汗',
+  'csdd' => '',
+  'my' => '英语',
+  'zhxl' => '英语',
+  'zjxy' => '道教',
+  'gzdw' => '',
+  'zy' => '英语',
+  'jkzk' => '',
+  'tcah' => '',
+  'hzhm' => '',
+  'hzdq' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000437s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `student` [ RunTime:0.005169s ]
+[ sql ] [ SQL ] SELECT * FROM `student` WHERE  `user` = 'rr' [ RunTime:0.000617s ]
+[ sql ] [ SQL ] INSERT INTO `student` (`user` , `imgaddress` , `hzx` , `hzm` , `zwxm` , `gj` , `csrq` , `csgj` , `csdd` , `my` , `zhxl` , `zjxy` , `gzdw` , `zy` , `jkzk` , `tcah` , `hzhm` , `hzdq`) VALUES ('rr' , '' , '' , '' , '' , '阿富汗' , '' , '阿富汗' , '' , '英语' , '英语' , '道教' , '' , '英语' , '' , '' , '' , '') [ RunTime:0.001509s ]
+---------------------------------------------------------------
+[ 2018-04-13T21:02:00+08:00 ] 0.0.0.0 GET /student/st/fill1/stid/stidoo.html
+[ info ] tp5.com/student/st/fill1/stid/stidoo.html [运行时间：0.033382s][吞吐率：29.96req/s] [内存消耗：1,440.55kb] [文件加载：60]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill1.html [ array (
+  0 => 'stid',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-13T21:05:28+08:00 ] 0.0.0.0 GET /student/st/fill.html
+[ info ] tp5.com/student/st/fill.html [运行时间：0.090202s][吞吐率：11.09req/s] [内存消耗：2,700.85kb] [文件加载：79]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill.html [ array (
+  0 => 'user',
+  1 => 'qx1',
+  2 => 'country',
+  3 => 'lang',
+  4 => 're',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000426s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `country` [ RunTime:0.002897s ]
+[ sql ] [ SQL ] SELECT * FROM `country` [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `language` [ RunTime:0.003282s ]
+[ sql ] [ SQL ] SELECT * FROM `language` [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `religion` [ RunTime:0.002770s ]
+[ sql ] [ SQL ] SELECT * FROM `religion` [ RunTime:0.000380s ]
+---------------------------------------------------------------
+[ 2018-04-13T21:05:30+08:00 ] 0.0.0.0 GET /student/st/fill.html
+[ info ] tp5.com/student/st/fill.html [运行时间：0.057076s][吞吐率：17.52req/s] [内存消耗：2,541.66kb] [文件加载：77]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill1.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill.html [ array (
+  0 => 'user',
+  1 => 'qx1',
+  2 => 'country',
+  3 => 'lang',
+  4 => 're',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000364s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `country` [ RunTime:0.004469s ]
+[ sql ] [ SQL ] SELECT * FROM `country` [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `language` [ RunTime:0.003629s ]
+[ sql ] [ SQL ] SELECT * FROM `language` [ RunTime:0.000547s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `religion` [ RunTime:0.003191s ]
+[ sql ] [ SQL ] SELECT * FROM `religion` [ RunTime:0.000421s ]
+---------------------------------------------------------------
+[ 2018-04-13T21:05:43+08:00 ] 0.0.0.0 POST /student/st/insert.html
+[ info ] tp5.com/student/st/insert.html [运行时间：0.063550s][吞吐率：15.74req/s] [内存消耗：2,378.40kb] [文件加载：70]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '241',
+  'accept' => '*/*',
+  'origin' => 'http://tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://tp5.com/student/st/fill.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+  'user' => 'rr',
+  'imgaddress' => '',
+  'hzx' => 'passpass',
+  'hzm' => '',
+  'zwxm' => '',
+  'gj' => '阿富汗',
+  'csrq' => '',
+  'csgj' => '阿富汗',
+  'csdd' => '',
+  'my' => '英语',
+  'zhxl' => '英语',
+  'zjxy' => '道教',
+  'gzdw' => '',
+  'zy' => '英语',
+  'jkzk' => '',
+  'tcah' => '',
+  'hzhm' => '',
+  'hzdq' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000513s ] mysql:host=localhost;port=8889;dbname=intermis;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `student` [ RunTime:0.003699s ]
+[ sql ] [ SQL ] SELECT * FROM `student` WHERE  `user` = 'rr' [ RunTime:0.000679s ]
+[ sql ] [ SQL ] INSERT INTO `student` (`user` , `imgaddress` , `hzx` , `hzm` , `zwxm` , `gj` , `csrq` , `csgj` , `csdd` , `my` , `zhxl` , `zjxy` , `gzdw` , `zy` , `jkzk` , `tcah` , `hzhm` , `hzdq`) VALUES ('rr' , '' , 'passpass' , '' , '' , '阿富汗' , '' , '阿富汗' , '' , '英语' , '英语' , '道教' , '' , '英语' , '' , '' , '' , '') [ RunTime:0.000894s ]
+---------------------------------------------------------------
+[ 2018-04-13T21:05:44+08:00 ] 0.0.0.0 GET /student/st/fill1/stid/26.html
+[ info ] tp5.com/student/st/fill1/stid/26.html [运行时间：0.033103s][吞吐率：30.21req/s] [内存消耗：1,285.62kb] [文件加载：58]
+[ info ] [ LANG ] /Users/liuyang/intermis/tp5/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://tp5.com/student/st/fill.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=5ba3eafef2b090af78ec3ca864ec152c',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] /Users/liuyang/intermis/tp5/application/student/view/st/fill1.html [ array (
+  0 => 'stid',
+) ]
+[ info ] [ LOG ] INIT File

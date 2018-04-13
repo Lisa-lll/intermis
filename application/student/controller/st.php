@@ -145,6 +145,7 @@ class st extends base
                  //下面是之前用ajax的return，ajax success后读取我们return的数值进行判断，但读取的数值无法再次进行跳转赋值，没弄懂。
 
                   return ['status'=>1,'message'=>'插入成功','stid1'=>$stid];
+
              }
              else
              {
