@@ -1,4 +1,4 @@
-<?php /*a:3:{s:65:"/Users/liuyang/intermis/tp5/application/student/view/st/fill.html";i:1523624717;s:67:"/Users/liuyang/intermis/tp5/application/student/view/st/header.html";i:1523603022;s:65:"/Users/liuyang/intermis/tp5/application/student/view/st/left.html";i:1523602918;}*/ ?>
+<?php /*a:3:{s:65:"/Users/liuyang/intermis/tp5/application/student/view/st/fill.html";i:1523624809;s:67:"/Users/liuyang/intermis/tp5/application/student/view/st/header.html";i:1523603022;s:65:"/Users/liuyang/intermis/tp5/application/student/view/st/left.html";i:1523602918;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -313,8 +313,6 @@
 
                         var url="<?php echo url('student/st/fill1',['stid'=>'stidoo']); ?>";
                        url1=url.replace("stidoo",data.stid1);
-
-
 
                         window.location.href=url1;
 

@@ -1,4 +1,4 @@
-<?php /*a:2:{s:66:"/Users/liuyang/intermis/tp5/application/student/view/st/apply.html";i:1523525091;s:67:"/Users/liuyang/intermis/tp5/application/student/view/st/header.html";i:1523522535;}*/ ?>
+<?php /*a:2:{s:66:"/Users/liuyang/intermis/tp5/application/student/view/st/apply.html";i:1523525091;s:67:"/Users/liuyang/intermis/tp5/application/student/view/st/header.html";i:1523603022;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,15 +18,15 @@
 
 <div class="container" style="background-color: white;">
     <div class="row bg-primary" >
-    <p class="text-right">欢迎您：<?php echo htmlentities((isset($user) && ($user !== '')?$user:'123')); ?>     <a href="<?php echo url('logout'); ?>">退出</a>    </p>
-    <div class="col-md-12 text-center"><h2 style="">国际学生在线入学申请</h2>
+    <p class="text-right">Welcome!<?php echo htmlentities((isset($user) && ($user !== '')?$user:'123')); ?>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <a href="<?php echo url('logout'); ?>">Sign out</a>    </p>
+    <div class="col-md-12 text-center"><h2 style="">China International Student Service System</h2>
 
     </div>
 
 </div>
 <div class="row bg-info" style="height: 55px">
     <nav class="navbar  " style="padding-left: 20px;">
-        <a class="navbar-brand" href="<?php echo url('apply'); ?>">报名申请</a> <a class="navbar-brand" href="#">报名结果查询</a>
+        <a class="navbar-brand" href="<?php echo url('apply'); ?>">Application</a> <a class="navbar-brand" href="#">Application Query</a>
     </nav>
 </div>
     <div class="col-md-12 table-bordered" ><h4>查询选项</h4></div>
