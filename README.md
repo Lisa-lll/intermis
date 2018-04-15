@@ -77,5 +77,8 @@ www  WEB部署目录（或者子目录）
 > router.php用于php自带webserver支持，可用于快速测试
 > 切换到public目录后，启动命令：php -S localhost:8888  router.php
 
+备注：
+git clone git://github.com/smalot/bootstrap-datetimepicker.git
+这个模块无法commit，难道只能npm install 的模块才能commit？
 
 
