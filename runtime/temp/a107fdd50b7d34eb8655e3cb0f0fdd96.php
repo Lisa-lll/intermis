@@ -1,30 +1,28 @@
-<?php /*a:3:{s:65:"/Users/liuyang/intermis/tp5/application/student/view/st/fill.html";i:1523624809;s:67:"/Users/liuyang/intermis/tp5/application/student/view/st/header.html";i:1523603022;s:65:"/Users/liuyang/intermis/tp5/application/student/view/st/left.html";i:1523602918;}*/ ?>
+<?php /*a:3:{s:65:"/Users/liuyang/intermis/tp5/application/student/view/st/fill.html";i:1523799227;s:67:"/Users/liuyang/intermis/tp5/application/student/view/st/header.html";i:1523767423;s:65:"/Users/liuyang/intermis/tp5/application/student/view/st/left.html";i:1523602918;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Shenyang Jianzhu University-Online Service Platform for International Students</title>
-    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
 
 
     <!-- datetimepicker,日期选择控件 -->
-    <link href="/static/css/font-awesome.min.css" rel="stylesheet">
-    <link href="/static/css/prettify-1.0.css" rel="stylesheet">
-    <link href="/static/css/base.css" rel="stylesheet">
-    <link href="/static/css/bootstrap-datetimepicker.css" rel="stylesheet">
-    <link href="/static/css/default.css" rel="stylesheet">
 
-    <script src="/static/js/jquery-2.1.1.min.js"></script>
+    <link href="/node_modules/bootstrap-datetimepicker/datetimepicker.css" rel="stylesheet">
 
-    <script src="/static/js/bootstrap.min.js"></script>
-    <script src="/static/js/moment-with-locales.js"></script>
-    <script src="/static/js/bootstrap-datetimepicker.js"></script>
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="/node_modules/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
 
 
     <!-- bootstrap-select，表单下拉控件 -->
-    <link rel="stylesheet" href="/static/css/bootstrap-select.min.css">
-    <script src="/static/js/bootstrap-select.min.js"></script>
-    <script src="/static/js/i18n/defaults-zh_CN.min.js"></script>
+    <link rel="stylesheet" href="/node_modules/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <script src="/node_modules/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+
 
 
 
@@ -45,7 +43,7 @@
 
 <div class="container" style="background-color: white;">
 <div class="row bg-primary" >
-    <p class="text-right">Welcome!<?php echo htmlentities((isset($user) && ($user !== '')?$user:'123')); ?>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <a href="<?php echo url('logout'); ?>">Sign out</a>    </p>
+    <p class="text-right" style="font-size: larger">Welcome! &nbsp;<b style="color:yellow;"><?php echo htmlentities((isset($user) && ($user !== '')?$user:'123')); ?></b>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <a style="color: white;" class="text-right" href="<?php echo url('logout'); ?>">Sign out</a>  &nbsp;&nbsp;   </p>
     <div class="col-md-12 text-center"><h2 style="">China International Student Service System</h2>
 
     </div>
@@ -81,7 +79,7 @@
                   <td class="text-right">*Personal Photo</td>
 
                   <td ><input type="hidden"  value="<?php echo htmlentities($user); ?>" name="user" >
-                      <img id="im1" src="" width="120" height="100" >
+                      <img id="im1" src="" width="200" height="140" >
                   </td>
                   <td colspan="2">
 
@@ -145,7 +143,11 @@
                       <div class="row">
 
                           <div class="form-group col-md-11">
-                                  <input type='date' name="csrq" class="form-control" />
+                              <div class='input-group date condate'  >
+                                  <input type='text' name="csrq" class="form-control" />
+                                  <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                              </div>
                           </div>
 
 
@@ -270,7 +272,16 @@
 
 <script type="text/javascript">
     $(function () {
-        $('.condate').datetimepicker();
+        $('.condate').datetimepicker({
+            format: 'yyyy-mm-dd',
+            todayBtn:'true',
+            autoclose:'true',
+            todayHighlight:'true',
+            viewSelect:'month',
+            startView: 2,
+            minView: 2
+
+        });
     });
 
     $(function () {

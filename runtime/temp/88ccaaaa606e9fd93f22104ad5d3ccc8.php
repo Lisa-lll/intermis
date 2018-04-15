@@ -1,4 +1,4 @@
-<?php /*a:1:{s:66:"/Users/liuyang/intermis/tp5/application/student/view/st/index.html";i:1523602476;}*/ ?>
+<?php /*a:1:{s:66:"/Users/liuyang/intermis/tp5/application/student/view/st/index.html";i:1523760134;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,6 +49,7 @@
 
 
                         alert(data.message);
+
 
                         location.href = "<?php echo url('student/st/fill'); ?>";
 

@@ -1,4 +1,4 @@
-<?php /*a:2:{s:66:"/Users/liuyang/intermis/tp5/application/student/view/st/apply.html";i:1523525091;s:67:"/Users/liuyang/intermis/tp5/application/student/view/st/header.html";i:1523603022;}*/ ?>
+<?php /*a:2:{s:66:"/Users/liuyang/intermis/tp5/application/student/view/st/apply.html";i:1523525091;s:67:"/Users/liuyang/intermis/tp5/application/student/view/st/header.html";i:1523767423;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +18,7 @@
 
 <div class="container" style="background-color: white;">
     <div class="row bg-primary" >
-    <p class="text-right">Welcome!<?php echo htmlentities((isset($user) && ($user !== '')?$user:'123')); ?>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <a href="<?php echo url('logout'); ?>">Sign out</a>    </p>
+    <p class="text-right" style="font-size: larger">Welcome! &nbsp;<b style="color:yellow;"><?php echo htmlentities((isset($user) && ($user !== '')?$user:'123')); ?></b>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <a style="color: white;" class="text-right" href="<?php echo url('logout'); ?>">Sign out</a>  &nbsp;&nbsp;   </p>
     <div class="col-md-12 text-center"><h2 style="">China International Student Service System</h2>
 
     </div>
