@@ -1,4 +1,4 @@
-<?php /*a:2:{s:66:"/Users/liuyang/intermis/tp5/application/student/view/st/apply.html";i:1523525091;s:67:"/Users/liuyang/intermis/tp5/application/student/view/st/header.html";i:1523767423;}*/ ?>
+<?php /*a:2:{s:66:"/Users/liuyang/intermis/tp5/application/student/view/st/apply.html";i:1523525091;s:67:"/Users/liuyang/intermis/tp5/application/student/view/st/header.html";i:1523870820;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,6 +29,29 @@
         <a class="navbar-brand" href="<?php echo url('apply'); ?>">Application</a> <a class="navbar-brand" href="#">Application Query</a>
     </nav>
 </div>
+<style>
+    a:hover{
+        background-color: #555;
+        color: white;
+    }
+    .btn-primary:hover{
+        background-color:#555 !important;
+    }
+    a.putong:hover{
+           color: red;
+        background-color: white;
+
+
+    }
+    a.putong{
+        color: blue;
+
+    }
+    a.putong:link{
+        text-decoration:none;
+    }
+</style>
+
     <div class="col-md-12 table-bordered" ><h4>查询选项</h4></div>
    <form id="cxpro">
     <table class="table table-bordered">

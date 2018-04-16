@@ -1,41 +1,73 @@
-<?php /*a:1:{s:66:"/Users/liuyang/intermis/tp5/application/student/view/st/fill1.html";i:1523620988;}*/ ?>
+<?php /*a:3:{s:66:"/Users/liuyang/intermis/tp5/application/student/view/st/fill1.html";i:1523888458;s:67:"/Users/liuyang/intermis/tp5/application/student/view/st/header.html";i:1523870820;s:65:"/Users/liuyang/intermis/tp5/application/student/view/st/left.html";i:1523889360;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
-    <script src="/static/js/jquery-2.1.1.min.js"></script>
-    <script src="/static/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- bootstrap-select，表单下拉控件 -->
-    <link rel="stylesheet" href="/static/css/bootstrap-select.min.css">
-    <script src="/static/js/bootstrap-select.min.js"></script>
-    <script src="/static/js/i18n/defaults-zh_CN.min.js"></script>
+    <!-- bootstrap-select，表单下拉控件 -->
+    <link rel="stylesheet" href="/node_modules/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <script src="/node_modules/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
     <script>
         $stid = $_GET['stid'];
     </script>
 
 </head>
 <body>
-<div class="container" style="background-color: white;">
-    <div class="row" style="background-color: #9acfea">
-        <div class="col-md-12 text-center">.<h2 style="padding-left: 20px;padding-bottom: 20px">国际学生在线入学申请</h2></div>
+<div class="container-fluid" style="background-color: white;">
+    <div class="row bg-primary" >
+    <p class="text-right" style="font-size: larger">Welcome! &nbsp;<b style="color:yellow;"><?php echo htmlentities((isset($user) && ($user !== '')?$user:'123')); ?></b>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <a style="color: white;" class="text-right" href="<?php echo url('logout'); ?>">Sign out</a>  &nbsp;&nbsp;   </p>
+    <div class="col-md-12 text-center"><h2 style="">China International Student Service System</h2>
+
     </div>
+
+</div>
+<div class="row bg-info" style="height: 55px">
+    <nav class="navbar  " style="padding-left: 20px;">
+        <a class="navbar-brand" href="<?php echo url('apply'); ?>">Application</a> <a class="navbar-brand" href="#">Application Query</a>
+    </nav>
+</div>
+<style>
+    a:hover{
+        background-color: #555;
+        color: white;
+    }
+    .btn-primary:hover{
+        background-color:#555 !important;
+    }
+    a.putong:hover{
+           color: red;
+        background-color: white;
+
+
+    }
+    a.putong{
+        color: blue;
+
+    }
+    a.putong:link{
+        text-decoration:none;
+    }
+</style>
+
     <div class="row">
         <div class="col-md-2" style="margin-top: 15px;">
-            <div class="col-md-12" style="height: 500px;border:1px solid #7e8795;padding: 10px 10px 10px 10px;">
-                <ul class="nav nav-pills nav-stacked">
-                    <li role="presentation" ><a href="#">1、基础信息</a></li>
-                    <li role="presentation"><a href="#">2、留学计划</a></li>
-                    <li role="presentation"><a href="#">3.教育及工作背景</a></li>
-                    <li role="presentation" class="active"><a href="#">4.其它信息</a></li>
-                    <li role="presentation"><a href="#">5.联系信息</a></li>
-                    <li role="presentation"><a href="#">6.申请单预览</a></li>
+    <div class="col-md-12" style="height: 500px;border:1px solid #7e8795;padding: 10px 3px 10px 3px;">
+        <ul class="nav nav-pills nav-stacked">
+            <li role="presentation" class="active"><a href="<?php echo url('st/fill'); ?>" class="btn btn-primary btn-default " role="button">1、Basci Info</a></li>
+            <li role="presentation"><a href="<?php echo url('st/studyplan'); ?>" class="btn btn-primary btn-default " role="button">2、Study Plan</a></li>
+            <li role="presentation"><a href="<?php echo url('st/education'); ?>" class="btn btn-primary btn-default " role="button">3.Education & Employment</a></li>
+            <li role="presentation"><a href="<?php echo url('st/fill1'); ?>" class="btn btn-primary btn-default " role="button">4.Additional Info</a></li>
+            <li role="presentation"><a href="<?php echo url('st/contact'); ?>" class="btn btn-primary btn-default " role="button">5.Contact Info</a></li>
+            <li role="presentation"><a href="<?php echo url('st/preview'); ?>" class="btn btn-primary btn-default " role="button">6.Application Form Pre-review</a></li>
 
-                </ul>
-            </div>
-        </div>
+        </ul>
+    </div>
+</div>
 
         <div class="col-md-10" style="padding: 10px 10px 20px 10px;margin-top: 5px;">
 

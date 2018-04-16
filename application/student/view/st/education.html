@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shenyang Jianzhu University-Online Service Platform for International Students</title>
+
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+
+    <!-- datetimepicker,日期选择控件 -->
+
+    <link href="/node_modules/bootstrap-datetimepicker/datetimepicker.css" rel="stylesheet">
+
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="/node_modules/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+
+
+    <!-- bootstrap-select，表单下拉控件 -->
+    <link rel="stylesheet" href="/node_modules/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <script src="/node_modules/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+
+
+
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/static/js/html5shiv.js"></script>
+    <script src="/static/js/respond.min.js"></script>
+    <![endif]-->
+
+
+
+
+
+
+</head>
+<body >
+
+<div class="container-fluid" style="background-color: white;">
+    {include file="st/header"/}
+    <div class="row">
+
+        {include file="st/left"/}
+        <div  class="col-md-10" style="padding: 10px 10px 20px 0px;margin-top: 5px;">
+           <form>
+            <table class="table table-bordered table-striped">
+                <tr>
+                    <td class="text-left" colspan="5" >
+                        <div class="col-md-10"> <h4>Educational Background</h4></div><div class="col-md-2 text-right" ><button type="button" class="btn btn-primary btn-xs">add</button></div>
+
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="text-center"><span class="glyphicon glyphicon-star text-danger" aria-hidden="true"></span><strong>Year Attended (From)</strong></td>
+                    <td class="text-center"><span class="glyphicon glyphicon-star text-danger" aria-hidden="true"></span><strong>Year Attended (To)</strong></td>
+                    <td class="text-center"><span class="glyphicon glyphicon-star text-danger" aria-hidden="true"></span><strong>School Name</strong></td>
+                    <td class="text-center"><strong>Field of Study & Diploma received</strong></td>
+                    <td class="text-center"><strong>Operation</strong></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="row">
+
+                            <div class="form-group col-md-11">
+                                <div class='input-group date condate'  >
+                                    <input type='text' name="csrq" class="form-control" />
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </td>
+                    <td>
+                        <div class="row">
+
+                            <div class="form-group col-md-11">
+                                <div class='input-group date condate'  >
+                                    <input type='text' name="csrq" class="form-control" />
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </td>
+                    <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                    <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                    <td class="text-center"><button type="button" class="btn btn-primary btn-xs">delete</button></td>
+                </tr>
+            </table>
+
+            <table class="table table-bordered table-striped">
+                <tr>
+                    <td  colspan="2" class="text-left"><strong>Upload Documents</strong>&nbsp;&nbsp;&nbsp;&nbsp;<strong style="color: red;">Max Size1M</strong></td>
+
+                </tr>
+                <tr>
+                    <td class="text-center"><strong>Documents List</strong></td>
+                    <td class="text-center"><strong>Operation</strong></td>
+                </tr>
+                <tr>
+                    <td class="col-md-8">  <img id="im1" src="" width="300" height="240" ></td>
+                    <td class="col-md-4">
+                        <input type="file" name="image" style="visibility: hidden" id="up1"/> <br>
+                        <input type="button" class="btn btn-primary btn-sm" value="Add Document" onclick="up1.click()">
+                        <input type="text" id="imgadd" style="visibility: hidden" class="form-control"  name="imgaddress">
+                        The Photocopy of Passport (Front page and blank visa page)(*.jpg,*.jpeg,*.png)：</td>
+                </tr>
+                <tr>
+                    <td><img id="im1" src="" width="300" height="240" ></td>
+                    <td>
+                        <input type="file" name="image" style="visibility: hidden" id="up1"/> <br>
+                        <input type="button" class="btn btn-primary btn-sm" value="Add  Document" onclick="up1.click()">
+                        <input type="text" id="imgadd" style="visibility: hidden" class="form-control"  name="imgaddress">
+                        The previous stage of graduation certificate(*.jpg,*.jpeg,*.png)：</td>
+
+                </tr>
+                <tr>
+                    <td><img id="im1" src="" width="300" height="240" ></td>
+                    <td>
+                        <input type="file" name="image" style="visibility: hidden" id="up1"/> <br>
+                        <input type="button" class="btn btn-primary btn-sm" value="Add Document" onclick="up1.click()">
+                        <input type="text" id="imgadd" style="visibility: hidden" class="form-control"  name="imgaddress">
+                        The previous stage of transcript(*.jpg,*.jpeg,*.png)</td>
+                </tr>
+            </table>
+               <div class="col-md-12 text-center">
+               <button type="button" class="btn btn-primary">Previous</button>&nbsp;&nbsp;&nbsp;&nbsp;
+               <button type="button" class="btn btn-primary">Save and Next</button>
+               </div>
+           </form>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+    $(function () {
+        $('.condate').datetimepicker({
+            format: 'yyyy-mm-dd',
+            todayBtn:'true',
+            autoclose:'true',
+            todayHighlight:'true',
+            viewSelect:'month',
+            startView: 2,
+            minView: 2
+
+        });
+    });
+
+    $(function () {
+
+
+        $("#up1").on('change', function(){
+
+            $.ajax({
+                url: "{:url('st/upload')}",
+                type: 'POST',
+                cache: false,
+                data: new FormData($('#stu1')[0]),
+                processData: false,
+                contentType: false,
+
+                success : function(data) {
+                    // alert(data.status);
+                    $("#im1").attr({src:"/uploads/"+data.status});
+                    $("#imgadd").val("/uploads/"+data.status);
+                }
+            })
+        })
+    });
+
+
+    $(function () {
+        $("#submit1").on('click',function () {
+
+            $.ajax({
+                type: 'post',
+                url: "{:url('st/insert')}",
+                data: $('#stu1').serialize(),
+                datatype: 'json',
+                success: function (data) {
+
+                    if (data.status == 1) {
+                        alert(data.stid1);
+                        var url="{:url('student/st/studyplan',['stid'=>'stidoo'])}";
+                        url1=url.replace("stidoo",data.stid1);
+                        window.location.href=url1;
+                    }else {
+                        alert(data.message);
+                    }
+                }
+
+
+
+            })
+
+        })
+
+    });
+
+
+</script>
+</html>

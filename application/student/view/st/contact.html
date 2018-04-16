@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shenyang Jianzhu University-Online Service Platform for International Students</title>
+
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+
+    <!-- datetimepicker,日期选择控件 -->
+
+    <link href="/node_modules/bootstrap-datetimepicker/datetimepicker.css" rel="stylesheet">
+
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="/node_modules/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+
+
+    <!-- bootstrap-select，表单下拉控件 -->
+    <link rel="stylesheet" href="/node_modules/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <script src="/node_modules/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+
+
+
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/static/js/html5shiv.js"></script>
+    <script src="/static/js/respond.min.js"></script>
+    <![endif]-->
+
+
+
+
+
+
+</head>
+<body >
+
+<div class="container-fluid" style="background-color: white;">
+    {include file="st/header"/}
+    <div class="row">
+
+        {include file="st/left"/}
+        <div  class="col-md-10" style="padding: 10px 10px 20px 0px;margin-top: 5px;">
+            <form>
+
+
+                <table class="table table-bordered table-striped">
+                    <tr>
+                        <td colspan="4">Home Country Address  Please fill in the blanks in Chinese if the address is in China</td>
+
+                    </tr>
+                    <tr>
+                        <td>*Street Address</td>
+                        <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                        <td>*Phone Number</td>
+                        <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                    </tr>
+                    <tr>
+                        <td>*City/Province</td>
+                        <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                        <td>Mobile</td>
+                        <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                    </tr>
+                    <tr>
+                        <td>*Country</td>
+                        <td>
+                            <select  class="selectpicker show-menu-arrow" name="gj" data-width="100%" data-live-search="true"  >
+                                {volist name="country" id="list"}
+                                <option value="{$list.name}">{$list.ename}</option>
+                                {/volist}
+                            </select>
+                        </td>
+                        <td>*Zipcode</td>
+                        <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">Current postal address</td>
+
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label class="radio-inline">
+                                <input type="radio" name="xb" id="inlineRadio1" value="男"> male
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="xb" id="inlineRadio2" value="女"> female
+                            </label>
+                        </td>
+                        <td>*Personal Email</td>
+                        <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+
+                    </tr>
+                    <tr>
+                        <td>*Mobile/Phone Number</td>
+                        <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                        <td>*Address</td>
+                        <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                    </tr>
+                    <tr>
+                        <td>*Zipcode</td>
+                        <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">*How to Collect the Admission Notice</td>
+
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <label class="radio-inline">
+                                <input type="radio" name="xb" id="inlineRadio1" value="男"> male
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="xb" id="inlineRadio2" value="女"> female
+                            </label>
+                        </td>
+
+                    </tr>
+                </table>
+
+                <div class="col-md-12 text-center">
+                    <button type="button" class="btn btn-primary">Previous</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="btn btn-primary">Save and Next</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+    $(function () {
+        $('.condate').datetimepicker({
+            format: 'yyyy-mm-dd',
+            todayBtn:'true',
+            autoclose:'true',
+            todayHighlight:'true',
+            viewSelect:'month',
+            startView: 2,
+            minView: 2
+
+        });
+    });
+
+    $(function () {
+
+
+        $("#up1").on('change', function(){
+
+            $.ajax({
+                url: "{:url('st/upload')}",
+                type: 'POST',
+                cache: false,
+                data: new FormData($('#stu1')[0]),
+                processData: false,
+                contentType: false,
+
+                success : function(data) {
+                    // alert(data.status);
+                    $("#im1").attr({src:"/uploads/"+data.status});
+                    $("#imgadd").val("/uploads/"+data.status);
+                }
+            })
+        })
+    });
+
+
+    $(function () {
+        $("#submit1").on('click',function () {
+
+            $.ajax({
+                type: 'post',
+                url: "{:url('st/insert')}",
+                data: $('#stu1').serialize(),
+                datatype: 'json',
+                success: function (data) {
+
+                    if (data.status == 1) {
+                        alert(data.stid1);
+                        var url="{:url('student/st/studyplan',['stid'=>'stidoo'])}";
+                        url1=url.replace("stidoo",data.stid1);
+                        window.location.href=url1;
+                    }else {
+                        alert(data.message);
+                    }
+                }
+
+
+
+            })
+
+        })
+
+    });
+
+
+</script>
+</html>

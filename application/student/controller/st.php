@@ -13,6 +13,7 @@ use app\student\model\department;
 use app\student\model\family;
 use app\student\model\project;
 use app\student\model\speciality;
+use app\student\model\stustatus;
 use app\student\model\user;
 use think\facade\Request;
 use app\student\model\student;
@@ -54,8 +55,10 @@ class st extends base
     }
     public function fill1( )
     {
+        $this->islogin();
       $stid=$this->request->param('stid');
        $this->assign('stid',$stid);
+
 
         return $this->fetch();
     }
@@ -128,6 +131,7 @@ class st extends base
 
 
             $data=Request::param();
+
             $result=Db::table('student')->where('user',$data['user'])->select();
 
          if($result){
@@ -137,9 +141,15 @@ class st extends base
 
              if($stu=student::create($data))
              {
+
+
+
                  //获取插入成功后对id
                  $stid=$stu->id;
-
+                 stustatus::create([
+                     'student'=>'ok',
+                     'stid'=>$stid
+                 ]);
                  //进行跳转，并赋值
               //   $this->redirect('st/fill1',['stid'=>$stid]);
                  //下面是之前用ajax的return，ajax success后读取我们return的数值进行判断，但读取的数值无法再次进行跳转赋值，没弄懂。
@@ -496,4 +506,52 @@ die('{"jsonrpc" : "2.0", "result" : null, "id" : "id"}');
         return['status'=>1,'projec'=>$projec,'coun'=>$coun,'dep'=>$depart,'spc'=>$speci];
     }
 
+    public function studyplan()
+    {
+        $this->islogin();
+        $country = Country::all();
+        $lang = language::all();
+        $religion = religion::all();
+
+        $this->assign('country', $country);
+        $this->assign('lang', $lang);
+        $this->assign('re', $religion);
+        return $this->fetch();
+    }
+    public function education()
+    {
+        $this->islogin();
+        $country = Country::all();
+        $lang = language::all();
+        $religion = religion::all();
+
+        $this->assign('country', $country);
+        $this->assign('lang', $lang);
+        $this->assign('re', $religion);
+        return $this->fetch();
+    }
+    public function contact()
+    {
+        $this->islogin();
+        $country = Country::all();
+        $lang = language::all();
+        $religion = religion::all();
+
+        $this->assign('country', $country);
+        $this->assign('lang', $lang);
+        $this->assign('re', $religion);
+        return $this->fetch();
+    }
+    public function preview()
+    {
+        $this->islogin();
+        $country = Country::all();
+        $lang = language::all();
+        $religion = religion::all();
+
+        $this->assign('country', $country);
+        $this->assign('lang', $lang);
+        $this->assign('re', $religion);
+        return $this->fetch();
+    }
 }

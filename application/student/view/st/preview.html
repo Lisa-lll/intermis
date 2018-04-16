@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shenyang Jianzhu University-Online Service Platform for International Students</title>
+
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+
+    <!-- datetimepicker,日期选择控件 -->
+
+    <link href="/node_modules/bootstrap-datetimepicker/datetimepicker.css" rel="stylesheet">
+
+    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="/node_modules/bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+
+
+    <!-- bootstrap-select，表单下拉控件 -->
+    <link rel="stylesheet" href="/node_modules/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <script src="/node_modules/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+
+
+
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/static/js/html5shiv.js"></script>
+    <script src="/static/js/respond.min.js"></script>
+    <![endif]-->
+
+
+
+
+
+
+</head>
+<body >
+
+<div class="container-fluid" style="background-color: white;">
+    {include file="st/header"/}
+    <div class="row">
+
+        {include file="st/left"/}
+        <div  class="col-md-10" style="padding: 10px 10px 20px 0px;margin-top: 5px;">
+
+            <table class="table table-bordered">
+
+                <tr>
+                    <td class="text-right">*Personal Photo</td>
+
+                    <td ><input type="hidden"  value="{$user}" name="user" >
+                        <img id="im1" src="" width="200" height="140" >
+                    </td>
+                    <td colspan="2">
+
+                        <input type="file" name="image" style="visibility: hidden" id="up1"/> <br>
+                        Please upload your recent full-faced passport size photo (*.jpg,*.jpeg,*.png).
+                        <input type="button" class="btn btn-primary btn-sm" value="Add your photo" onclick="up1.click()">
+                        <input type="text" id="imgadd" style="visibility: hidden" class="form-control"  name="imgaddress">
+
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="text-right">Family Name(as on passport)</td>
+                    <td class="col-xs-4"><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                    <td class="text-right">Given Name(as on passport)</td>
+                    <td class="col-xs-4"><input type="text" class="form-control" placeholder="" name="hzm"></td>
+                </tr>
+                <tr>
+                    <td class="text-right">Chinese Name (if available)</td>
+                    <td class="col-xs-4"><input type="text" class="form-control" placeholder="" name="zwxm"></td>
+                    <td class="text-right">*Gender</td>
+                    <td class="col-xs-4">
+                        <label class="radio-inline">
+                            <input type="radio" name="xb" id="inlineRadio1" value="男"> male
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="xb" id="inlineRadio2" value="女"> female
+                        </label>
+
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-right">*Marital Status</td>
+                    <td class="col-xs-4">
+                        <label class="radio-inline">
+                            <input type="radio" name="hyzk" id="inlineRadio1" value="单身"> unmarried
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="hyzk" id="inlineRadio2" value="已婚"> married
+                        </label>
+
+
+                    </td>
+                    <td class="text-right">*Nationality</td>
+                    <td>
+
+                        <select  class="selectpicker show-menu-arrow" name="gj" data-width="100%" data-live-search="true"  >
+                            {volist name="country" id="list"}
+                            <option value="{$list.name}">{$list.name}</option>
+                            {/volist}
+                        </select>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-right">*Birth Date</td>
+                    <td class="col-xs-4">
+
+
+                        <div class="row">
+
+                            <div class="form-group col-md-11">
+                                <div class='input-group date condate'  >
+                                    <input type='text' name="csrq" class="form-control" />
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </td>
+                    <td class="text-right">*Country of Birth</td>
+                    <td>
+
+                        <select  class="selectpicker show-menu-arrow" name="csgj" data-width="100%" data-live-search="true"  >
+                            {volist name="country" id="list"}
+                            <option value="{$list.name}">{$list.name}</option>
+                            {/volist}
+                        </select>
+
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-right">*Place of Birth(City,Province)</td>
+                    <td class="col-xs-4"><input type="text" name="csdd" class="form-control" placeholder=""></td>
+                    <td class="text-right">Native language</td>
+                    <td>
+
+                        <select data-width="100%" name="my">
+                            {volist name="lang" id="list"}
+                            <option value="{$list.name}">{$list.ename}</option>
+                            {/volist}
+                        </select>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-right">*Highest Level of Education</td>
+                    <td>
+                        <select class="form-control" name="zhxl" data-width="100%">
+                            {volist name="lang" id="list"}
+                            <option value="{$list.name}">{$list.name}</option>
+                            {/volist}
+                        </select>
+                    </td>
+                    <td class="text-right">*Religion</td>
+                    <td>
+                        <select data-width="100%" name="zjxy">
+                            {volist name="re" id="list"}
+                            <option value="{$list.name}">{$list.ename}</option>
+                            {/volist}
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-right">*Employer or Institution Affiliated	</td>
+                    <td class="col-xs-4"><input  name="gzdw" type="text" class="form-control" placeholder=""></td>
+                    <td class="text-right">*Occupation</td>
+                    <td>
+                        <select name="zy"  data-width="100%">
+                            {volist name="lang" id="list"}
+                            <option value="{$list.name}">{$list.name}</option>
+                            {/volist}
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-right">Health Status	</td>
+                    <td class="col-xs-4"><input name="jkzk" type="text" class="form-control" placeholder=""></td>
+                    <td class="text-right">Emigrant from mainland China, Hong Kong, Macau, and Taiwan?</td>
+                    <td class="col-xs-4">
+                        <label class="radio-inline">
+                            <input type="radio" name="sfym" id="inlineRadio1" value="yes"> Yes
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="sfym" id="inlineRadio2" value="no"> No
+                        </label>
+
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="text-right">Hobby</td>
+                    <td class="col-xs-4"><input type="text" name="tcah" class="form-control" placeholder=""></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="text-right">*Passport No.</td>
+                    <td class="col-xs-4"><input type="text" name="hzhm" class="form-control" placeholder=""></td>
+                    <td class="text-right">*Passport Expiration Date</td>
+                    <td class="col-xs-4">
+
+
+                        <div class="row">
+
+                            <div class="form-group col-md-11">
+                                <div class='input-group date condate'  id='da2'>
+                                    <input type='text' name="hzdq" class="form-control" />
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </td>
+                </tr>
+
+            </table>
+            <table class="table table-bordered table-striped">
+                <tr>
+                    <td class="text-left" colspan="5" >
+                        <div class="col-md-10"> <h4>Educational Background</h4></div><div class="col-md-2 text-right" ><button type="button" class="btn btn-primary btn-xs">add</button></div>
+
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="text-center"><span class="glyphicon glyphicon-star text-danger" aria-hidden="true"></span><strong>Year Attended (From)</strong></td>
+                    <td class="text-center"><span class="glyphicon glyphicon-star text-danger" aria-hidden="true"></span><strong>Year Attended (To)</strong></td>
+                    <td class="text-center"><span class="glyphicon glyphicon-star text-danger" aria-hidden="true"></span><strong>School Name</strong></td>
+                    <td class="text-center"><strong>Field of Study & Diploma received</strong></td>
+                    <td class="text-center"><strong>Operation</strong></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="row">
+
+                            <div class="form-group col-md-11">
+                                <div class='input-group date condate'  >
+                                    <input type='text' name="csrq" class="form-control" />
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </td>
+                    <td>
+                        <div class="row">
+
+                            <div class="form-group col-md-11">
+                                <div class='input-group date condate'  >
+                                    <input type='text' name="csrq" class="form-control" />
+                                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </td>
+                    <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                    <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                    <td class="text-center"><button type="button" class="btn btn-primary btn-xs">delete</button></td>
+                </tr>
+            </table>
+
+            <table class="table table-bordered table-striped">
+                <tr>
+                    <td  colspan="2" class="text-left"><strong>Upload Documents</strong>&nbsp;&nbsp;&nbsp;&nbsp;<strong style="color: red;">Max Size1M</strong></td>
+
+                </tr>
+                <tr>
+                    <td class="text-center"><strong>Documents List</strong></td>
+                    <td class="text-center"><strong>Operation</strong></td>
+                </tr>
+                <tr>
+                    <td class="col-md-8">  <img id="im1" src="" width="300" height="240" ></td>
+                    <td class="col-md-4">
+                        <input type="file" name="image" style="visibility: hidden" id="up1"/> <br>
+                        <input type="button" class="btn btn-primary btn-sm" value="Add Document" onclick="up1.click()">
+                        <input type="text" id="imgadd" style="visibility: hidden" class="form-control"  name="imgaddress">
+                        The Photocopy of Passport (Front page and blank visa page)(*.jpg,*.jpeg,*.png)：</td>
+                </tr>
+                <tr>
+                    <td><img id="im1" src="" width="300" height="240" ></td>
+                    <td>
+                        <input type="file" name="image" style="visibility: hidden" id="up1"/> <br>
+                        <input type="button" class="btn btn-primary btn-sm" value="Add  Document" onclick="up1.click()">
+                        <input type="text" id="imgadd" style="visibility: hidden" class="form-control"  name="imgaddress">
+                        The previous stage of graduation certificate(*.jpg,*.jpeg,*.png)：</td>
+
+                </tr>
+                <tr>
+                    <td><img id="im1" src="" width="300" height="240" ></td>
+                    <td>
+                        <input type="file" name="image" style="visibility: hidden" id="up1"/> <br>
+                        <input type="button" class="btn btn-primary btn-sm" value="Add Document" onclick="up1.click()">
+                        <input type="text" id="imgadd" style="visibility: hidden" class="form-control"  name="imgaddress">
+                        The previous stage of transcript(*.jpg,*.jpeg,*.png)</td>
+                </tr>
+            </table>
+            <table class="table table-bordered table-striped" >
+                <tr>
+                    <td class="text-left" colspan="4" ><h4>Language Proficiency</h4></td>
+
+                </tr>
+                <tr>
+                    <td class="text-center" colspan="4"><b>Chinese Proficiency</b></td>
+                </tr>
+                <tr>
+                    <td class="text-right"  >*Language Proficiency</td>
+                    <td>
+
+                        <select data-width="100%" name="my">
+                            {volist name="lang" id="list"}
+                            <option value="{$list.name}">{$list.ename}</option>
+                            {/volist}
+                        </select>
+
+                    </td>
+                    <td  ></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="text-right"  >HSK Score</td>
+                    <td>
+                        <select data-width="100%" name="my">
+                            {volist name="lang" id="list"}
+                            <option value="{$list.name}">{$list.ename}</option>
+                            {/volist}
+                        </select>
+                        score:<input type="text">
+                    </td >
+                    <td  class="text-right">HSKK Score</td>
+                    <td>
+                        <select data-width="100%" name="my">
+                            {volist name="lang" id="list"}
+                            <option value="{$list.name}">{$list.ename}</option>
+                            {/volist}
+                        </select>
+                        score:<input type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td  class="text-right" >Other Language Proficiency</td>
+                    <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="text-left"><h4>Study Plan  - Undergraduate Student&nbsp;  &nbsp;  &nbsp;   <a class="putong" href="">Edit Study Plan</a></h4></td>
+
+
+                </tr>
+                <tr>
+                    <td class="text-right" >Program</td>
+                    <td class="text-right"></td>
+                    <td  class="text-right"  ></td>
+                    <td class="text-right"></td>
+                </tr>
+                <tr>
+                    <td  class="text-right">Department</td>
+                    <td></td>
+                    <td  class="text-right" >Major</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td  class="text-right" >Teaching Language</td>
+                    <td></td>
+                    <td  class="text-right" >Study Years</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td  class="text-right" >Study Duration</td>
+                    <td></td>
+                    <td  class="text-right" ></td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="text-left"><h4>Recommended by</h4></td>
+
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                    <td>Relationship with the applicant</td>
+                    <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                </tr>
+                <tr>
+                    <td>Organization</td>
+                    <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                    <td>Mobile</td>
+                    <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                </tr>
+                <tr>
+                    <td>Phone Number</td>
+                    <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                    <td>Email</td>
+                    <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                </tr>
+                <tr>
+                    <td>Nationality</td>
+                    <td>
+                        <select  class="selectpicker show-menu-arrow" name="gj" data-width="100%" data-live-search="true"  >
+                            {volist name="country" id="list"}
+                            <option value="{$list.name}">{$list.ename}</option>
+                            {/volist}
+                        </select>
+                    </td>
+                    <td>Job</td>
+                    <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                    <td>Fax Numbe</td>
+                    <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                </tr>
+
+            </table>
+            <table class="table table-bordered" id="basic">
+                <tbody>
+                <tr>
+                    <td colspan="7" class="active">
+                        <div class="col-md-6">家庭情况 </div>
+                        <div class="col-md-6 text-right"><button type="button" class="btn btn-primary btn-sm" id="addtry" onclick="addaaa();">追加</button></div>
+                    </td>
+                </tr>
+                <tr >
+
+                    <th>家庭成员</th><th>姓名</th><th>电话</th><th>E-mail</th><th>职务</th><th>工作单位</th><th>操作</th>
+
+                </tr>
+                <tr>
+                    <td>
+                        <select name="gx[]" data-width="100%">
+                            <option value="father">父亲</option>
+                            <option value="mother">母亲</option>
+                        </select>
+                    </td>
+                    <td><input type="text" class="form-control" placeholder="" name="name[]"></td>
+                    <td><input type="text" class="form-control" placeholder="" name="mobile[]"></td>
+                    <td><input type="text" class="form-control" placeholder="" name="email[]"></td>
+                    <td><input type="text" class="form-control" placeholder="" name="zhiwu[]"></td>
+                    <td><input type="text" class="form-control" placeholder="" name="company[]"></td>
+                    <td><button type="button" class="btn btn-primary btn-sm" onclick="delNew();">删除</button></td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="gx[]" data-width="100%"><option value="father">父亲</option><option value="mother">母亲</option></select>
+                    </td>
+                    <td><input type="text" class="form-control" placeholder="" name="name[]"></td>
+                    <td><input type="text" class="form-control" placeholder="" name="mobile[]"></td>
+                    <td><input type="text" class="form-control" placeholder="" name="email[]"></td>
+                    <td><input type="text" class="form-control" placeholder="" name="zhiwu[]"></td>
+                    <td><input type="text" class="form-control" placeholder="" name="company[]"></td>
+                    <td><button type="button" class="btn btn-primary btn-sm" onclick="delNew(this);">删除</button></td>
+                </tr>
+                </tbody>
+            </table>
+
+            <table class="table table-bordered">
+                <tr>
+                    <td colspan="4" class="active">
+                        <div class="col-md-6">经济担保人或机构</div>
+                        <div class="col-md-6 text-right"></div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="text-right">
+                        担保人姓名
+                    </td>
+                    <td><input type="text" class="form-control" placeholder="" name="dbrname"></td>
+                    <td class="text-right"> 担保人地址</td>
+                    <td><input type="text" class="form-control" placeholder="" name="dbraddress"></td>
+                </tr>
+                <tr>
+                    <td class="text-right">
+                        担保人电话
+                    </td>
+                    <td><input type="text" class="form-control" placeholder="" name="dbrmobile"></td>
+                    <td class="text-right"> 与申请人关系</td>
+                    <td><input type="text" class="form-control" placeholder="" name="dbrgx"></td>
+                </tr>
+                <tr>
+                    <td class="text-right">
+                        工作单位
+                    </td>
+                    <td><input type="text" class="form-control" placeholder="" name="dbrcompany"></td>
+                    <td class="text-right"> 电子邮件	</td>
+                    <td><input type="text" class="form-control" placeholder="" name="dbremail"></td>
+                </tr>
+            </table>
+
+            <table class="table table-bordered">
+                <tr>
+                    <td colspan="4" class="active">
+                        <div class="col-md-6">紧急事务联系人</div>
+                        <div class="col-md-6 text-right"></div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="text-right">
+                        姓名
+                    </td>
+                    <td><input type="text" class="form-control" placeholder="" name="sosname"></td>
+                    <td class="text-right"> 手机</td>
+                    <td><input type="text" class="form-control" placeholder="" name="sosmobile"></td>
+                </tr>
+                <tr>
+                    <td class="text-right">
+                        电话
+                    </td>
+                    <td><input type="text" class="form-control" placeholder="" name="sostel"></td>
+                    <td class="text-right"> 电子邮件</td>
+                    <td><input type="text" class="form-control" placeholder="" name="sosemail"></td>
+                </tr>
+                <tr>
+                    <td class="text-right">
+                        工作单位
+                    </td>
+                    <td><input type="text" class="form-control" placeholder="" name="soscompany"></td>
+                    <td class="text-right"> 地址	</td>
+                    <td><input type="text" class="form-control" placeholder="" name="sosaddress"></td>
+                </tr>
+            </table>
+            <table class="table table-bordered table-striped">
+                <tr>
+                    <td colspan="4">Home Country Address  Please fill in the blanks in Chinese if the address is in China</td>
+
+                </tr>
+                <tr>
+                    <td>*Street Address</td>
+                    <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                    <td>*Phone Number</td>
+                    <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                </tr>
+                <tr>
+                    <td>*City/Province</td>
+                    <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                    <td>Mobile</td>
+                    <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                </tr>
+                <tr>
+                    <td>*Country</td>
+                    <td>
+                        <select  class="selectpicker show-menu-arrow" name="gj" data-width="100%" data-live-search="true"  >
+                            {volist name="country" id="list"}
+                            <option value="{$list.name}">{$list.ename}</option>
+                            {/volist}
+                        </select>
+                    </td>
+                    <td>*Zipcode</td>
+                    <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                </tr>
+                <tr>
+                    <td colspan="4">Current postal address</td>
+
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label class="radio-inline">
+                            <input type="radio" name="xb" id="inlineRadio1" value="男"> male
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="xb" id="inlineRadio2" value="女"> female
+                        </label>
+                    </td>
+                    <td>*Personal Email</td>
+                    <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+
+                </tr>
+                <tr>
+                    <td>*Mobile/Phone Number</td>
+                    <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                    <td>*Address</td>
+                    <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                </tr>
+                <tr>
+                    <td>*Zipcode</td>
+                    <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="4">*How to Collect the Admission Notice</td>
+
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <label class="radio-inline">
+                            <input type="radio" name="xb" id="inlineRadio1" value="男"> male
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="xb" id="inlineRadio2" value="女"> female
+                        </label>
+                    </td>
+
+                </tr>
+            </table>
+
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+    $('select').selectpicker({
+        width:'auto',
+
+        size: 8
+    });
+    $(function () {
+        $('.condate').datetimepicker({
+            format: 'yyyy-mm-dd',
+            todayBtn:'true',
+            autoclose:'true',
+            todayHighlight:'true',
+            viewSelect:'month',
+            startView: 2,
+            minView: 2
+
+        });
+    });
+
+    $(function () {
+
+
+        $("#up1").on('change', function(){
+
+            $.ajax({
+                url: "{:url('st/upload')}",
+                type: 'POST',
+                cache: false,
+                data: new FormData($('#stu1')[0]),
+                processData: false,
+                contentType: false,
+
+                success : function(data) {
+                    // alert(data.status);
+                    $("#im1").attr({src:"/uploads/"+data.status});
+                    $("#imgadd").val("/uploads/"+data.status);
+                }
+            })
+        })
+    });
+
+
+    $(function () {
+        $("#submit1").on('click',function () {
+
+            $.ajax({
+                type: 'post',
+                url: "{:url('st/insert')}",
+                data: $('#stu1').serialize(),
+                datatype: 'json',
+                success: function (data) {
+
+                    if (data.status == 1) {
+                        alert(data.stid1);
+                        var url="{:url('student/st/studyplan',['stid'=>'stidoo'])}";
+                        url1=url.replace("stidoo",data.stid1);
+                        window.location.href=url1;
+                    }else {
+                        alert(data.message);
+                    }
+                }
+
+
+
+            })
+
+        })
+
+    });
+
+
+</script>
+</html>
