@@ -6,15 +6,16 @@
  * Time: 上午10:58
  */
 
-namespace app\student\controller;
-use app\common\controller\base;
+namespace app\student\Controller;
 
-class index extends base
+use think\Controller;
+
+class Index extends Controller
 
 {
     public function index()
     {
-      return 'welcome student';
+      return 'welcome liuyang';
     }
 
 

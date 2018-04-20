@@ -6,25 +6,25 @@
  * Time: 上午11:15
  */
 
-namespace app\student\controller;
-use app\common\controller\base;
-use app\student\model\dbr;
+namespace app\student\Controller;
+use app\common\Controller\base;
+use app\student\model\Dbr;
 use app\student\model\department;
-use app\student\model\family;
+use app\student\model\Family;
 use app\student\model\project;
 use app\student\model\speciality;
-use app\student\model\stustatus;
-use app\student\model\user;
+use app\student\model\Student;
+use app\student\model\User;
 use think\facade\Request;
-use app\student\model\student;
+use app\student\model\Stustatus;
 use think\Db;
-use app\common\model\Country;
+use app\common\model\country;
 use app\common\model\language;
 use app\common\model\religion;
 use think\facade\Session;
 
 
-class st extends base
+class St extends base
 {
     public function register()
     {
@@ -40,13 +40,39 @@ class st extends base
     public function fill()
     {
             $this->islogin();
-            $country = Country::all();
-            $lang = language::all();
-            $religion = religion::all();
+            //判断是否已有数据
+        $user=Session::get('user');
+        $data=Db::table('student')->where('user',$user)->find();
+        if($data){
+            $this->assign('data',$data);
+
+            $country=Db::table('country')->where('')->select();
+            $lang=Db::table('language')->where('')->select();
+            $religion=Db::table('religion')->where('')->select();
+
 
             $this->assign('country', $country);
             $this->assign('lang', $lang);
             $this->assign('re', $religion);
+
+
+    }else{
+            //查询下拉表数据，模型太慢，换成db
+//            $country = country::all();
+//            $lang = language::all();
+//            $religion = religion::all();
+            $country=Db::table('country')->where('')->select();
+            $lang=Db::table('language')->where('')->select();
+            $religion=Db::table('religion')->where('')->select();
+
+
+            $this->assign('country', $country);
+            $this->assign('lang', $lang);
+            $this->assign('re', $religion);
+
+
+        }
+
 
 
 
@@ -74,6 +100,7 @@ class st extends base
         // 移动到框架应用根目录/uploads/ 目录下
         $info = $file->move( '../public/uploads');
         return['status'=>$info->getSavename()];
+
         if($info){
             // 成功上传后 获取上传信息
             // 输出 jpg
@@ -127,16 +154,28 @@ class st extends base
     }
     public function insert()
     {
-
+             $this->islogin();
 
 
             $data=Request::param();
 
             $result=Db::table('student')->where('user',$data['user'])->select();
 
+
+
          if($result){
 
-             return ['status'=>2,'message'=>'有重复数据'];
+
+//            Student::where('user',$data['user'])
+//                ->update($data);
+
+            Db::name('student')
+                ->where('user',$data['user'])
+                ->update($data);
+
+             return ['status'=>2,'message'=>'更新成功'];
+
+
          }else{
 
              if($stu=student::create($data))
@@ -146,13 +185,11 @@ class st extends base
 
                  //获取插入成功后对id
                  $stid=$stu->id;
-                 stustatus::create([
-                     'student'=>'ok',
-                     'stid'=>$stid
-                 ]);
+
                  //进行跳转，并赋值
               //   $this->redirect('st/fill1',['stid'=>$stid]);
                  //下面是之前用ajax的return，ajax success后读取我们return的数值进行判断，但读取的数值无法再次进行跳转赋值，没弄懂。
+                 Db::name('stustatus')->data(['student'=>'ok','stid'=>$stid,'user'=>$user])->insert();
 
                   return ['status'=>1,'message'=>'插入成功','stid1'=>$stid];
 
@@ -161,7 +198,7 @@ class st extends base
              {
                  $this->error("错误",'/student/st/first');
              }
-         }
+             }
 
 
 
@@ -455,7 +492,7 @@ die('{"jsonrpc" : "2.0", "result" : null, "id" : "id"}');
 
 
 
-            $depart = department::all();
+            $depart =department::all();
             $speci = speciality::all();
             // $projec=project::all();
             $projec=project::where('')->paginate(7);
@@ -509,7 +546,7 @@ die('{"jsonrpc" : "2.0", "result" : null, "id" : "id"}');
     public function studyplan()
     {
         $this->islogin();
-        $country = Country::all();
+        $country = country::all();
         $lang = language::all();
         $religion = religion::all();
 
@@ -521,7 +558,7 @@ die('{"jsonrpc" : "2.0", "result" : null, "id" : "id"}');
     public function education()
     {
         $this->islogin();
-        $country = Country::all();
+        $country = country::all();
         $lang = language::all();
         $religion = religion::all();
 
@@ -533,7 +570,7 @@ die('{"jsonrpc" : "2.0", "result" : null, "id" : "id"}');
     public function contact()
     {
         $this->islogin();
-        $country = Country::all();
+        $country = country::all();
         $lang = language::all();
         $religion = religion::all();
 
@@ -545,7 +582,7 @@ die('{"jsonrpc" : "2.0", "result" : null, "id" : "id"}');
     public function preview()
     {
         $this->islogin();
-        $country = Country::all();
+        $country = country::all();
         $lang = language::all();
         $religion = religion::all();
 

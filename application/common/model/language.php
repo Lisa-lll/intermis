@@ -7,9 +7,9 @@
  */
 
 namespace app\common\model;
-use think\model;
+use think\Model;
 
-class language extends model
+class language extends Model
 {
     protected $pk='id';
     protected $table='language';

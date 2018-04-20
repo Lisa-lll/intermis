@@ -7,9 +7,9 @@
  */
 
 namespace app\common\model;
-use think\model;
+use think\Model;
 
-class religion extends model
+class religion extends Model
 {
     protected $pk='id';
     protected $table='religion';

@@ -7,10 +7,10 @@
  */
 
 namespace app\common\model;
-use think\model;
+use think\Model;
 
 
-class Country extends model
+class country extends Model
 {
     protected $pk='id';
     protected $table='country';

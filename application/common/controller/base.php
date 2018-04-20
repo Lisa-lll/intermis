@@ -6,7 +6,7 @@
  * Time: 上午10:50
  */
 
-namespace app\common\controller;
+namespace app\common\Controller;
 use think\Controller;
 use think\facade\Session;
 

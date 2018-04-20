@@ -9,7 +9,7 @@
 namespace app\student\model;
 use think\Model;
 
-class dbr extends Model
+class Dbr extends Model
 {
     protected $pk='id';
     protected $table='dbr';

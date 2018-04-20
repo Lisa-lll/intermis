@@ -1,4 +1,4 @@
-<?php /*a:3:{s:65:"/Users/liuyang/intermis/tp5/application/student/view/st/fill.html";i:1523872293;s:67:"/Users/liuyang/intermis/tp5/application/student/view/st/header.html";i:1523870820;s:65:"/Users/liuyang/intermis/tp5/application/student/view/st/left.html";i:1523889360;}*/ ?>
+<?php /*a:3:{s:65:"/Users/liuyang/intermis/tp5/application/student/view/st/fill.html";i:1524193414;s:67:"/Users/liuyang/intermis/tp5/application/student/view/st/header.html";i:1523870820;s:65:"/Users/liuyang/intermis/tp5/application/student/view/st/left.html";i:1523889360;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -100,7 +100,7 @@
                 <td class="text-right">*Personal Photo</td>
 
                 <td ><input type="hidden"  value="<?php echo htmlentities($user); ?>" name="user" >
-                    <img id="im1" src="" width="200" height="140" >
+                    <img id="im1" src="<?php echo htmlentities((isset($data['imgaddress']) && ($data['imgaddress'] !== '')?$data['imgaddress']:'')); ?>" width="200" height="140" >
                 </td>
                 <td colspan="2">
 
@@ -114,7 +114,7 @@
             </tr>
             <tr>
                 <td class="text-right">Family Name(as on passport)</td>
-                <td class="col-xs-4"><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                <td class="col-xs-4"><input type="text" class="form-control" placeholder="" name="hzx" value="<?php echo htmlentities((isset($data['hzx']) && ($data['hzx'] !== '')?$data['hzx']:'')); ?>" ></td>
                 <td class="text-right">Given Name(as on passport)</td>
                 <td class="col-xs-4"><input type="text" class="form-control" placeholder="" name="hzm"></td>
             </tr>
@@ -276,7 +276,7 @@
             </tr>
             <tr >
                 <td colspan="4" class="text-center">
-                    <button type="button" class="btn btn-default" id="submit1">Save and Next</button>
+                    <button type="button" class="btn btn-primary" id="submit1">Save and Next</button>
                 </td>
             </tr>
         </table>

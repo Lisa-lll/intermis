@@ -10,7 +10,7 @@ namespace app\student\model;
 
 use think\Model;
 
-class user extends Model
+class User extends Model
 {
     protected $pk='id';
     protected $table='user';
