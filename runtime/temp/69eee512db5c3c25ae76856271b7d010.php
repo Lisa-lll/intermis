@@ -1,4 +1,4 @@
-<?php /*a:3:{s:66:"/Users/liuyang/intermis/tp5/application/student/view/st/fill1.html";i:1523888458;s:67:"/Users/liuyang/intermis/tp5/application/student/view/st/header.html";i:1523870820;s:65:"/Users/liuyang/intermis/tp5/application/student/view/st/left.html";i:1523889360;}*/ ?>
+<?php /*a:3:{s:66:"/Users/liuyang/intermis/tp5/application/student/view/st/fill1.html";i:1524559196;s:67:"/Users/liuyang/intermis/tp5/application/student/view/st/header.html";i:1523870820;s:65:"/Users/liuyang/intermis/tp5/application/student/view/st/left.html";i:1523889360;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,9 +12,7 @@
     <!-- bootstrap-select，表单下拉控件 -->
     <link rel="stylesheet" href="/node_modules/bootstrap-select/dist/css/bootstrap-select.min.css">
     <script src="/node_modules/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-    <script>
-        $stid = $_GET['stid'];
-    </script>
+
 
 </head>
 <body>
@@ -71,120 +69,119 @@
 
         <div class="col-md-10" style="padding: 10px 10px 20px 10px;margin-top: 5px;">
 
-            <form id="otherinfo" action="<?php echo url('insert1'); ?>" type="post">
+            <form id="form1">
 
             <table class="table table-bordered" id="basic">
                 <tbody>
                 <tr>
                     <td colspan="7" class="active">
-                        <div class="col-md-6">家庭情况stid:<?php echo htmlentities($stid); ?> </div>
-                        <div class="col-md-6 text-right"><button type="button" class="btn btn-primary btn-sm" id="addtry" onclick="addaaa();">追加</button></div>
+                        <div class="col-md-6"><h4>Family Status</h4><input type="hidden" name="user" value="<?php echo htmlentities($user); ?>"> </div>
+                        <div class="col-md-6 text-right"><button type="button" class="btn btn-primary btn-sm" id="addtry" onclick="addaaa();">Add</button></div>
                     </td>
                 </tr>
                <tr >
 
-                <th>家庭成员</th><th>姓名</th><th>电话</th><th>E-mail</th><th>职务</th><th>工作单位</th><th>操作</th>
+                   <th><span class="glyphicon glyphicon-star text-danger" aria-hidden="true"></span><strong>Family Members</strong></th><th><span class="glyphicon glyphicon-star text-danger" aria-hidden="true"></span><strong>Name</strong></th><th><span class="glyphicon glyphicon-star text-danger" aria-hidden="true"></span><strong>Phone Number</strong></th><th><strong>Email</strong></th><th><span class="glyphicon glyphicon-star text-danger" aria-hidden="true"></span><strong>Position</strong></th><th><span class="glyphicon glyphicon-star text-danger" aria-hidden="true"></span><strong>Work Place</strong></th><th></th>
 
                </tr>
+                <?php if(is_array($dfam) || $dfam instanceof \think\Collection || $dfam instanceof \think\Paginator): $i = 0; $__LIST__ = $dfam;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$fam): $mod = ($i % 2 );++$i;?>
                 <tr>
                     <td>
-                        <select name="gx[]" data-width="100%">
-                            <option value="father">父亲</option>
-                            <option value="mother">母亲</option>
+<script> $("#gx").selectpicker('val','<?php echo htmlentities($fam['gx']); ?>');</script>
+                        <select name="gx[]" data-width="100%" id="gx">
+                            <option value="father">Father</option>
+                            <option value="mother">Mother</option>
+                            <option value="spouse">Spouse</option>
+
+                            <option value="brother">Brother</option>
+                            <option value="sister">Sister</option>
+                            <option value="others">Others</option>
+                            <option value="children">Children</option>
                         </select>
                     </td>
-                    <td><input type="text" class="form-control" placeholder="" name="name[]"></td>
-                    <td><input type="text" class="form-control" placeholder="" name="mobile[]"></td>
-                    <td><input type="text" class="form-control" placeholder="" name="email[]"></td>
-                    <td><input type="text" class="form-control" placeholder="" name="zhiwu[]"></td>
-                    <td><input type="text" class="form-control" placeholder="" name="company[]"></td>
-                    <td><button type="button" class="btn btn-primary btn-sm" onclick="delNew();">删除</button></td>
+                    <td><input type="text" class="form-control" placeholder="" name="name[]" value="<?php echo htmlentities($fam['name']); ?>"></td>
+                    <td><input type="text" class="form-control" placeholder="" name="mobile[]" value="<?php echo htmlentities($fam['mobile']); ?>"></td>
+                    <td><input type="text" class="form-control" placeholder="" name="email[]" value="<?php echo htmlentities($fam['email']); ?>"></td>
+                    <td><input type="text" class="form-control" placeholder="" name="zhiwu[]" value="<?php echo htmlentities($fam['zhiwu']); ?>"></td>
+                    <td><input type="text" class="form-control" placeholder="" name="company[]" value="<?php echo htmlentities($fam['company']); ?>"></td>
+                    <td><button type="button" class="btn btn-primary btn-sm" onclick="delNew();">Delete</button></td>
                 </tr>
-                <tr>
-                    <td>
-                        <select name="gx[]" data-width="100%"><option value="father">父亲</option><option value="mother">母亲</option></select>
-                    </td>
-                    <td><input type="text" class="form-control" placeholder="" name="name[]"></td>
-                    <td><input type="text" class="form-control" placeholder="" name="mobile[]"></td>
-                    <td><input type="text" class="form-control" placeholder="" name="email[]"></td>
-                    <td><input type="text" class="form-control" placeholder="" name="zhiwu[]"></td>
-                    <td><input type="text" class="form-control" placeholder="" name="company[]"></td>
-                    <td><button type="button" class="btn btn-primary btn-sm" onclick="delNew(this);">删除</button></td>
-                </tr>
+                <?php endforeach; endif; else: echo "" ;endif; ?>
+
                 </tbody>
             </table>
 
             <table class="table table-bordered">
                 <tr>
                     <td colspan="4" class="active">
-                        <div class="col-md-6">经济担保人或机构</div>
+                        <div class="col-md-6"><h4>Financial Supporter</h4></div>
                         <div class="col-md-6 text-right"></div>
                     </td>
                 </tr>
 
                 <tr>
                     <td class="text-right">
-                        担保人姓名
+                        <span class="glyphicon glyphicon-star text-danger" aria-hidden="true"></span>  Guarantor name
                     </td>
-                    <td><input type="text" class="form-control" placeholder="" name="dbrname"></td>
-                    <td class="text-right"> 担保人地址</td>
-                    <td><input type="text" class="form-control" placeholder="" name="dbraddress"></td>
+                    <td><input type="text" class="form-control" placeholder="" name="dbrname" value="<?php echo htmlentities($ddb['dbrname']); ?>"></td>
+                    <td class="text-right"> The guarantor Addr</td>
+                    <td><input type="text" class="form-control" placeholder="" name="dbraddress" value="<?php echo htmlentities($ddb['dbraddress']); ?>"></td>
                 </tr>
                 <tr>
                     <td class="text-right">
-                        担保人电话
+                        <span class="glyphicon glyphicon-star text-danger" aria-hidden="true"></span>The guarantor Tel
                     </td>
-                    <td><input type="text" class="form-control" placeholder="" name="dbrmobile"></td>
-                    <td class="text-right"> 与申请人关系</td>
-                    <td><input type="text" class="form-control" placeholder="" name="dbrgx"></td>
+                    <td><input type="text" class="form-control" placeholder="" name="dbrmobile" value="<?php echo htmlentities($ddb['dbrmobile']); ?>"></td>
+                    <td class="text-right"> Relationship with applicant	</td>
+                    <td><input type="text" class="form-control" placeholder="" name="dbrgx" value="<?php echo htmlentities($ddb['dbrgx']); ?>"></td>
                 </tr>
                 <tr>
                     <td class="text-right">
-                        工作单位
+                        <span class="glyphicon glyphicon-star text-danger" aria-hidden="true"></span> Organization
                     </td>
-                    <td><input type="text" class="form-control" placeholder="" name="dbrcompany"></td>
-                    <td class="text-right"> 电子邮件	</td>
-                    <td><input type="text" class="form-control" placeholder="" name="dbremail"></td>
+                    <td><input type="text" class="form-control" placeholder="" name="dbrcompany" value="<?php echo htmlentities($ddb['dbrcompany']); ?>"></td>
+                    <td class="text-right"> Email</td>
+                    <td><input type="text" class="form-control" placeholder="" name="dbremail" value="<?php echo htmlentities($ddb['dbremail']); ?>"></td>
                 </tr>
             </table>
 
             <table class="table table-bordered">
                 <tr>
                     <td colspan="4" class="active">
-                        <div class="col-md-6">紧急事务联系人</div>
+                        <div class="col-md-6"><h4>Emergency Contact</h4></div>
                         <div class="col-md-6 text-right"></div>
                     </td>
                 </tr>
 
                 <tr>
                     <td class="text-right">
-                        姓名
+                        <span class="glyphicon glyphicon-star text-danger" aria-hidden="true"></span>Name
                     </td>
-                    <td><input type="text" class="form-control" placeholder="" name="sosname"></td>
-                    <td class="text-right"> 手机</td>
-                    <td><input type="text" class="form-control" placeholder="" name="sosmobile"></td>
+                    <td><input type="text" class="form-control" placeholder="" name="sosname" value="<?php echo htmlentities($ddb['sosname']); ?>"></td>
+                    <td class="text-right"><span class="glyphicon glyphicon-star text-danger" aria-hidden="true"></span>Mobile</td>
+                    <td><input type="text" class="form-control" placeholder="" name="sosmobile" value="<?php echo htmlentities($ddb['sosmobile']); ?>"></td>
                 </tr>
                 <tr>
                     <td class="text-right">
-                        电话
+                        <span class="glyphicon glyphicon-star text-danger" aria-hidden="true"></span> Phone Number
                     </td>
-                    <td><input type="text" class="form-control" placeholder="" name="sostel"></td>
-                    <td class="text-right"> 电子邮件</td>
-                    <td><input type="text" class="form-control" placeholder="" name="sosemail"></td>
+                    <td><input type="text" class="form-control" placeholder="" name="sostel" value="<?php echo htmlentities($ddb['sostel']); ?>"></td>
+                    <td class="text-right"> <span class="glyphicon glyphicon-star text-danger" aria-hidden="true"></span>Email</td>
+                    <td><input type="text" class="form-control" placeholder="" name="sosemail" value="<?php echo htmlentities($ddb['sosemail']); ?>"></td>
                 </tr>
                 <tr>
                     <td class="text-right">
-                        工作单位
+                        Organization
                     </td>
-                    <td><input type="text" class="form-control" placeholder="" name="soscompany"></td>
-                    <td class="text-right"> 地址	</td>
-                    <td><input type="text" class="form-control" placeholder="" name="sosaddress"></td>
+                    <td><input type="text" class="form-control" placeholder="" name="soscompany" value="<?php echo htmlentities($ddb['soscompany']); ?>"></td>
+                    <td class="text-right"> OrganizationAddress	</td>
+                    <td><input type="text" class="form-control" placeholder="" name="sosaddress" value="<?php echo htmlentities($ddb['sosaddress']); ?>"></td>
                 </tr>
             </table>
 
                 <div class="col-md-12 text-center">
-                    <button type="button" class="btn btn-primary">上一步</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <button type="submit" class="btn btn-primary">保存并下一步</button>
+                   <a href="<?php echo url('st/education'); ?>"><button type="button" class="btn btn-primary">Previous</button>&nbsp;&nbsp;</a> &nbsp;&nbsp;&nbsp;
+                    <button type="button" class="btn btn-primary" id="submit1">Save and Next</button>
                 </div>
             </form>
 
@@ -196,13 +193,50 @@
 <script>
     $('select').selectpicker();
 
+    $(function () {
+        $("#submit1").on('click',function () {
 
+            $.ajax({
+                type: 'post',
+                url: "<?php echo url('st/insert1'); ?>",
+                data: $('#form1').serialize(),
+                datatype: 'json',
+                success: function (data) {
+
+                    if (data.status == 1) {
+
+                        var url="<?php echo url('student/st/contact'); ?>";
+
+                        window.location.href=url;
+                    }else {
+                        var url="<?php echo url('student/st/contact'); ?>";
+
+                        window.location.href=url;
+                    }
+                }
+
+
+
+            })
+
+        })
+
+    });
 
 
     function addaaa() {
         $("#basic tr:last").after(" <tr>\n" +
             "                    <td>\n" +
-            "                        <select name=\"gx[]\" data-width=\"100%\"><option value=\"father\">父亲</option><option value=\"mother\">母亲</option></select>\n" +
+            "                        <select name=\"gx[]\" data-width=\"100%\" id=\"gx\">\n" +
+            "                            <option value=\"father\">Father</option>\n" +
+            "                            <option value=\"mother\">Mother</option>\n" +
+            "                            <option value=\"spouse\">Spouse</option>\n" +
+            "\n" +
+            "                            <option value=\"brother\">Brother</option>\n" +
+            "                            <option value=\"sister\">Sister</option>\n" +
+            "                            <option value=\"others\">Others</option>\n" +
+            "                            <option value=\"children\">Children</option>\n" +
+            "                        </select>\n" +
             "                    </td>\n" +
             "                    <td><input type=\"text\" class=\"form-control\" placeholder=\"\" name=\"name[]\"></td>\n" +
             "                    <td><input type=\"text\" class=\"form-control\" placeholder=\"\" name=\"mobile[]\"></td>\n" +
@@ -211,6 +245,8 @@
             "                    <td><input type=\"text\" class=\"form-control\" placeholder=\"\" name=\"company[]\"></td>\n" +
             "                    <td><button type=\"button\" class=\"btn btn-primary btn-sm\" onclick=\"delNew(this);\">删除</button></td>\n" +
             "                </tr>")
+
+        $('select').selectpicker();
 
     }
 

@@ -12,24 +12,7 @@ use think\facade\Session;
 
 class base extends Controller
 {
-    public function islogin()
-    {
-        if(Session::has('user'))
-        {
-            $user=Session::get('user');
-            $qx1=Session::get('qx1');
 
-            $this->assign('user',$user);
-            $this->assign('qx1',$qx1);
-        }else{
-            $this->redirect('index');
-        }
-    }
 
-    public function logout()
-    {
-        Session::clear();
-        $this->redirect('index');
-    }
 
 }

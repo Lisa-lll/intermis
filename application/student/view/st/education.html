@@ -6,7 +6,7 @@
 
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
 
-
+    <link href="/static/css/viewer.min.css" rel="stylesheet">
     <!-- datetimepicker,日期选择控件 -->
 
     <link href="/node_modules/bootstrap-datetimepicker/datetimepicker.css" rel="stylesheet">
@@ -22,7 +22,11 @@
     <link rel="stylesheet" href="/node_modules/bootstrap-select/dist/css/bootstrap-select.min.css">
     <script src="/node_modules/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
 
+    <!-- viewer图片查看插件 -->
 
+
+
+    <script src="/static/css/viewer.min.js"></script>
 
 
 
@@ -46,11 +50,11 @@
 
         {include file="st/left"/}
         <div  class="col-md-10" style="padding: 10px 10px 20px 0px;margin-top: 5px;">
-           <form>
-            <table class="table table-bordered table-striped">
+           <form id="form1" enctype="multipart/form-data">
+            <table class="table table-bordered table-striped" id="basic">
                 <tr>
                     <td class="text-left" colspan="5" >
-                        <div class="col-md-10"> <h4>Educational Background</h4></div><div class="col-md-2 text-right" ><button type="button" class="btn btn-primary btn-xs">add</button></div>
+                        <div class="col-md-10"> <h4>Educational Background</h4></div><div class="col-md-2 text-right" ><button type="button" class="btn btn-primary btn-xs" onclick="addaaa()">add</button></div>
 
                     </td>
 
@@ -62,13 +66,14 @@
                     <td class="text-center"><strong>Field of Study & Diploma received</strong></td>
                     <td class="text-center"><strong>Operation</strong></td>
                 </tr>
+                {volist name="data1" id="vo"}
                 <tr>
                     <td>
                         <div class="row">
 
                             <div class="form-group col-md-11">
                                 <div class='input-group date condate'  >
-                                    <input type='text' name="csrq" class="form-control" />
+                                    <input type='text' name="yearfrom[]" class="form-control" value="{$vo.yearfrom}"/>
                                     <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
                     </span>
                                 </div>
@@ -82,7 +87,7 @@
 
                             <div class="form-group col-md-11">
                                 <div class='input-group date condate'  >
-                                    <input type='text' name="csrq" class="form-control" />
+                                    <input type='text' name="yearto[]" class="form-control" value="{$vo.yearto}"/>
                                     <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
                     </span>
                                 </div>
@@ -91,15 +96,17 @@
 
                         </div>
                     </td>
-                    <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
-                    <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
-                    <td class="text-center"><button type="button" class="btn btn-primary btn-xs">delete</button></td>
+                    <td><input type="text" class="form-control" placeholder="" name="schoolname[]" value="{$vo.schoolname}"></td>
+                    <td><input type="text" class="form-control" placeholder="" name="fieldstudy[]" value="{$vo.fieldstudy}"></td>
+                    <td class="text-center"><button type="button" class="btn btn-primary btn-xs" onclick="
+delNew()">delete</button></td>
                 </tr>
+                {/volist}
             </table>
 
-            <table class="table table-bordered table-striped">
+            <table class="table table-bordered table-striped" id="">
                 <tr>
-                    <td  colspan="2" class="text-left"><strong>Upload Documents</strong>&nbsp;&nbsp;&nbsp;&nbsp;<strong style="color: red;">Max Size1M</strong></td>
+                    <td  colspan="2" class="text-left"><input type="hidden"  value="{$user}" name="user" ><strong>Upload Documents</strong>&nbsp;&nbsp;&nbsp;&nbsp;<strong style="color: red;">Max Size1M</strong></td>
 
                 </tr>
                 <tr>
@@ -107,34 +114,34 @@
                     <td class="text-center"><strong>Operation</strong></td>
                 </tr>
                 <tr>
-                    <td class="col-md-8">  <img id="im1" src="" width="300" height="240" ></td>
+                    <td class="col-md-8">  <img id="im1" src="{$data.passport}" width="300" height="240" ></td>
                     <td class="col-md-4">
-                        <input type="file" name="image" style="visibility: hidden" id="up1"/> <br>
+                        <input type="file" name="image1" style="visibility: hidden" id="up1"/> <br>
                         <input type="button" class="btn btn-primary btn-sm" value="Add Document" onclick="up1.click()">
-                        <input type="text" id="imgadd" style="visibility: hidden" class="form-control"  name="imgaddress">
+                        <input type="text" id="passport" style="visibility: hidden" class="form-control"  name="passport">
                         The Photocopy of Passport (Front page and blank visa page)(*.jpg,*.jpeg,*.png)：</td>
                 </tr>
                 <tr>
-                    <td><img id="im1" src="" width="300" height="240" ></td>
+                    <td><img id="im2" src="{$data.graduation}" width="300" height="240" ></td>
                     <td>
-                        <input type="file" name="image" style="visibility: hidden" id="up1"/> <br>
-                        <input type="button" class="btn btn-primary btn-sm" value="Add  Document" onclick="up1.click()">
-                        <input type="text" id="imgadd" style="visibility: hidden" class="form-control"  name="imgaddress">
+                        <input type="file" name="image2" style="visibility: hidden" id="up2"/> <br>
+                        <input type="button" class="btn btn-primary btn-sm" value="Add  Document" onclick="up2.click()">
+                        <input type="text" id="graduation" style="visibility: hidden" class="form-control"  name="graduation">
                         The previous stage of graduation certificate(*.jpg,*.jpeg,*.png)：</td>
 
                 </tr>
                 <tr>
-                    <td><img id="im1" src="" width="300" height="240" ></td>
+                    <td><img id="im3" src="{$data.transcript}" width="300" height="240" ></td>
                     <td>
-                        <input type="file" name="image" style="visibility: hidden" id="up1"/> <br>
-                        <input type="button" class="btn btn-primary btn-sm" value="Add Document" onclick="up1.click()">
-                        <input type="text" id="imgadd" style="visibility: hidden" class="form-control"  name="imgaddress">
+                        <input type="file" name="image3" style="visibility: hidden" id="up3"/> <br>
+                        <input type="button" class="btn btn-primary btn-sm" value="Add Document" onclick="up3.click()">
+                        <input type="text" id="transcript" style="visibility: hidden" class="form-control"  name="transcript">
                         The previous stage of transcript(*.jpg,*.jpeg,*.png)</td>
                 </tr>
             </table>
                <div class="col-md-12 text-center">
-               <button type="button" class="btn btn-primary">Previous</button>&nbsp;&nbsp;&nbsp;&nbsp;
-               <button type="button" class="btn btn-primary">Save and Next</button>
+              <a href="{:url('st/studyplan')}"> <button type="button" class="btn btn-primary">Previous</button>&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                   <button type="button" class="btn btn-primary" id="submit1">Save and Next</button>
                </div>
            </form>
         </div>
@@ -142,6 +149,7 @@
 </div>
 </body>
 <script type="text/javascript">
+    $("#im1").viewer({url:"data-original"});
     $(function () {
         $('.condate').datetimepicker({
             format: 'yyyy-mm-dd',
@@ -161,20 +169,54 @@
         $("#up1").on('change', function(){
 
             $.ajax({
-                url: "{:url('st/upload')}",
+                url: "{:url('st/upload1')}",
                 type: 'POST',
                 cache: false,
-                data: new FormData($('#stu1')[0]),
+                data: new FormData($('#form1')[0]),
                 processData: false,
                 contentType: false,
 
                 success : function(data) {
                     // alert(data.status);
                     $("#im1").attr({src:"/uploads/"+data.status});
-                    $("#imgadd").val("/uploads/"+data.status);
+                    $("#passport").val("/uploads/"+data.status);
                 }
             })
-        })
+        });
+        $("#up2").on('change', function(){
+
+            $.ajax({
+                url: "{:url('st/upload2')}",
+                type: 'POST',
+                cache: false,
+                data: new FormData($('#form1')[0]),
+                processData: false,
+                contentType: false,
+
+                success : function(data) {
+                    // alert(data.status);
+                    $("#im2").attr({src:"/uploads/"+data.status});
+                    $("#graduation").val("/uploads/"+data.status);
+                }
+            })
+        });
+        $("#up3").on('change', function(){
+
+            $.ajax({
+                url: "{:url('st/upload3')}",
+                type: 'POST',
+                cache: false,
+                data: new FormData($('#form1')[0]),
+                processData: false,
+                contentType: false,
+
+                success : function(data) {
+                    // alert(data.status);
+                    $("#im3").attr({src:"/uploads/"+data.status});
+                    $("#transcript").val("/uploads/"+data.status);
+                }
+            })
+        });
     });
 
 
@@ -183,16 +225,16 @@
 
             $.ajax({
                 type: 'post',
-                url: "{:url('st/insert')}",
-                data: $('#stu1').serialize(),
+                url: "{:url('st/inserteducation')}",
+                data: $('#form1').serialize(),
                 datatype: 'json',
                 success: function (data) {
 
                     if (data.status == 1) {
                         alert(data.stid1);
-                        var url="{:url('student/st/studyplan',['stid'=>'stidoo'])}";
-                        url1=url.replace("stidoo",data.stid1);
-                        window.location.href=url1;
+                        var url="{:url('student/st/fill1')}";
+
+                        window.location.href=url;
                     }else {
                         alert(data.message);
                     }
@@ -205,7 +247,57 @@
         })
 
     });
+    function addaaa() {
+        $("#basic tr:last").after(" <tr>\n" +
+            "                    <td>\n" +
+            "                        <div class=\"row\">\n" +
+            "\n" +
+            "                            <div class=\"form-group col-md-11\">\n" +
+            "                                <div class='input-group date condate'  >\n" +
+            "                                    <input type='text' name=\"yearfrom[]\" class=\"form-control\" />\n" +
+            "                                    <span class=\"input-group-addon\"><span class=\"glyphicon glyphicon-calendar\"></span>\n" +
+            "                    </span>\n" +
+            "                                </div>\n" +
+            "                            </div>\n" +
+            "\n" +
+            "\n" +
+            "                        </div>\n" +
+            "                    </td>\n" +
+            "                    <td>\n" +
+            "                        <div class=\"row\">\n" +
+            "\n" +
+            "                            <div class=\"form-group col-md-11\">\n" +
+            "                                <div class='input-group date condate'  >\n" +
+            "                                    <input type='text' name=\"yearto[]\" class=\"form-control\" />\n" +
+            "                                    <span class=\"input-group-addon\"><span class=\"glyphicon glyphicon-calendar\"></span>\n" +
+            "                    </span>\n" +
+            "                                </div>\n" +
+            "                            </div>\n" +
+            "\n" +
+            "\n" +
+            "                        </div>\n" +
+            "                    </td>\n" +
+            "                    <td><input type=\"text\" class=\"form-control\" placeholder=\"\" name=\"schoolname[]\" ></td>\n" +
+            "                    <td><input type=\"text\" class=\"form-control\" placeholder=\"\" name=\"fieldstudy[]\" ></td>\n" +
+            "                    <td class=\"text-center\"><button type=\"button\" class=\"btn btn-primary btn-xs\" onclick=\"\n" +
+            "delNew(this)\">delete</button></td>\n" +
+            "                </tr>");
+        $('.condate').datetimepicker({
+            format: 'yyyy-mm-dd',
+            todayBtn:'true',
+            autoclose:'true',
+            todayHighlight:'true',
+            viewSelect:'month',
+            startView: 2,
+            minView: 2
 
+        });
+
+    }
+
+    function delNew(nowTr) {
+        $(nowTr).parent().parent().remove();
+    }
 
 </script>
 </html>

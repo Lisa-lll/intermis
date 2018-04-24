@@ -45,23 +45,32 @@
     <div class="row">
 
         {include file="st/left"/}
+
         <div  class="col-md-10" style="padding: 10px 10px 20px 0px;margin-top: 5px;">
+            <form id="form1">
             <table class="table table-bordered table-striped" >
                 <tr>
                     <td class="text-left" colspan="4" ><h4>Language Proficiency</h4></td>
 
                 </tr>
                 <tr>
+                    <input type="hidden" value="{$stid}" name="stid">
+                    <input type="hidden" value="{$user}" name="user">
                     <td class="text-center" colspan="4"><b>Chinese Proficiency</b></td>
                 </tr>
                 <tr>
                     <td class="text-right"  >*Language Proficiency</td>
                     <td>
 
-                        <select data-width="100%" name="my">
-                            {volist name="lang" id="list"}
-                            <option value="{$list.name}">{$list.ename}</option>
-                            {/volist}
+                        <select class="s1" data-width="100%" name="lp" id="lp">
+
+                            <option value="">-choose-</option>
+                            <option value="none">None</option>
+                            <option value="poor">Poor</option>
+                            <option value="fair">Fair</option>
+                            <option value="good">Good</option>
+                            <option value="excellent">Excellent</option>
+
                         </select>
 
                     </td>
@@ -71,55 +80,64 @@
                 <tr>
                     <td class="text-right"  >HSK Score</td>
                     <td>
-                        <select data-width="100%" name="my">
-                            {volist name="lang" id="list"}
-                            <option value="{$list.name}">{$list.ename}</option>
-                            {/volist}
+                        <select data-width="100%" name="hsklx" id="hsklx">
+                            <option value="">-choose-</option>
+                            <option value="none">None</option>
+                            <option value="New HSK Level1">New HSK Level1</option>
+                            <option value="New HSK Level2">New HSK Level2</option>
+                            <option value="New HSK Level3">New HSK Level3</option>
+                            <option value="New HSK Level4">New HSK Level4</option>
+                            <option value="New HSK Level5">New HSK Level5</option>
+                            <option value="New HSK Level6">New HSK Level6</option>
+                            <option value="HSK Base level C(score leve:1)">HSK Base level C(score leve:1)</option>
                         </select>
-                        score:<input type="text">
+                        score:<input type="text" name="hskcj" value="{$data.hskcj}">
                     </td >
                     <td  class="text-right">HSKK Score</td>
                     <td>
-                        <select data-width="100%" name="my">
-                            {volist name="lang" id="list"}
-                            <option value="{$list.name}">{$list.ename}</option>
-                            {/volist}
+                        <select data-width="100%" name="hskklx" id="hskklx">
+
+                            <option value="">-choose-</option>
+                            <option value="primary">Primary</option>
+                            <option value="junior">Junior</option>
+                            <option value="senior">Senior</option>
+
                         </select>
-                        score:<input type="text">
+                        score:<input type="text" name="hskkcj" value="{$data.hskkcj}">
                     </td>
                 </tr>
                 <tr>
                     <td  class="text-right" >Other Language Proficiency</td>
-                    <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                    <td><input type="text" class="form-control" placeholder="" name="olp" value="{$data.olp}"></td>
                     <td></td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td colspan="4" class="text-left"><h4>Study Plan  - Undergraduate Student&nbsp;  &nbsp;  &nbsp;   <a class="putong" href="">Edit Study Plan</a></h4></td>
+                    <td colspan="4" class="text-left"><h4>Study Plan  - Undergraduate Student&nbsp;  &nbsp;  &nbsp;   <a class="putong" href="{:url('st/apply')}">Edit Study Plan</a></h4></td>
 
 
                 </tr>
                 <tr>
                     <td class="text-right" >Program</td>
-                    <td class="text-right"></td>
+                    <td  id="program"></td>
                     <td  class="text-right"  ></td>
                     <td class="text-right"></td>
                 </tr>
                 <tr>
                     <td  class="text-right">Department</td>
-                    <td></td>
+                    <td id="department"></td>
                     <td  class="text-right" >Major</td>
-                    <td></td>
+                    <td id="major"></td>
                 </tr>
                 <tr>
                     <td  class="text-right" >Teaching Language</td>
-                    <td></td>
+                    <td id="tl"></td>
                     <td  class="text-right" >Study Years</td>
-                    <td></td>
+                    <td id="sy"></td>
                 </tr>
                 <tr>
                     <td  class="text-right" >Study Duration</td>
-                    <td></td>
+                    <td id="sd"></td>
                     <td  class="text-right" ></td>
                     <td ></td>
                 </tr>
@@ -129,56 +147,120 @@
                 </tr>
                 <tr>
                     <td>Name</td>
-                    <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                    <td><input type="text" class="form-control" placeholder="" name="rconame" value="{$data.rconame}" ></td>
                     <td>Relationship with the applicant</td>
-                    <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                    <td><input type="text" class="form-control" placeholder="" name="rcorelation" value="{$data.rcorelation}"></td>
                 </tr>
                 <tr>
                     <td>Organization</td>
-                    <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                    <td><input type="text" class="form-control" placeholder="" name="rcoorgan"  value="{$data.rcoorgan}"></td>
                     <td>Mobile</td>
-                    <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                    <td><input type="text" class="form-control" placeholder="" name="rcomobile" value="{$data.rcomobile}"></td>
                 </tr>
                 <tr>
                     <td>Phone Number</td>
-                    <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                    <td><input type="text" class="form-control" placeholder="" name="rcophone"  value="{$data.rcophone}"></td>
                     <td>Email</td>
-                    <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                    <td><input type="text" class="form-control" placeholder="" name="rcoemail" id="rcoemail" value="{$data.rcoemail}" ></td>
                 </tr>
                 <tr>
                     <td>Nationality</td>
                     <td>
-                        <select  class="selectpicker show-menu-arrow" name="gj" data-width="100%" data-live-search="true"  >
+                        <select  class="selectpicker show-menu-arrow" name="rconation" id="rconation" data-width="100%" data-live-search="true"  >
                             {volist name="country" id="list"}
-                            <option value="{$list.name}">{$list.ename}</option>
+                            {if $data.rconation==$list.ename}
+                            <option value="{$list.ename}" selected>{$list.ename}</option>
+                            {else/}
+                            <option value="{$list.ename}">{$list.ename}</option>
+                            {/if}
                             {/volist}
                         </select>
                     </td>
                     <td>Job</td>
-                    <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                    <td><input type="text" class="form-control" placeholder="" name="rcojob" value="{$data.rcojob}" ></td>
                 </tr>
                 <tr>
                     <td>Address</td>
-                    <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                    <td><input type="text" class="form-control" placeholder="" name="rcoaddress" value="{$data.rcoaddress}" ></td>
                     <td>Fax Numbe</td>
-                    <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                    <td><input type="text" class="form-control" placeholder="" name="rcofax" value="{$data.rcofax}"></td>
                 </tr>
                 <tr>
 
-                    <td colspan="4" class="text-center"> <button type="button" class="btn btn-primary" id="submit1">Previous</button>
-                        <button type="button" class="btn btn-primary" id="submit2">Save and Next</button></td>
+                    <td colspan="4" class="text-center"> <a href="{:url('st/fill')}"><button type="button" class="btn btn-primary" id="submit1">Previous</button></a>
+                        <button type="button" class="btn btn-primary" id="submit2">Save and Next</button>
+
+                    </td>
                 </tr>
             </table>
-
+            </form>
         </div>
+
     </div>
 </div>
 </body>
 <script>
-    $('select').selectpicker({
-       width:'auto',
 
+
+    $(function () {
+        $("#submit2").on('click',function () {
+
+            $.ajax({
+                type: 'post',
+                url: "{:url('student/st/istp')}",
+                data: $('#form1').serialize(),
+                datatype: 'json',
+                success: function (data) {
+
+                    if (data.status == 1) {
+                        alert(data.stid1);
+                        var url="{:url('student/st/education',['stid'=>'stidoo'])}";
+                        url1=url.replace("stidoo",data.stid1);
+                        window.location.href=url1;
+                    }else {
+
+                        alert(data.stid1);
+                        var url="{:url('student/st/education',['stid'=>'stidoo'])}";
+                        url1=url.replace("stidoo",data.stid1);
+                        window.location.href=url1;
+
+                    }
+                }
+
+
+
+            })
+
+        })
+
+    });
+
+
+    $('select').selectpicker({
+        width:'auto',
         size: 8
+    });
+    $("#program").html("{$studyplan.name}");
+    $("#department").html("{$studyplan.depart}");
+    $("#major").html("{$studyplan.speci}");
+    $("#tl").html("{$studyplan.lang}");
+    $("#sy").html("{$studyplan.system}");
+    $("#sd").html("{$studyplan.limit}");
+
+
+
+
+    $("#lp").selectpicker('val','{$data.lp}');
+    $("#hsklx").selectpicker('val','{$data.hsklx}');
+    $("#hsklx").selectpicker('val','{$data.hsklx}');
+    $("#hskklx").selectpicker('val','{$data.hskklx}');
+    $("#rconation").selectpicker('val','{$data.rconation}');
+    $("#rconation").selectpicker('val','{$data.rconation}');
+
+    $(document).ready(function () {
+
+
+
     });
 </script>
 </html>

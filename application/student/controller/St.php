@@ -10,11 +10,13 @@ namespace app\student\Controller;
 use app\common\Controller\base;
 use app\student\model\Dbr;
 use app\student\model\department;
+use app\student\model\Edubg;
 use app\student\model\Family;
 use app\student\model\project;
 use app\student\model\speciality;
 use app\student\model\Student;
 use app\student\model\User;
+
 use think\facade\Request;
 use app\student\model\Stustatus;
 use think\Db;
@@ -26,6 +28,38 @@ use think\facade\Session;
 
 class St extends base
 {
+    public function islogin()
+    {
+        if(Session::has('user'))
+        {
+            $user=Session::get('user');
+            $qx1=Session::get('qx1');
+
+            $this->assign('user',$user);
+            $this->assign('qx1',$qx1);
+        }else{
+            $this->redirect('index');
+        }
+    }
+
+    public function logout()
+    {
+        Session::clear();
+        $this->redirect('index');
+    }
+
+    public function _initialize()
+    {
+
+
+    }
+    public function _empty($name)
+    {
+        echo $name.'这个操作不存在';
+    }
+    protected $beforeActionList = [
+        'islogin'=>['except'=>'index,register,login,insert']
+    ];
     public function register()
     {
         $this->assign('kk','测试变量');
@@ -39,10 +73,12 @@ class St extends base
 
     public function fill()
     {
-            $this->islogin();
+
+
             //判断是否已有数据
         $user=Session::get('user');
         $data=Db::table('student')->where('user',$user)->find();
+
         if($data){
             $this->assign('data',$data);
 
@@ -61,9 +97,11 @@ class St extends base
 //            $country = country::all();
 //            $lang = language::all();
 //            $religion = religion::all();
+            $data=null;
             $country=Db::table('country')->where('')->select();
             $lang=Db::table('language')->where('')->select();
             $religion=Db::table('religion')->where('')->select();
+            $this->assign('data', $data);
 
 
             $this->assign('country', $country);
@@ -81,10 +119,28 @@ class St extends base
     }
     public function fill1( )
     {
-        $this->islogin();
-      $stid=$this->request->param('stid');
-       $this->assign('stid',$stid);
+        $user=Session::get('user');
+//      $stid=$this->request->param('stid');
+//       $this->assign('stid',$stid);
+        $this->assign('user',$user);
+        $dfam=Db::name('family')->where('user',$user)->select();
+        $ddb=Db::name('dbr')->where('user',$user)->find();
+        if($dfam){
+            $this->assign('dfam',$dfam);
+        }
+        else{
+            $dfam=null;
+            $this->assign('dfam',$dfam);
+        }
 
+        if($ddb){
+            $this->assign('ddb',$ddb);
+
+        }
+        else{$ddb=null;
+        $this->assign('ddb',$ddb);
+
+        }
 
         return $this->fetch();
     }
@@ -94,9 +150,9 @@ class St extends base
         return $this->fetch();
     }
 
-    public function upload(){
+    public function upload1(){
         // 获取表单上传文件 例如上传了001.jpg
-        $file = request()->file('image');
+        $file = request()->file('image1');
         // 移动到框架应用根目录/uploads/ 目录下
         $info = $file->move( '../public/uploads');
         return['status'=>$info->getSavename()];
@@ -111,6 +167,52 @@ class St extends base
             echo $aa=$info->getFilename();
 
            // return['status'=>$aa];
+
+        }else{
+            // 上传失败获取错误信息
+            echo $file->getError();
+        }
+    }
+    public function upload2(){
+        // 获取表单上传文件 例如上传了001.jpg
+        $file = request()->file('image2');
+        // 移动到框架应用根目录/uploads/ 目录下
+        $info = $file->move( '../public/uploads');
+        return['status'=>$info->getSavename()];
+
+        if($info){
+            // 成功上传后 获取上传信息
+            // 输出 jpg
+            echo $info->getExtension();
+            // 输出 20160820/42a79759f284b767dfcb2a0197904287.jpg
+            echo $info->getSaveName();
+            // 输出 42a79759f284b767dfcb2a0197904287.jpg
+            echo $aa=$info->getFilename();
+
+            // return['status'=>$aa];
+
+        }else{
+            // 上传失败获取错误信息
+            echo $file->getError();
+        }
+    }
+    public function upload3(){
+        // 获取表单上传文件 例如上传了001.jpg
+        $file = request()->file('image3');
+        // 移动到框架应用根目录/uploads/ 目录下
+        $info = $file->move( '../public/uploads');
+        return['status'=>$info->getSavename()];
+
+        if($info){
+            // 成功上传后 获取上传信息
+            // 输出 jpg
+            echo $info->getExtension();
+            // 输出 20160820/42a79759f284b767dfcb2a0197904287.jpg
+            echo $info->getSaveName();
+            // 输出 42a79759f284b767dfcb2a0197904287.jpg
+            echo $aa=$info->getFilename();
+
+            // return['status'=>$aa];
 
         }else{
             // 上传失败获取错误信息
@@ -154,12 +256,13 @@ class St extends base
     }
     public function insert()
     {
-             $this->islogin();
+
 
 
             $data=Request::param();
 
-            $result=Db::table('student')->where('user',$data['user'])->select();
+         $result=Db::table('student')->where('user',$data['user'])->find();
+       //$result=Student::where('user',$data['user'])->find();
 
 
 
@@ -173,7 +276,7 @@ class St extends base
                 ->where('user',$data['user'])
                 ->update($data);
 
-             return ['status'=>2,'message'=>'更新成功'];
+             return ['status'=>2,'message'=>'更新成功','stid1'=>$result['id']];
 
 
          }else{
@@ -206,6 +309,123 @@ class St extends base
 
 
     }
+    public function inserteducation()
+    {
+
+
+
+        $data=Request::only(['user','passport','graduation','transcript']);
+        $data1 = Request::only(['yearfrom','yearto','schoolname','fieldstudy']);
+
+$a=$data1['yearfrom'];
+$b=$data1['yearto'];
+$c=$data1['schoolname'];
+$d=$data1['fieldstudy'];
+        $result=Db::table('education')->where('user',$data['user'])->find();
+
+//如果数据表里有数据，则更新；
+        if($result){
+
+
+            Db::name('education')
+                ->where('user',$data['user'])
+                ->update($data);
+            Db::name('edubg')->where('user',$data['user'])->delete();
+            $arrlength=count($a);
+            for($x=0;$x<$arrlength;$x++){
+                $fam=new Edubg([
+                    'yearfrom'  =>  $a[$x],
+                    'yearto'=>$b[$x],
+                    'schoolname'=> $c[$x] ,
+                    'fieldstudy'=> $d[$x] ,
+                    'user'=>$data['user']
+                ]);
+                $fam->save();
+            }
+
+
+
+
+            return ['status'=>2,'message'=>'更新成功'];
+
+
+        }else{
+
+            if($stu=Db::name('education')->insert($data))
+            {
+                Db::name('edubg')->where('user',$data['user'])->delete();
+                $arrlength=count($a);
+                for($x=0;$x<$arrlength;$x++){
+                    $fam=new Edubg([
+                        'yearfrom'  =>  $a[$x],
+                        'yearto'=>$b[$x],
+                        'schoolname'=> $c[$x] ,
+                        'fieldstudy'=> $d[$x] ,
+                        'user'=>$data['user']
+                    ]);
+                    $fam->save();
+                }
+
+
+
+
+                Db::name('stustatus')->where('user',$data['user'])->update(['education'=>'ok']);
+
+                return ['status'=>1,'message'=>'插入成功'];
+
+            }
+            else
+            {
+                $this->error("错误",'/student/st/first');
+            }
+        }
+
+
+
+
+
+
+    }
+    public function istp()
+    {
+
+
+        $data=Request::param();
+       // dump($data);
+//查询表中是否有数据
+        $result=Db::table('studyplan')->where('stid',$data['stid'])->find();
+    if($result){
+
+         Db::name('studyplan')
+                ->where('stid',$data['stid'])
+                ->update($data);
+
+            return ['status'=>2,'message'=>'更新成功','stid1'=>$result['stid']];
+
+
+        }else{
+//如果没有数据插入数据
+            if(Db::table('studyplan')->insert($data))
+            {
+
+//如果插入成功，在状态表里更新ok
+                Db::name('stustatus')->where('stid',$data['stid'])->update(['studyplan'=>'ok']);
+
+                return ['status'=>1,'message'=>'插入成功','stid1'=>$data['stid']];
+
+            }
+            else
+            {
+                $this->error("错误",'/student/st/first');
+            }
+        }
+
+
+
+
+
+
+    }
 
     public function insert1()
     {
@@ -213,47 +433,74 @@ class St extends base
 
 
         $data=Request::param();
+        $dfam=Request::only('gx,name,mobile,email,zhiwu,company,user');
+        $ddb=Request::only('dbrname,dbraddress,dbrmobile,dbrgx,dbrcompany,dbremail,sosname,sosmobile,sosemail,sostel,soscompany,sosaddress,user');
+        dump($data);
 
 
-        $gxx=$data['gx'];
-       $namee=$data['name'];
-        $mobilee=$data['mobile'];
-        $emaill=$data['email'];
-        $zhiwuu=$data['zhiwu'];
-        $companyy=$data['company'];
+        $gxx=$dfam['gx'];
+       $namee=$dfam['name'];
+        $mobilee=$dfam['mobile'];
+        $emaill=$dfam['email'];
+        $zhiwuu=$dfam['zhiwu'];
+        $companyy=$dfam['company'];
+       // $fdata=Db::name('family');
+
+        $dfamily=Db::name('family')->where('user',$dfam['user'])->find();
+        $ddbr=Db::name('dbr')->where('user',$ddb['user'])->find();
 //对数组遍历读取并插入数据库
-        $arrlength=count($gxx);
+        if($dfamily){
+            //如果有数据，删除，重新插入
+            Db::name('family')->where('user',$dfamily['user'])->delete();
+            $arrlength=count($gxx);
 
-        for($x=0;$x<$arrlength;$x++) {
-            $fam= new family([
-                'gx'  =>  $gxx[$x],
-                'name'  =>  $namee[$x],
-                'mobile'  =>  $mobilee[$x],
-                'email'  =>  $emaill[$x],
-                'zhiwu'  =>  $zhiwuu[$x],
-                'company'  =>  $companyy[$x],
-                'stid'=>$data['stid']
+            for($x=0;$x<$arrlength;$x++) {
+                $fam= new family([
+                    'gx'  =>  $gxx[$x],
+                    'name'  =>  $namee[$x],
+                    'mobile'  =>  $mobilee[$x],
+                    'email'  =>  $emaill[$x],
+                    'zhiwu'  =>  $zhiwuu[$x],
+                    'company'  =>  $companyy[$x],
+                    'user'=>$data['user']
 
-            ]);
-            $fam->save();
-            //调试的时候输出的
+                ]);
+                $fam->save();
+                //调试的时候输出的
 //            echo "关系=".$gxx[$x].",,name=".$namee[$x];
 //            echo "<br>";
 
+            }
         }
+        else{
+            $arrlength=count($gxx);
 
-        $this->redirect('st/first');
-//单条数据指直接用creat插入数据库
-            dbr::create($data);
-        //调试的时候输出的
+            for($x=0;$x<$arrlength;$x++) {
+                $fam= new family([
+                    'gx'  =>  $gxx[$x],
+                    'name'  =>  $namee[$x],
+                    'mobile'  =>  $mobilee[$x],
+                    'email'  =>  $emaill[$x],
+                    'zhiwu'  =>  $zhiwuu[$x],
+                    'company'  =>  $companyy[$x],
+                    'user'=>$data['user']
 
-          // dump($data);
+                ]);
+                $fam->save();
+                //调试的时候输出的
+//            echo "关系=".$gxx[$x].",,name=".$namee[$x];
+//            echo "<br>";
 
+            }
 
+        }
+        if($ddbr){
+            Db::name('dbr')->where('user',$ddb['user'])->update($ddb);
 
-
-
-
+    }
+    else{
+        dbr::create($ddb);
+    }
 
 
     }
@@ -491,7 +738,6 @@ die('{"jsonrpc" : "2.0", "result" : null, "id" : "id"}');
     {
 
 
-
             $depart =department::all();
             $speci = speciality::all();
             // $projec=project::all();
@@ -545,11 +791,25 @@ die('{"jsonrpc" : "2.0", "result" : null, "id" : "id"}');
 
     public function studyplan()
     {
-        $this->islogin();
+
         $country = country::all();
         $lang = language::all();
         $religion = religion::all();
+        $user=Session::get('user');
+        $studyid=Db::table('studyplan')->where('user',$user)->value('studyid');
+        $studyplan=Db::table('project')->where('id',$studyid)->find();
 
+        $stid=$this->request->param('stid');
+        $data=Db::table('studyplan')->where('user',$user)->find();
+        if($data)
+        {$this->assign('data',$data);}
+        else
+        {$data=null;
+            $this->assign('data',$data);
+    }
+
+        $this->assign('studyplan',$studyplan);
+        $this->assign('stid',$stid);
         $this->assign('country', $country);
         $this->assign('lang', $lang);
         $this->assign('re', $religion);
@@ -557,10 +817,24 @@ die('{"jsonrpc" : "2.0", "result" : null, "id" : "id"}');
     }
     public function education()
     {
-        $this->islogin();
+
         $country = country::all();
         $lang = language::all();
         $religion = religion::all();
+        $user=Session::get('user');
+        $this->assign('user',$user);
+        $data=Db::name('education')->where('user',$user)->find();
+        $data1=Db::name('edubg')->where('user',$user)->select();
+        if($data1){
+            $this->assign('data1',$data1);
+            $this->assign('data',$data);
+        }else{
+            $data=null;
+            $data1=null;
+            $this->assign('data',$data);
+            $this->assign('data1',$data1);
+
+        }
 
         $this->assign('country', $country);
         $this->assign('lang', $lang);
@@ -569,7 +843,7 @@ die('{"jsonrpc" : "2.0", "result" : null, "id" : "id"}');
     }
     public function contact()
     {
-        $this->islogin();
+
         $country = country::all();
         $lang = language::all();
         $religion = religion::all();
@@ -581,7 +855,7 @@ die('{"jsonrpc" : "2.0", "result" : null, "id" : "id"}');
     }
     public function preview()
     {
-        $this->islogin();
+
         $country = country::all();
         $lang = language::all();
         $religion = religion::all();
@@ -591,4 +865,39 @@ die('{"jsonrpc" : "2.0", "result" : null, "id" : "id"}');
         $this->assign('re', $religion);
         return $this->fetch();
     }
+    public function chooseproject()
+    {
+        $user = Session::get('user');
+
+        $data = Request::param();
+
+        $result = Db::table('studyplan')->where('user', $user)->find();
+        if ($result) {
+
+            Db::name('studyplan')
+                ->where('user', $user)
+                ->update(['studyid' => $data['stid']]);
+
+        } else {
+            $studyii=Db::table('studyplan')->insert(['studyid' => $data['stid'], 'user' => $user]);
+
+        }
+
+
+
+            if (Db::table('stustatus')->where('user', $user)->find()) {
+                Db::name('stustatus')->where('user', $user)->update(['studyplan' => 'ok']);
+            } else {
+                Db::name('stustatus')->insert(['user' => $user, 'studyplan' => 'ok']);
+            }
+
+
+        $this->success('Elective success', 'st/fill');
+
+
+    }
+
+
+
+
 }

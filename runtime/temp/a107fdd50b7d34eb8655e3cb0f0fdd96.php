@@ -1,4 +1,4 @@
-<?php /*a:3:{s:65:"/Users/liuyang/intermis/tp5/application/student/view/st/fill.html";i:1524193414;s:67:"/Users/liuyang/intermis/tp5/application/student/view/st/header.html";i:1523870820;s:65:"/Users/liuyang/intermis/tp5/application/student/view/st/left.html";i:1523889360;}*/ ?>
+<?php /*a:3:{s:65:"/Users/liuyang/intermis/tp5/application/student/view/st/fill.html";i:1524282739;s:67:"/Users/liuyang/intermis/tp5/application/student/view/st/header.html";i:1523870820;s:65:"/Users/liuyang/intermis/tp5/application/student/view/st/left.html";i:1523889360;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -100,14 +100,14 @@
                 <td class="text-right">*Personal Photo</td>
 
                 <td ><input type="hidden"  value="<?php echo htmlentities($user); ?>" name="user" >
-                    <img id="im1" src="<?php echo htmlentities((isset($data['imgaddress']) && ($data['imgaddress'] !== '')?$data['imgaddress']:'')); ?>" width="200" height="140" >
+                    <img id="im1" src="<?php echo htmlentities($data['imgaddress']); ?>" width="200" height="140" >
                 </td>
                 <td colspan="2">
 
                     <input type="file" name="image" style="visibility: hidden" id="up1"/> <br>
                     Please upload your recent full-faced passport size photo (*.jpg,*.jpeg,*.png).
                     <input type="button" class="btn btn-primary btn-sm" value="Add your photo" onclick="up1.click()">
-                    <input type="text" id="imgadd" style="visibility: hidden" class="form-control"  name="imgaddress">
+                    <input type="text" id="imgadd" style="visibility: hidden" class="form-control"  name="imgaddress" value="<?php echo htmlentities($data['imgaddress']); ?>">
 
                 </td>
 
@@ -116,18 +116,25 @@
                 <td class="text-right">Family Name(as on passport)</td>
                 <td class="col-xs-4"><input type="text" class="form-control" placeholder="" name="hzx" value="<?php echo htmlentities((isset($data['hzx']) && ($data['hzx'] !== '')?$data['hzx']:'')); ?>" ></td>
                 <td class="text-right">Given Name(as on passport)</td>
-                <td class="col-xs-4"><input type="text" class="form-control" placeholder="" name="hzm"></td>
+                <td class="col-xs-4"><input type="text" class="form-control" placeholder="" name="hzm" value="<?php echo htmlentities((isset($data['hzm']) && ($data['hzm'] !== '')?$data['hzm']:'')); ?>"></td>
             </tr>
             <tr>
                 <td class="text-right">Chinese Name (if available)</td>
-                <td class="col-xs-4"><input type="text" class="form-control" placeholder="" name="zwxm"></td>
+                <td class="col-xs-4"><input type="text" class="form-control" placeholder="" name="zwxm" value="<?php echo htmlentities((isset($data['zwxm']) && ($data['zwxm'] !== '')?$data['zwxm']:'')); ?>"></td>
                 <td class="text-right">*Gender</td>
                 <td class="col-xs-4">
+
                     <label class="radio-inline">
-                        <input type="radio" name="xb" id="inlineRadio1" value="男"> male
+                        <?php switch($data['xb']): case "男": ?>     <input type="radio" name="xb" id="inlineRadio1" value="男" checked> male<?php break; default: ?>  <input type="radio" name="xb" id="inlineRadio1" value="男" > male
+                        <?php endswitch; ?>
                     </label>
                     <label class="radio-inline">
-                        <input type="radio" name="xb" id="inlineRadio2" value="女"> female
+                        <?php if($data['xb']=='女'): ?>
+                        <input type="radio" name="xb" id="inlineRadio2" value="女" checked> female
+                        <?php else: ?>
+                        <input type="radio" name="xb" id="inlineRadio2" value="女" > female
+                        <?php endif; ?>
+
                     </label>
 
 
@@ -137,10 +144,18 @@
                 <td class="text-right">*Marital Status</td>
                 <td class="col-xs-4">
                     <label class="radio-inline">
+                        <?php if($data['hyzk']=='单身'): ?>
+                        <input type="radio" name="hyzk" id="inlineRadio1" value="单身" checked> unmarried
+                        <?php else: ?>
                         <input type="radio" name="hyzk" id="inlineRadio1" value="单身"> unmarried
+                        <?php endif; ?>
                     </label>
                     <label class="radio-inline">
+                        <?php if($data['hyzk']=='已婚'): ?>
+                        <input type="radio" name="hyzk" id="inlineRadio2" value="已婚" checked> married
+                        <?php else: ?>
                         <input type="radio" name="hyzk" id="inlineRadio2" value="已婚"> married
+                        <?php endif; ?>
                     </label>
 
 
@@ -149,9 +164,11 @@
                 <td>
 
                     <select  class="selectpicker show-menu-arrow" name="gj" data-width="100%" data-live-search="true"  >
-                        <?php if(is_array($country) || $country instanceof \think\Collection || $country instanceof \think\Paginator): $i = 0; $__LIST__ = $country;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;?>
+                        <?php if(is_array($country) || $country instanceof \think\Collection || $country instanceof \think\Paginator): $i = 0; $__LIST__ = $country;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;if($data['gj']==$list['name']): ?>
+                        <option value="<?php echo htmlentities($list['name']); ?>" selected><?php echo htmlentities($list['name']); ?></option>
+                        <?php else: ?>
                         <option value="<?php echo htmlentities($list['name']); ?>"><?php echo htmlentities($list['name']); ?></option>
-                        <?php endforeach; endif; else: echo "" ;endif; ?>
+                        <?php endif; endforeach; endif; else: echo "" ;endif; ?>
                     </select>
 
                 </td>
@@ -165,7 +182,7 @@
 
                         <div class="form-group col-md-11">
                             <div class='input-group date condate'  >
-                                <input type='text' name="csrq" class="form-control" />
+                                <input type='text' name="csrq" class="form-control" value="<?php echo htmlentities((isset($data['csrq']) && ($data['csrq'] !== '')?$data['csrq']:'')); ?>"/>
                                 <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
                     </span>
                             </div>
@@ -179,9 +196,11 @@
                 <td>
 
                     <select  class="selectpicker show-menu-arrow" name="csgj" data-width="100%" data-live-search="true"  >
-                        <?php if(is_array($country) || $country instanceof \think\Collection || $country instanceof \think\Paginator): $i = 0; $__LIST__ = $country;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;?>
+                        <?php if(is_array($country) || $country instanceof \think\Collection || $country instanceof \think\Paginator): $i = 0; $__LIST__ = $country;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;if($data['csgj']==$list['name']): ?>
+                        <option value="<?php echo htmlentities($list['name']); ?>" selected><?php echo htmlentities($list['name']); ?></option>
+                        <?php else: ?>
                         <option value="<?php echo htmlentities($list['name']); ?>"><?php echo htmlentities($list['name']); ?></option>
-                        <?php endforeach; endif; else: echo "" ;endif; ?>
+                        <?php endif; endforeach; endif; else: echo "" ;endif; ?>
                     </select>
 
 
@@ -189,14 +208,16 @@
             </tr>
             <tr>
                 <td class="text-right">*Place of Birth(City,Province)</td>
-                <td class="col-xs-4"><input type="text" name="csdd" class="form-control" placeholder=""></td>
+                <td class="col-xs-4"><input type="text" name="csdd" class="form-control" placeholder="" value="<?php echo htmlentities((isset($data['csdd']) && ($data['csdd'] !== '')?$data['csdd']:'')); ?>"></td>
                 <td class="text-right">Native language</td>
                 <td>
 
                     <select data-width="100%" name="my">
-                        <?php if(is_array($lang) || $lang instanceof \think\Collection || $lang instanceof \think\Paginator): $i = 0; $__LIST__ = $lang;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;?>
+                        <?php if(is_array($lang) || $lang instanceof \think\Collection || $lang instanceof \think\Paginator): $i = 0; $__LIST__ = $lang;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;if($data['my']==$list['name']): ?>
+                        <option value="<?php echo htmlentities($list['name']); ?>" selected><?php echo htmlentities($list['ename']); ?></option>
+                        <?php else: ?>
                         <option value="<?php echo htmlentities($list['name']); ?>"><?php echo htmlentities($list['ename']); ?></option>
-                        <?php endforeach; endif; else: echo "" ;endif; ?>
+                        <?php endif; endforeach; endif; else: echo "" ;endif; ?>
                     </select>
 
                 </td>
@@ -205,56 +226,77 @@
                 <td class="text-right">*Highest Level of Education</td>
                 <td>
                     <select class="form-control" name="zhxl" data-width="100%">
-                        <?php if(is_array($lang) || $lang instanceof \think\Collection || $lang instanceof \think\Paginator): $i = 0; $__LIST__ = $lang;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;?>
+                        <?php if(is_array($lang) || $lang instanceof \think\Collection || $lang instanceof \think\Paginator): $i = 0; $__LIST__ = $lang;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;if($data['zhxl']==$list['name']): ?>
+                        <option value="<?php echo htmlentities($list['name']); ?>" selected><?php echo htmlentities($list['name']); ?></option>
+                        <?php else: ?>
                         <option value="<?php echo htmlentities($list['name']); ?>"><?php echo htmlentities($list['name']); ?></option>
-                        <?php endforeach; endif; else: echo "" ;endif; ?>
+                        <?php endif; endforeach; endif; else: echo "" ;endif; ?>
                     </select>
                 </td>
                 <td class="text-right">*Religion</td>
                 <td>
                     <select data-width="100%" name="zjxy">
-                        <?php if(is_array($re) || $re instanceof \think\Collection || $re instanceof \think\Paginator): $i = 0; $__LIST__ = $re;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;?>
+                        <?php if(is_array($re) || $re instanceof \think\Collection || $re instanceof \think\Paginator): $i = 0; $__LIST__ = $re;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;if($data['zjxy']==$list['name']): ?>
+                        <option value="<?php echo htmlentities($list['name']); ?>" selected><?php echo htmlentities($list['ename']); ?></option>
+                        <?php else: ?>
                         <option value="<?php echo htmlentities($list['name']); ?>"><?php echo htmlentities($list['ename']); ?></option>
-                        <?php endforeach; endif; else: echo "" ;endif; ?>
+                        <?php endif; endforeach; endif; else: echo "" ;endif; ?>
                     </select>
                 </td>
             </tr>
             <tr>
                 <td class="text-right">*Employer or Institution Affiliated	</td>
-                <td class="col-xs-4"><input  name="gzdw" type="text" class="form-control" placeholder=""></td>
+                <td class="col-xs-4"><input  name="gzdw" type="text" class="form-control" placeholder="" value="<?php echo htmlentities((isset($data['gzdw']) && ($data['gzdw'] !== '')?$data['gzdw']:'')); ?>"></td>
                 <td class="text-right">*Occupation</td>
                 <td>
                     <select name="zy"  data-width="100%">
-                        <?php if(is_array($lang) || $lang instanceof \think\Collection || $lang instanceof \think\Paginator): $i = 0; $__LIST__ = $lang;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;?>
+                        <?php if(is_array($lang) || $lang instanceof \think\Collection || $lang instanceof \think\Paginator): $i = 0; $__LIST__ = $lang;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;if($data['zy']==$list['name']): ?>
+                        <option value="<?php echo htmlentities($list['name']); ?>" selected><?php echo htmlentities($list['name']); ?></option>
+                        <?php else: ?>
                         <option value="<?php echo htmlentities($list['name']); ?>"><?php echo htmlentities($list['name']); ?></option>
-                        <?php endforeach; endif; else: echo "" ;endif; ?>
+                        <?php endif; endforeach; endif; else: echo "" ;endif; ?>
                     </select>
                 </td>
             </tr>
             <tr>
                 <td class="text-right">Health Status	</td>
-                <td class="col-xs-4"><input name="jkzk" type="text" class="form-control" placeholder=""></td>
+                <td class="col-xs-4"><input name="jkzk" type="text" class="form-control" placeholder="" value="<?php echo htmlentities((isset($data['jkzk']) && ($data['jkzk'] !== '')?$data['jkzk']:'')); ?>"></td>
                 <td class="text-right">Emigrant from mainland China, Hong Kong, Macau, and Taiwan?</td>
                 <td class="col-xs-4">
+                    <?php if($data['sfym']=='yes'): ?>
                     <label class="radio-inline">
-                        <input type="radio" name="sfym" id="inlineRadio1" value="yes"> Yes
+                        <input type="radio" name="sfym" id="inlineRadio1" value="yes" checked> Yes
                     </label>
                     <label class="radio-inline">
                         <input type="radio" name="sfym" id="inlineRadio2" value="no"> No
                     </label>
-
+                    <?php elseif($data['sfym']=='no'): ?>
+                    <label class="radio-inline">
+                        <input type="radio" name="sfym" id="inlineRadio1" value="yes"> Yes
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="sfym" id="inlineRadio2" value="no" checked> No
+                    </label>
+                    <?php else: ?>
+                    <label class="radio-inline">
+                        <input type="radio" name="sfym" id="inlineRadio1" value="yes" > Yes
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="sfym" id="inlineRadio2" value="no"> No
+                    </label>
+                    <?php endif; ?>
 
                 </td>
             </tr>
             <tr>
                 <td class="text-right">Hobby</td>
-                <td class="col-xs-4"><input type="text" name="tcah" class="form-control" placeholder=""></td>
+                <td class="col-xs-4"><input type="text" name="tcah" class="form-control" placeholder="" value="<?php echo htmlentities((isset($data['tcah']) && ($data['tcah'] !== '')?$data['tcah']:'')); ?>"></td>
                 <td></td>
                 <td></td>
             </tr>
             <tr>
                 <td class="text-right">*Passport No.</td>
-                <td class="col-xs-4"><input type="text" name="hzhm" class="form-control" placeholder=""></td>
+                <td class="col-xs-4"><input type="text" name="hzhm" class="form-control" placeholder="" value="<?php echo htmlentities((isset($data['hzhm']) && ($data['hzhm'] !== '')?$data['hzhm']:'')); ?>"></td>
                 <td class="text-right">*Passport Expiration Date</td>
                 <td class="col-xs-4">
 
@@ -263,7 +305,7 @@
 
                         <div class="form-group col-md-11">
                             <div class='input-group date condate'  id='da2'>
-                                <input type='text' name="hzdq" class="form-control" />
+                                <input type='text' name="hzdq" class="form-control" value="<?php echo htmlentities((isset($data['hzdq']) && ($data['hzdq'] !== '')?$data['hzdq']:'')); ?>" />
                                 <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
                     </span>
                             </div>
@@ -329,6 +371,8 @@
     });
 
 
+
+
     $(function () {
         $("#submit1").on('click',function () {
 
@@ -345,7 +389,12 @@
                        url1=url.replace("stidoo",data.stid1);
                         window.location.href=url1;
                     }else {
-                        alert(data.message);
+
+                       alert(data.stid1);
+                        var url="<?php echo url('student/st/studyplan',['stid'=>'stidoo']); ?>";
+                        url1=url.replace("stidoo",data.stid1);
+                        window.location.href=url1;
+
                     }
                 }
 
@@ -356,6 +405,9 @@
         })
 
     });
+
+
+
 
     $('select').selectpicker({
 

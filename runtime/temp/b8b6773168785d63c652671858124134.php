@@ -1,4 +1,4 @@
-<?php /*a:2:{s:66:"/Users/liuyang/intermis/tp5/application/student/view/st/apply.html";i:1523525091;s:67:"/Users/liuyang/intermis/tp5/application/student/view/st/header.html";i:1523870820;}*/ ?>
+<?php /*a:2:{s:66:"/Users/liuyang/intermis/tp5/application/student/view/st/apply.html";i:1524448172;s:67:"/Users/liuyang/intermis/tp5/application/student/view/st/header.html";i:1523870820;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -129,7 +129,7 @@
             <td class="text-center"><?php echo htmlentities($list1['lang']); ?></td>
             <td class="text-center"><?php echo htmlentities($list1['deadline']); ?></td>
             <td class="text-center"><?php echo htmlentities($list1['remark']); ?></td>
-            <td class="text-center"><a href="">申请</a> </td>
+            <td class="text-center"><a href = "javascript:;" onclick ="chooseproject(<?php echo htmlentities($list1); ?>)" >申请</a> </td>
         </tr>
         <?php endforeach; endif; else: echo "" ;endif; ?>
 
@@ -208,6 +208,24 @@
         })
 
     });
+function chooseproject(data) {
+    var r=confirm("按下按钮");
+    if (r==true)
+    {
+        x="你按下了\"确定\"按钮!";
+        var url = "<?php echo url('st/chooseproject',['stid'=>'stidoo']); ?>";
+        url1=url.replace("stidoo",data.id)
+        window.location.href= url1;
+    }
+    else
+    {
+        x="你按下了\"取消\"按钮!";
+    }
+
+
+
+
+}
 
 
 
