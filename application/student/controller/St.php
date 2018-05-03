@@ -58,7 +58,7 @@ class St extends base
         echo $name.'这个操作不存在';
     }
     protected $beforeActionList = [
-        'islogin'=>['except'=>'index,register,login,insert']
+        'islogin'=>['except'=>'index,register,regist,login,insert']
     ];
     public function register()
     {
@@ -149,12 +149,39 @@ class St extends base
 
         return $this->fetch();
     }
+    public function upload(){
+        // 获取表单上传文件 例如上传了001.jpg
+        $file = request()->file('image');
 
+
+       // 使用图像处理，把图像压缩后上传服务器$image = \think\Image::open(request()->file('image'));
+       // $file= \think\Image::open(request()->file('image'));
+        // 移动到框架应用根目录/uploads/ 目录下
+        //$file->thumb(400,300)->save('../public/uploads/111.jpg');
+        $info = $file->rule('date')->move( '../public/uploads',true,false);
+        return['status'=>$info->getSavename()];
+
+        if($info){
+            // 成功上传后 获取上传信息
+            // 输出 jpg
+            echo $info->getExtension();
+            // 输出 20160820/42a79759f284b767dfcb2a0197904287.jpg
+            echo $info->getSaveName();
+            // 输出 42a79759f284b767dfcb2a0197904287.jpg
+            echo $aa=$info->getFilename();
+
+            // return['status'=>$aa];
+
+        }else{
+            // 上传失败获取错误信息
+            echo $file->getError();
+        }
+    }
     public function upload1(){
         // 获取表单上传文件 例如上传了001.jpg
         $file = request()->file('image1');
         // 移动到框架应用根目录/uploads/ 目录下
-        $info = $file->move( '../public/uploads');
+        $info = $file->rule('date')->move( '../public/uploads',true,false);
         return['status'=>$info->getSavename()];
 
         if($info){
@@ -177,7 +204,7 @@ class St extends base
         // 获取表单上传文件 例如上传了001.jpg
         $file = request()->file('image2');
         // 移动到框架应用根目录/uploads/ 目录下
-        $info = $file->move( '../public/uploads');
+        $info = $file->rule('date')->move( '../public/uploads',true,false);
         return['status'=>$info->getSavename()];
 
         if($info){
@@ -200,7 +227,7 @@ class St extends base
         // 获取表单上传文件 例如上传了001.jpg
         $file = request()->file('image3');
         // 移动到框架应用根目录/uploads/ 目录下
-        $info = $file->move( '../public/uploads');
+        $info = $file->rule('date')->move( '../public/uploads',true,false);
         return['status'=>$info->getSavename()];
 
         if($info){
@@ -327,6 +354,7 @@ $d=$data1['fieldstudy'];
         if($result){
 
 
+
             Db::name('education')
                 ->where('user',$data['user'])
                 ->update($data);
@@ -385,6 +413,39 @@ $d=$data1['fieldstudy'];
 
 
 
+    }
+    public function insertcontact()
+    {
+
+        $data=Request::param();
+       dump($data);
+        //$data1 = Request::only(['yearfrom','yearto','schoolname','fieldstudy']);
+
+        $result=Db::table('contact')->where('user',$data['user'])->find();
+
+//如果数据表里有数据，则更新；
+        if($result){
+             Db::name('contact')
+                ->where('user',$data['user'])
+                ->update($data);
+
+
+            return ['status'=>2,'message'=>'更新成功'];
+
+
+        }else{
+
+            if(Db::name('contact')->insert($data))
+            {
+                Db::name('stustatus')->where('user',$data['user'])->update(['contact'=>'ok']);
+                return ['status'=>1,'message'=>'插入成功'];
+
+            }
+            else
+            {
+                $this->error("错误",'/student/st/first');
+            }
+        }
     }
     public function istp()
     {
@@ -715,22 +776,30 @@ die('{"jsonrpc" : "2.0", "result" : null, "id" : "id"}');
     }
     public function regist(){
         $data=Request::param();
+        $validate=new \app\student\validate\user();
+        if(!$validate->check($data)){
+            //dump($validate->getError());
+            return['message'=>$validate->getError()];
+        }else{
+            $user=Db::table('user')->where('user',$data['user'])->find();
+            if(is_null($user)) {
+                if ($stu = user::create($data)) {//获取插入成功后对id
+                    // $stid=$stu->id;
+                    //进行跳转，并赋值
+                    // $this->redirect('st/fill1',['stid'=>$stid]);
+                    //下面是之前用ajax的return，ajax success后读取我们return的数值进行判断，但读取的数值无法再次进行跳转赋值，没弄懂。
+                    Session::set('user', $data['user']);
+                    return ['status' => 1, 'message' => '注册成功'];
+                }
+            }else
+            {
+                return['message'=>'用户名重复'];
 
-        $user=Db::table('user')->where('user',$data['user'])->find();
-        if(is_null($user)) {
-            if ($stu = user::create($data)) {//获取插入成功后对id
-                // $stid=$stu->id;
-                //进行跳转，并赋值
-                // $this->redirect('st/fill1',['stid'=>$stid]);
-                //下面是之前用ajax的return，ajax success后读取我们return的数值进行判断，但读取的数值无法再次进行跳转赋值，没弄懂。
-                Session::set('user', $data['user']);
-                return ['status' => 1, 'message' => '注册成功'];
             }
-        }else
-        {
-            return['message'=>'用户名重复'];
 
         }
+
+
 
     }
 
@@ -843,7 +912,8 @@ die('{"jsonrpc" : "2.0", "result" : null, "id" : "id"}');
     }
     public function contact()
     {
-
+        $user=Session::get('user');
+        $this->assign('user',$user);
         $country = country::all();
         $lang = language::all();
         $religion = religion::all();

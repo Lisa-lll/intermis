@@ -6,7 +6,7 @@
 
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
 
-    <link href="/static/css/viewer.min.css" rel="stylesheet">
+
     <!-- datetimepicker,日期选择控件 -->
 
     <link href="/node_modules/bootstrap-datetimepicker/datetimepicker.css" rel="stylesheet">
@@ -26,8 +26,8 @@
 
 
 
-    <script src="/static/css/viewer.min.js"></script>
-
+    <script src="/node_modules/viewerjs/dist/viewer.min.js"></script>
+    <link href="/node_modules/viewerjs/dist/viewer.min.css" rel="stylesheet">
 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -104,7 +104,7 @@ delNew()">delete</button></td>
                 {/volist}
             </table>
 
-            <table class="table table-bordered table-striped" id="">
+            <table class="table table-bordered table-striped" id="imclude">
                 <tr>
                     <td  colspan="2" class="text-left"><input type="hidden"  value="{$user}" name="user" ><strong>Upload Documents</strong>&nbsp;&nbsp;&nbsp;&nbsp;<strong style="color: red;">Max Size1M</strong></td>
 
@@ -118,7 +118,7 @@ delNew()">delete</button></td>
                     <td class="col-md-4">
                         <input type="file" name="image1" style="visibility: hidden" id="up1"/> <br>
                         <input type="button" class="btn btn-primary btn-sm" value="Add Document" onclick="up1.click()">
-                        <input type="text" id="passport" style="visibility: hidden" class="form-control"  name="passport">
+                        <input type="text" id="passport" style="visibility: hidden" value="{$data.passport}" class="form-control"  name="passport">
                         The Photocopy of Passport (Front page and blank visa page)(*.jpg,*.jpeg,*.png)：</td>
                 </tr>
                 <tr>
@@ -126,7 +126,7 @@ delNew()">delete</button></td>
                     <td>
                         <input type="file" name="image2" style="visibility: hidden" id="up2"/> <br>
                         <input type="button" class="btn btn-primary btn-sm" value="Add  Document" onclick="up2.click()">
-                        <input type="text" id="graduation" style="visibility: hidden" class="form-control"  name="graduation">
+                        <input type="text" id="graduation" style="visibility: hidden" value="{$data.graduation}" class="form-control"  name="graduation">
                         The previous stage of graduation certificate(*.jpg,*.jpeg,*.png)：</td>
 
                 </tr>
@@ -135,7 +135,7 @@ delNew()">delete</button></td>
                     <td>
                         <input type="file" name="image3" style="visibility: hidden" id="up3"/> <br>
                         <input type="button" class="btn btn-primary btn-sm" value="Add Document" onclick="up3.click()">
-                        <input type="text" id="transcript" style="visibility: hidden" class="form-control"  name="transcript">
+                        <input type="text" id="transcript" style="visibility: hidden" value="{$data.transcript}" class="form-control"  name="transcript">
                         The previous stage of transcript(*.jpg,*.jpeg,*.png)</td>
                 </tr>
             </table>
@@ -149,7 +149,7 @@ delNew()">delete</button></td>
 </div>
 </body>
 <script type="text/javascript">
-    $("#im1").viewer({url:"data-original"});
+    var viewer = new Viewer(document.getElementById('imclude'));
     $(function () {
         $('.condate').datetimepicker({
             format: 'yyyy-mm-dd',

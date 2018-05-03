@@ -1,4 +1,4 @@
-<?php /*a:2:{s:66:"/Users/liuyang/intermis/tp5/application/student/view/st/apply.html";i:1524448172;s:67:"/Users/liuyang/intermis/tp5/application/student/view/st/header.html";i:1523870820;}*/ ?>
+<?php /*a:2:{s:66:"/Users/liuyang/intermis/tp5/application/student/view/st/apply.html";i:1524579220;s:67:"/Users/liuyang/intermis/tp5/application/student/view/st/header.html";i:1523870820;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -145,7 +145,7 @@
 
 </div>
 <script type="text/javascript">
-
+    $('select').selectpicker();
     $(function () {
         $("#chaxun").on('click',function () {
 

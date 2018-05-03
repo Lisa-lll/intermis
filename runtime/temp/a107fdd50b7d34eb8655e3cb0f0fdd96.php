@@ -1,4 +1,4 @@
-<?php /*a:3:{s:65:"/Users/liuyang/intermis/tp5/application/student/view/st/fill.html";i:1524282739;s:67:"/Users/liuyang/intermis/tp5/application/student/view/st/header.html";i:1523870820;s:65:"/Users/liuyang/intermis/tp5/application/student/view/st/left.html";i:1523889360;}*/ ?>
+<?php /*a:3:{s:65:"/Users/liuyang/intermis/tp5/application/student/view/st/fill.html";i:1524576302;s:67:"/Users/liuyang/intermis/tp5/application/student/view/st/header.html";i:1523870820;s:65:"/Users/liuyang/intermis/tp5/application/student/view/st/left.html";i:1523889360;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +23,12 @@
     <link rel="stylesheet" href="/node_modules/bootstrap-select/dist/css/bootstrap-select.min.css">
     <script src="/node_modules/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
 
+    <!-- viewer图片查看插件 -->
 
+
+
+    <script src="/node_modules/viewerjs/dist/viewer.min.js"></script>
+    <link href="/node_modules/viewerjs/dist/viewer.min.css" rel="stylesheet">
 
 
 
@@ -335,6 +340,7 @@
 
 
 <script type="text/javascript">
+    var viewer = new Viewer(document.getElementById('im1'));
     $(function () {
         $('.condate').datetimepicker({
             format: 'yyyy-mm-dd',

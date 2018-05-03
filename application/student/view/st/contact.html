@@ -46,87 +46,119 @@
 
         {include file="st/left"/}
         <div  class="col-md-10" style="padding: 10px 10px 20px 0px;margin-top: 5px;">
-            <form>
+            <form id="form1">
 
 
                 <table class="table table-bordered table-striped">
                     <tr>
-                        <td colspan="4">Home Country Address  Please fill in the blanks in Chinese if the address is in China</td>
+                        <td colspan="4"><input type="hidden" value="{$user}" name="user"><h4>Home Country Address </h4> Please fill in the blanks in Chinese if the address is in China</td>
 
                     </tr>
                     <tr>
-                        <td>*Street Address</td>
-                        <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
-                        <td>*Phone Number</td>
-                        <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                        <td><span class="glyphicon glyphicon-star text-danger" aria-hidden="true"></span>Street Address</td>
+                        <td><input type="text" class="form-control" placeholder="" name="hstreet" ></td>
+                        <td><span class="glyphicon glyphicon-star text-danger" aria-hidden="true"></span>Phone Number</td>
+                        <td><input type="text" class="form-control" placeholder="" name="hphone" ></td>
                     </tr>
                     <tr>
-                        <td>*City/Province</td>
-                        <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                        <td><span class="glyphicon glyphicon-star text-danger" aria-hidden="true"></span>City/Province</td>
+                        <td><input type="text" class="form-control" placeholder="" name="hcity" ></td>
                         <td>Mobile</td>
-                        <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                        <td><input type="text" class="form-control" placeholder="" name="hmobile" ></td>
                     </tr>
                     <tr>
-                        <td>*Country</td>
+                        <td><span class="glyphicon glyphicon-star text-danger" aria-hidden="true"></span>Country</td>
                         <td>
-                            <select  class="selectpicker show-menu-arrow" name="gj" data-width="100%" data-live-search="true"  >
+                            <select  class="selectpicker show-menu-arrow" name="hcountry" data-width="100%" data-live-search="true"  >
                                 {volist name="country" id="list"}
                                 <option value="{$list.name}">{$list.ename}</option>
                                 {/volist}
                             </select>
                         </td>
-                        <td>*Zipcode</td>
-                        <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                        <td><span class="glyphicon glyphicon-star text-danger" aria-hidden="true"></span>Zipcode</td>
+                        <td><input type="text" class="form-control" placeholder="" name="hzipcode" ></td>
                     </tr>
                     <tr>
-                        <td colspan="4">Current postal address</td>
+                        <td colspan="4"><h4>Current postal address</h4></td>
 
                     </tr>
                     <tr>
                         <td colspan="2">
                             <label class="radio-inline">
-                                <input type="radio" name="xb" id="inlineRadio1" value="男"> male
+                                <input type="radio" name="lxfs" id="lxfs1" value="男">Same as the Home country address
                             </label>
                             <label class="radio-inline">
-                                <input type="radio" name="xb" id="inlineRadio2" value="女"> female
+                                <input type="radio" name="lxfs" id="lxfs2" value="女"> Other
                             </label>
                         </td>
-                        <td>*Personal Email</td>
-                        <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                        <td><span class="glyphicon glyphicon-star text-danger" aria-hidden="true"></span>Personal Email</td>
+                        <td><input type="text" class="form-control" placeholder="" name="cpemail" ></td>
 
                     </tr>
                     <tr>
-                        <td>*Mobile/Phone Number</td>
-                        <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
-                        <td>*Address</td>
-                        <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                        <td>QQ No.</td>
+                        <td><input type="text" class="form-control" placeholder="" name="cqq" ></td>
+                        <td>Wechat No.</td>
+                        <td><input type="text" class="form-control" placeholder="" name="cwechat" ></td>
                     </tr>
-                    <tr>
-                        <td>*Zipcode</td>
-                        <td><input type="text" class="form-control" placeholder="" name="hzx" ></td>
+                    <tr class="lxhidd">
+                        <td><span class="glyphicon glyphicon-star text-danger" aria-hidden="true"></span><strong>Mobile/Phone Number</strong></td>
+                        <td><input type="text" class="form-control" placeholder="" name="cmobile" ></td>
+                        <td><span class="glyphicon glyphicon-star text-danger" aria-hidden="true"></span><strong>Address</strong></td>
+                        <td><input type="text" class="form-control" placeholder="" name="caddress" ></td>
+                    </tr>
+                    <tr class="lxhidd">
+                        <td><span class="glyphicon glyphicon-star text-danger" aria-hidden="true"></span>Zipcode</td>
+                        <td><input type="text" class="form-control" placeholder="" name="czipcode" ></td>
                         <td></td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td colspan="4">*How to Collect the Admission Notice</td>
+                        <td colspan="4"><h4><span class="glyphicon glyphicon-star text-danger" aria-hidden="true"></span>How to Collect the Admission Notice</h4></td>
 
                     </tr>
                     <tr>
                         <td colspan="4">
                             <label class="radio-inline">
-                                <input type="radio" name="xb" id="inlineRadio1" value="男"> male
+                                <input type="radio" name="tzscn" id="tzscn1" value="男">Deliver to Address Provided in Application
                             </label>
                             <label class="radio-inline">
-                                <input type="radio" name="xb" id="inlineRadio2" value="女"> female
+                                <input type="radio" name="tzscn" id="tzscn2" value="女">Collect at the Shenyang Jianzhu University in Person
                             </label>
+                            <p class="tzshidd">
+                                <button type="button" class="btn btn-default btn-sm">Copy from Home country address</button>
+                                <button type="button" class="btn btn-default btn-sm">Copy from My current postal address </button>
+                            </p>
                         </td>
 
+                    </tr>
+                    <tr class="tzshidd">
+                        <td><span class="glyphicon glyphicon-star text-danger" aria-hidden="true"></span>Receiver's Name</td>
+                        <td><input type="text" class="form-control" placeholder="" name="tzsname" ></td>
+                        <td><span class="glyphicon glyphicon-star text-danger" aria-hidden="true"></span>Phone or Mobile</td>
+                        <td><input type="text" class="form-control" placeholder="" name="tzsphone" ></td>
+                    </tr>
+                    <tr class="tzshidd">
+                        <td><span class="glyphicon glyphicon-star text-danger" aria-hidden="true"></span>Receiver's City/Province</td>
+                        <td><input type="text" class="form-control" placeholder="" name="tzscity" ></td>
+                        <td><span class="glyphicon glyphicon-star text-danger" aria-hidden="true"></span>Receiver's Country</td>
+                        <td><select  class="selectpicker show-menu-arrow" name="tzscountry" data-width="100%" data-live-search="true"  >
+                            {volist name="country" id="list"}
+                            <option value="{$list.name}">{$list.ename}</option>
+                            {/volist}
+                        </select></td>
+                    </tr>
+                    <tr class="tzshidd">
+                        <td><span class="glyphicon glyphicon-star text-danger" aria-hidden="true"></span>Receiver'sAddress</td>
+                        <td><input type="text" class="form-control" placeholder="" name="tzsaddress" ></td>
+                        <td><span class="glyphicon glyphicon-star text-danger" aria-hidden="true"></span>Zipcode</td>
+                        <td><input type="text" class="form-control" placeholder="" name="tzszipcode" ></td>
                     </tr>
                 </table>
 
                 <div class="col-md-12 text-center">
                     <button type="button" class="btn btn-primary">Previous</button>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <button type="button" class="btn btn-primary">Save and Next</button>
+                    <button type="button" class="btn btn-primary" id="submit1">Save and Next</button>
                 </div>
             </form>
         </div>
@@ -134,39 +166,36 @@
 </div>
 </body>
 <script type="text/javascript">
-    $(function () {
-        $('.condate').datetimepicker({
-            format: 'yyyy-mm-dd',
-            todayBtn:'true',
-            autoclose:'true',
-            todayHighlight:'true',
-            viewSelect:'month',
-            startView: 2,
-            minView: 2
 
-        });
-    });
 
     $(function () {
-
-
-        $("#up1").on('change', function(){
+        $("#submit1").on('click',function () {
 
             $.ajax({
-                url: "{:url('st/upload')}",
-                type: 'POST',
-                cache: false,
-                data: new FormData($('#stu1')[0]),
-                processData: false,
-                contentType: false,
+                type: 'post',
+                url: "{:url('st/insertcontact')}",
+                data: $('#form1').serialize(),
+                datatype: 'json',
+                success: function (data) {
 
-                success : function(data) {
-                    // alert(data.status);
-                    $("#im1").attr({src:"/uploads/"+data.status});
-                    $("#imgadd").val("/uploads/"+data.status);
+                    if (data.status == 1) {
+
+                        var url="{:url('student/st/preview')}";
+
+                        window.location.href=url;
+                    }else {
+                        var url="{:url('student/st/preview')}";
+
+                        window.location.href=url;
                 }
+                }
+
+
+
             })
+
         })
+
     });
 
 
@@ -197,7 +226,18 @@
         })
 
     });
-
+    $("#lxfs1").click(function(){
+        $(".lxhidd").hide();
+    });
+    $("#lxfs2").click(function(){
+        $(".lxhidd").show();
+    });
+    $("#tzscn2").click(function(){
+        $(".tzshidd").hide();
+    });
+    $("#tzscn1").click(function(){
+        $(".tzshidd").show();
+    });
 
 </script>
 </html>

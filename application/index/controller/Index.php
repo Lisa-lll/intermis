@@ -1,6 +1,8 @@
 <?php
 namespace app\index\controller;
 
+use think\facade\Session;
+
 class Index
 {
     public function index()
@@ -10,6 +12,14 @@ class Index
 
     public function hello($name = 'liuyang')
     {
+       // echo THINK_VERSION;
         return 'hello,' . $name;
+    }
+
+    public function h()
+    {
+//        Session::set('name','liuyang');
+//        $lll = Session::get('name');
+//        dump($lll);
     }
 }

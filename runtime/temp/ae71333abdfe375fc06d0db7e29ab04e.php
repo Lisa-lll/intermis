@@ -1,4 +1,4 @@
-<?php /*a:1:{s:69:"/Users/liuyang/intermis/tp5/application/student/view/st/register.html";i:1523601991;}*/ ?>
+<?php /*a:1:{s:69:"/Users/liuyang/intermis/tp5/application/student/view/st/register.html";i:1525319870;}*/ ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en">
 <head>
@@ -18,7 +18,7 @@
 
     <form action=""  id="registerForm">
         <div>
-            <input type="text" name="user" class="username" placeholder="User Name" autocomplete="off"/>
+            <input type="text" name="user" class="username" placeholder="User Name" autocomplete="off" required/>
         </div>
         <div>
             <input type="password" name="pass" class="password" placeholder="Password" oncontextmenu="return false" onpaste="return false" />
@@ -30,7 +30,7 @@
             <input type="text" name="mobile" class="phone_number" placeholder="Mobile" autocomplete="off" id="number"/>
         </div>
         <div>
-            <input type="email" name="email" class="email" placeholder="E-mail" oncontextmenu="return false" onpaste="return false" />
+            <input type="text" name="email" class="email" placeholder="E-mail" oncontextmenu="return false" onpaste="return false" />
         </div>
 
         <button id="submit" type="button">Register</button>

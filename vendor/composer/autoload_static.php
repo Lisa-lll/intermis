@@ -10,6 +10,7 @@ class ComposerStaticInita0c7f8a8115f8ed7767db345102704fb
         't' => 
         array (
             'think\\composer\\' => 15,
+            'think\\' => 6,
         ),
         'a' => 
         array (
@@ -21,6 +22,10 @@ class ComposerStaticInita0c7f8a8115f8ed7767db345102704fb
         'think\\composer\\' => 
         array (
             0 => __DIR__ . '/..' . '/topthink/think-installer/src',
+        ),
+        'think\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/topthink/think-image/src',
         ),
         'app\\' => 
         array (
